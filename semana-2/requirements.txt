@@ -1,0 +1,7 @@
+# Dependencias de Python del proyecto
+# Instalar con:  pip install -r requirements.txt
+
+rdflib             # construir/serializar el grafo RDF (carga inicial y consumer)
+psycopg2-binary    # conexión a PostgreSQL
+confluent-kafka    # consumir los eventos de Debezium en Kafka (consumer)
+requests           # cargar tripletas en GraphDB vía su API HTTP (consumer)

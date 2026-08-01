@@ -66,8 +66,23 @@ La carga inicial se hace con un script de carga que vuelca toda la base al grafo
 
 ```
 Memorias-LIFIA-Grafo-de-Conocimiento/
-|- dump/                 Dump de la base
-|- semana-1/             Mapeo ontológico + ontología OWL
+|- dump/
+|    |- new_memorias_para_kgsw.dump  Dump de la base
+|
+|- semana-1/                    MAPEO DE LAS ENTIDADES
+|    |- mapeo_ontologico.md     Mapeo ontológico
+|    |- ontologia.ttl           Ontología OWL
+|
+|- semana-2/                    CARGA INICIAL
+|    |- requirements.txt        Dependencias de Python necesarias
+|    |- carga_inicial.py        Script ETL
+|    |- mapping.py              Mapeo de entidades a RDF
+|    |- memorias.ttl            Grafo RDF
+|    |- graphdb
+|        |- README.md                       Instrucciones para cargar en GraphDB
+|        |- Tripletas con inferencia.png    Cantidad de tripletas con inferencia
+|        |- Tripletas sin inferencia.png    Cantidad de tripletas sin inferencia
+|    
 |- IR AGREGANDO SEMANAS
 ```
 
