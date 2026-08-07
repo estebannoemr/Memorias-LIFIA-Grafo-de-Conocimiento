@@ -1,0 +1,193 @@
+@prefix lifia:   <http://lifia.info.unlp.edu.ar/ontology#> .
+@prefix res:     <http://lifia.info.unlp.edu.ar/resource/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix vivo:    <http://vivoweb.org/ontology/core#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix dblp:    <https://dblp.org/rdf/schema#> .
+@prefix cso:     <http://cso.kmi.open.ac.uk/schema/cso#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+
+# ------
+#  Vocabulario propio del grafo de conocimiento - Memorias LIFIA
+#
+#  Las clases e instancias se describen con vocabularios estándar
+#  (VIVO, DBLP, BIBO, FOAF, Dublin Core, CSO, SKOS).
+#  Las instancias usan el namespace res:
+
+#  Este archivo define *SOLO* lo propio (lifia:):
+#  las propiedades que no tienen equivalente estándar y las
+#  alineaciones (inversas y sub-propiedades) que dan COHERENCIA al grafo.
+#
+#  Convención de namespaces:
+#    lifia:  ->  http://lifia.info.unlp.edu.ar/ontology#   (este vocabulario)
+#    res:    ->  http://lifia.info.unlp.edu.ar/resource/   (las instancias de datos)
+# ------
+
+
+
+<http://lifia.info.unlp.edu.ar/ontology>
+    a owl:Ontology ;
+    rdfs:label "Vocabulario Memorias LIFIA"@es ;
+    rdfs:comment "Términos propios del grafo de las memorias del Centro LIFIA. Complementa VIVO, DBLP, BIBO, FOAF, Dublin Core, CSO y SKOS."@es ;
+    owl:versionInfo "1.0" .
+
+
+
+# ------
+#  1. PROPIEDADES DE DATOS PROPIAS (columna → literal)
+#     Solo las que no tienen término estándar.
+# ------
+
+# --- comunes a varias entidades ---
+lifia:slug a owl:DatatypeProperty ;
+    rdfs:label "slug"@es ; rdfs:range xsd:string ;
+    rdfs:comment "Identificador legible del recurso, usado en la URL del portal."@es .
+lifia:startDate a owl:DatatypeProperty ; rdfs:label "fecha de inicio"@es ; rdfs:range xsd:date .
+lifia:endDate   a owl:DatatypeProperty ; rdfs:label "fecha de fin"@es ; rdfs:range xsd:date .
+lifia:fundingAgency a owl:DatatypeProperty ; rdfs:label "agencia de financiamiento"@es ; rdfs:range xsd:string .
+lifia:featured a owl:DatatypeProperty ; rdfs:label "destacado"@es ; rdfs:range xsd:boolean .
+
+# --- Member ---
+lifia:highestDegree      a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "máximo título"@es .
+lifia:coursesAtUNLP      a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "materias en la UNLP"@es .
+lifia:positionAtLab      a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "cargo en el LIFIA"@es .
+lifia:positionAtUnlp     a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "cargo en la UNLP"@es .
+lifia:positionAtCIC      a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "cargo en la CIC"@es .
+lifia:positionAtCONICET  a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "cargo en el CONICET"@es .
+lifia:category           a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "categoría"@es .
+lifia:sicadiCategory     a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "categoría SICADI"@es .
+lifia:institutionalEmail a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "email institucional"@es .
+lifia:affiliations       a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "afiliaciones"@es .
+
+# --- Project ---
+lifia:code             a owl:DatatypeProperty ; rdfs:domain vivo:Project ; rdfs:range xsd:string ; rdfs:label "código"@es .
+lifia:responsibleGroup a owl:DatatypeProperty ; rdfs:domain vivo:Project ; rdfs:range xsd:string ; rdfs:label "grupo responsable"@es .
+lifia:amount           a owl:DatatypeProperty ; rdfs:domain vivo:Project ; rdfs:range xsd:string ; rdfs:label "monto"@es .
+
+# --- Publication ---
+lifia:ranking          a owl:DatatypeProperty ; rdfs:domain bibo:Document ; rdfs:range xsd:string ; rdfs:label "ranking"@es ;
+    rdfs:comment "Categoría de la publicación (p.ej. CORE, Scimago)."@es .
+lifia:selfArchivingUrl a owl:ObjectProperty ; rdfs:domain bibo:Document ; rdfs:label "URL de auto-archivo"@es ;
+    rdfs:comment "Enlace (IRI) a la versión de auto-archivo; se guarda como recurso, no como literal."@es .
+lifia:publicationType  a owl:DatatypeProperty ; rdfs:domain bibo:Document ; rdfs:range xsd:string ; rdfs:label "tipo de publicación"@es .
+
+# --- Scholarship ---
+lifia:scholarshipType a owl:DatatypeProperty ; rdfs:domain vivo:Grant ; rdfs:range xsd:string ; rdfs:label "tipo de beca"@es .
+
+# --- Thesis ---
+lifia:career    a owl:DatatypeProperty ; rdfs:domain bibo:Thesis ; rdfs:range xsd:string  ; rdfs:label "carrera"@es .
+lifia:level     a owl:DatatypeProperty ; rdfs:domain bibo:Thesis ; rdfs:range xsd:string  ; rdfs:label "nivel"@es .
+lifia:reportUrl a owl:ObjectProperty ; rdfs:domain bibo:Thesis ; rdfs:label "URL del informe"@es .
+lifia:progress  a owl:DatatypeProperty ; rdfs:domain bibo:Thesis ; rdfs:range xsd:integer ; rdfs:label "avance"@es .
+
+
+
+# ------
+#  2. NOMBRES EN TEXTO LIBRE (pendientes de resolución de entidades)
+#     Guardan el nombre como literal. Tras la resolución, se agrega
+#     además la relación de objeto hacia el foaf:Person correspondiente.
+# ------
+
+lifia:directorName   a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "director (nombre)"@es ;
+    rdfs:comment "Nombre del director como texto; candidato a reconciliar con un Member."@es .
+lifia:coDirectorName a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "codirector (nombre)"@es .
+lifia:studentName    a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "estudiante (nombre)"@es .
+lifia:otherAdvisors  a owl:DatatypeProperty ; rdfs:domain bibo:Thesis ; rdfs:range xsd:string ; rdfs:label "otros asesores (nombres)"@es .
+
+
+
+# ------
+#  3. PROPIEDADES DE OBJETO PROPIAS (relación → recurso)
+#     Derivadas de las tablas de join.
+# ------
+
+# --- autoría (Member <-> Publication, tabla _PublicationMembers) ---
+lifia:authorOf a owl:ObjectProperty ;
+    rdfs:domain foaf:Person ; rdfs:range bibo:Document ;
+    rdfs:label "es autor de"@es .
+
+# --- Member <-> Project (_ProjectMembers) ---
+lifia:worksOnProject a owl:ObjectProperty ;
+    rdfs:domain foaf:Person ; rdfs:range vivo:Project ;
+    rdfs:label "trabaja en el proyecto"@es .
+lifia:hasProjectMember a owl:ObjectProperty ;
+    rdfs:domain vivo:Project ; rdfs:range foaf:Person ;
+    rdfs:label "tiene como integrante"@es .
+
+# --- Member <-> Scholarship / Thesis ---
+lifia:involvedInScholarship a owl:ObjectProperty ;
+    rdfs:domain foaf:Person ; rdfs:range vivo:Grant ;
+    rdfs:label "participa en la beca"@es .
+lifia:involvedInThesis a owl:ObjectProperty ;
+    rdfs:domain foaf:Person ; rdfs:range bibo:Thesis ;
+    rdfs:label "participa en la tesis"@es .
+lifia:involvedMember a owl:ObjectProperty ;
+    rdfs:range foaf:Person ;
+    rdfs:label "tiene como integrante"@es ;
+    rdfs:comment "Vínculo genérico de una beca o tesis con un miembro (tablas _ScholarshipMembers, _ThesisMembers)."@es .
+
+# --- Project <-> Publication ---
+lifia:producedPublication a owl:ObjectProperty ;
+    rdfs:domain vivo:Project ; rdfs:range bibo:Document ;
+    rdfs:label "produjo la publicación"@es .
+lifia:partOfProject a owl:ObjectProperty ;
+    rdfs:domain bibo:Document ; rdfs:range vivo:Project ;
+    rdfs:label "forma parte del proyecto"@es .
+
+# --- relaciones genéricas por rango (para los joins restantes) ---
+lifia:relatedProject     a owl:ObjectProperty ; rdfs:range vivo:Project   ; rdfs:label "proyecto relacionado"@es .
+lifia:relatedPublication a owl:ObjectProperty ; rdfs:range bibo:Document  ; rdfs:label "publicación relacionada"@es .
+lifia:relatedScholarship a owl:ObjectProperty ; rdfs:range vivo:Grant     ; rdfs:label "beca relacionada"@es .
+lifia:relatedThesis      a owl:ObjectProperty ; rdfs:range bibo:Thesis    ; rdfs:label "tesis relacionada"@es .
+
+
+
+# ------
+#  4. ALINEACIONES (inversas y sub-propiedades)
+#     Permiten inferir relacions adicionales a partir de las tripletas cargadas.
+# ------
+
+# authorOf es la inversa de dcterms:creator (mismo _PublicationMembers, ambos sentidos)
+lifia:authorOf owl:inverseOf dcterms:creator .
+
+# worksOnProject <-> hasProjectMember  ;  producedPublication <-> partOfProject
+lifia:worksOnProject      owl:inverseOf lifia:hasProjectMember .
+lifia:producedPublication owl:inverseOf lifia:partOfProject .
+
+# todas las relaciones propias son sub-propiedades de dcterms:relation (propiedad
+# genérica estándar de "recurso relacionado"). Se usa dcterms:relation y no
+# vivo:relatedBy porque esta última está asociada al modelo de relaciones de VIVO
+# y no es adecuada para representar directamente estos vínculos.
+lifia:worksOnProject        rdfs:subPropertyOf dcterms:relation .
+lifia:hasProjectMember      rdfs:subPropertyOf dcterms:relation .
+lifia:involvedInScholarship rdfs:subPropertyOf dcterms:relation .
+lifia:involvedInThesis      rdfs:subPropertyOf dcterms:relation .
+lifia:involvedMember        rdfs:subPropertyOf dcterms:relation .
+lifia:producedPublication   rdfs:subPropertyOf dcterms:relation .
+lifia:partOfProject         rdfs:subPropertyOf dcterms:relation .
+lifia:relatedProject        rdfs:subPropertyOf dcterms:relation .
+lifia:relatedPublication    rdfs:subPropertyOf dcterms:relation .
+lifia:relatedScholarship    rdfs:subPropertyOf dcterms:relation .
+lifia:relatedThesis         rdfs:subPropertyOf dcterms:relation .
+
+
+# ------
+#  5. VÍNCULOS RESUELTOS DE ROLES (nombres en texto → persona)
+#     Se agregan cuando la resolución de entidades encuentra al miembro.
+#     El nombre original se conserva igual como literal (directorName, etc.).
+# ------
+
+lifia:hasDirector   a owl:ObjectProperty ; rdfs:range foaf:Person ; rdfs:label "tiene como director"@es ;
+    rdfs:subPropertyOf dcterms:relation .
+lifia:hasCoDirector a owl:ObjectProperty ; rdfs:range foaf:Person ; rdfs:label "tiene como codirector"@es ;
+    rdfs:subPropertyOf dcterms:relation .
+lifia:hasStudent    a owl:ObjectProperty ; rdfs:range foaf:Person ; rdfs:label "tiene como estudiante"@es ;
+    rdfs:subPropertyOf dcterms:relation .
+lifia:hasAdvisor    a owl:ObjectProperty ; rdfs:range foaf:Person ; rdfs:label "tiene como asesor"@es ;
+    rdfs:subPropertyOf dcterms:relation .

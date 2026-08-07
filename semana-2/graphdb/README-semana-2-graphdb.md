@@ -8,7 +8,7 @@ Pasos para cargar el grafo de conocimiento en GraphDB, una vez generado el `memo
 
 ## Requisitos
 
-- GraphDB corriendo en `http://localhost:7200`.
+- GraphDB corriendo en `http://localhost:7200`. Puede ser el GraphDB Free de escritorio o el que levanta el `docker-compose` de la semana 3; en ambos casos responde en esa misma URL, así que estos pasos sirven igual.
 - Archivos: `ontologia_memorias_lifia.ttl` (vocabulario) y `memorias.ttl` (datos), generado este último por `carga_inicial.py`.
 
 ---

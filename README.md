@@ -78,11 +78,21 @@ Memorias-LIFIA-Grafo-de-Conocimiento/
 |    |- carga_inicial.py        Script ETL
 |    |- mapping.py              Mapeo de entidades a RDF
 |    |- memorias.ttl            Grafo RDF
+|    |
 |    |- graphdb
 |        |- README.md                       Instrucciones para cargar en GraphDB
 |        |- Tripletas con inferencia.png    Cantidad de tripletas con inferencia
 |        |- Tripletas sin inferencia.png    Cantidad de tripletas sin inferencia
 |    
+|- semana-3/                    PIPELINE CDC
+|    |- docker-compose.yml      Configuración de Docker
+|    |- README-semana-3.md      Descripción del pipeline
+|    |- register-connector.sh   Registra el conector en Kafka Connect.
+|    |
+|    |- connectors/memorias-postgres.json      Configuración del conector Debezium para la base.
+|    |
+|    |- graphdb-from-docker     Archivos para cargar en GraphDB desde el Docker (son los mismos de las semana 1 y 2)
+| 
 |- IR AGREGANDO SEMANAS
 ```
 

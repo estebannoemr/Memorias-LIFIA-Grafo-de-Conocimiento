@@ -15,8 +15,8 @@ import unicodedata
 from rdflib import Graph, Namespace, Literal, URIRef
 from rdflib.namespace import RDF, RDFS, XSD, OWL, DCTERMS, FOAF
 
-LIFIA = Namespace("http://lifia.info.unlp.edu.ar/ontology#")
-RES   = "http://lifia.info.unlp.edu.ar/resource/"
+LIFIA = Namespace("http://lifia.info.unlp.edu.ar/ontology#") # Namespace de nuestro vocabulario propio (clases/propiedades lifia:)
+RES   = "http://lifia.info.unlp.edu.ar/resource/" # string base para armar las IRIs de las instancias (recursos)
 VIVO  = Namespace("http://vivoweb.org/ontology/core#")
 BIBO  = Namespace("http://purl.org/ontology/bibo/")
 DBLP  = Namespace("https://dblp.org/rdf/schema#")
@@ -199,7 +199,7 @@ def venue_node(name, vtype, g):
 
 
 # ------ valores literales
-def add_literal(g, s, pred, val, kind="str", lang=None):
+def add_literal(g, s, pred, val, kind="str", lang=None): # g = graph, s = subject, pred = predicate, val = value
     """Agrega un valor al grafo RDF como literal, aplicando el tipo indicado."""
     if val is None:
         return  # no se agrega nada si el valor es None

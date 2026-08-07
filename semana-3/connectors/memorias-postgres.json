@@ -1,0 +1,33 @@
+{
+  "name": "memorias-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "tasks.max": "1",
+
+    "database.hostname": "host.docker.internal",
+    "database.port": "5432",
+    "database.user": "postgres",
+    "database.password": "postgres",
+    "database.dbname": "new_memorias",
+
+    "topic.prefix": "memorias",
+
+    "plugin.name": "pgoutput",
+    "slot.name": "memorias_slot",
+    "publication.name": "memorias_pub",
+    "publication.autocreate.mode": "filtered",
+
+    "snapshot.mode": "initial",
+
+    "table.include.list": "public.Member,public.Project,public.Publication,public.Thesis,public.Scholarship,public._ProjectMembers,public._ProjectPublications,public._ProjectScholarships,public._ProjectTheses,public._PublicationMembers,public._ScholarshipMembers,public._ThesisMembers,public._ThesisPublications,public._ThesisScholarships",
+
+    "decimal.handling.mode": "string",
+    "time.precision.mode": "connect",
+    "tombstones.on.delete": "false",
+
+    "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "key.converter.schemas.enable": "false",
+    "value.converter.schemas.enable": "false"
+  }
+}

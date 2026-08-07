@@ -1,0 +1,67 @@
+# docker-compose para el pipeline CDC
+# Levanta: Zookeeper + Kafka + Kafka Connect (con Debezium) + Kafka UI + GraphDB
+#
+# Uso:
+#   docker compose up -d
+#   (esperar ~30s a que arranque todo)
+#   ./register-connector.sh
+#
+# Postgres NO va en Docker: corre en la maquina local (localhost). Los contenedores lo
+# alcanzan por "host.docker.internal" (ver el connector json).
+
+services:
+
+  zookeeper:
+    image: quay.io/debezium/zookeeper:2.7
+    container_name: memorias-zookeeper
+    ports:
+      - "2181:2181"
+
+  kafka:
+    image: quay.io/debezium/kafka:2.7
+    container_name: memorias-kafka
+    depends_on: [zookeeper]
+    ports:
+      - "9092:9092"
+    environment:
+      ZOOKEEPER_CONNECT: zookeeper:2181
+
+  connect:
+    image: quay.io/debezium/connect:2.7
+    container_name: memorias-connect
+    depends_on: [kafka]
+    ports:
+      - "8083:8083"
+    # Permite que el contenedor resuelva la Postgres del host (si sería en Linux.
+    # Ya que en Docker Desktop Windows/Mac host.docker.internal ya funciona por defecto).
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      BOOTSTRAP_SERVERS: kafka:9092
+      GROUP_ID: memorias-connect-group
+      CONFIG_STORAGE_TOPIC: connect_configs
+      OFFSET_STORAGE_TOPIC: connect_offsets
+      STATUS_STORAGE_TOPIC: connect_statuses
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    container_name: memorias-kafka-ui
+    depends_on: [kafka, connect]
+    ports:
+      - "8080:8080"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: memorias
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
+      KAFKA_CLUSTERS_0_KAFKACONNECT_0_NAME: connect
+      KAFKA_CLUSTERS_0_KAFKACONNECT_0_ADDRESS: http://connect:8083
+
+  graphdb:
+    image: ontotext/graphdb:10.7.0
+    container_name: memorias-graphdb
+    ports:
+      - "7200:7200"
+    volumes:
+      - graphdb-data:/opt/graphdb/home
+
+volumes:
+  graphdb-data:
