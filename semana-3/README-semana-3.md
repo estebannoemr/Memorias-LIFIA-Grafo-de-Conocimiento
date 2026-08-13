@@ -1,4 +1,4 @@
-# Etapa 3 - Infraestructura CDC (Debezium + Kafka)
+# Semana 3 - Infraestructura CDC (Debezium + Kafka)
 
 Objetivo: que cada cambio en la base `new_memorias` (INSERT/UPDATE/DELETE) se capture automáticamente y se publique en Kafka, sin tocar el portal. Esto es lo que después consume el `consumer.py` (Etapa 4) para actualizar el grafo.
 
@@ -13,7 +13,7 @@ Archivos de esta carpeta:
 ## Requisitos previos
 
 - Docker Desktop instalado y corriendo.
-- La base `new_memorias` ya restaurada en tu PostgreSQL local (Etapa 0, hecho).
+- La base `new_memorias` ya restaurada en el PostgreSQL local (Etapa 0, hecho).
 
 
 ---
@@ -59,7 +59,7 @@ Servicios que quedan disponibles:
 | Kafka UI | http://localhost:8080 | ver TOPICs y mensajes en el navegador |
 | GraphDB | http://localhost:7200 | el triplestore (Etapa 4) |
 
-Nota sobre GraphDB: en este proyecto se usa el GraphDB que levanta este mismo `docker-compose`, en lugar del GraphDB Free de escritorio que se usó en la Etapa 2. Como es una instancia nueva y vacía, hay que crear el repo `memorias` e importar la ontología y `memorias.ttl` ahí (los mismos pasos que en `semana-2/graphdb/README.md`; sigue siendo `localhost:7200`, así que el resto no cambia).
+Nota sobre GraphDB: en este proyecto se usa el GraphDB que levanta este mismo `docker-compose`, en lugar del GraphDB Free de escritorio que se usó en la Etapa 2. Como es una instancia nueva y vacía, hay que crear el repo `memorias-repo` e importar la ontología y `memorias.ttl` ahí (los pasos están en el README de `semana-2/graphdb/`; sigue siendo `localhost:7200`, así que el resto no cambia).
 
 
 ---

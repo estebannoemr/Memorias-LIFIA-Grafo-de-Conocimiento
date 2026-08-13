@@ -16,7 +16,7 @@ Pasos para cargar el grafo de conocimiento en GraphDB, una vez generado el `memo
 
 ## Pasos
 
-1. **Crear el repositorio.** En `http://localhost:7200` → *Setup → Repositories → Create → GraphDB Repository*. ID: `memorias`. Para habilitar la inferencia (necesaria en la etapa de consultas), elegir un ruleset con OWL/RDFS, por ejemplo *RDFS-Plus (Optimized)*.
+1. **Crear el repositorio.** En `http://localhost:7200` → *Setup → Repositories → Create → GraphDB Repository*. ID: `memorias-repo`. Para habilitar la inferencia (necesaria en la etapa de consultas), elegir un ruleset con OWL/RDFS, por ejemplo *RDFS-Plus (Optimized)*. Se puede también crear directamente desde el archivo `memorias-repository.ttl`.
 
 2. **Importar la ontología primero.** *Import → RDF → Upload RDF files* → subir `ontologia_memorias_lifia.ttl` → *Import*. Es el esquema/vocabulario, va antes que los datos.
 

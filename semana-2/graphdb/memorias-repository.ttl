@@ -8,8 +8,8 @@
 @prefix graphdb: <http://www.ontotext.com/config/graphdb#>.
 
 [] a rep:Repository ;
-    rep:repositoryID "WS-Final" ;
-    rdfs:label "WS-Final" ;
+    rep:repositoryID "memorias-repo" ;
+    rdfs:label "memorias-repo" ;
     rep:repositoryImpl [
         rep:repositoryType "graphdb:SailRepository" ;
         sr:sailImpl [
