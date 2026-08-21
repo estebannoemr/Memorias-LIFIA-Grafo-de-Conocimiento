@@ -75,7 +75,6 @@ Memorias-LIFIA-Grafo-de-Conocimiento/
 |    |- ontologia.ttl           Ontología OWL
 |
 |- semana-2/                    CARGA INICIAL
-|    |- requirements.txt        Dependencias de Python necesarias
 |    |- carga_inicial.py        Script ETL
 |    |- mapping.py              Mapeo de entidades a RDF
 |    |- memorias.ttl            Grafo RDF
@@ -90,14 +89,21 @@ Memorias-LIFIA-Grafo-de-Conocimiento/
 |    |- README-semana-3.md      Descripción del pipeline
 |    |- register-connector.sh   Registra el conector en Kafka Connect.
 |    |
-|    |- connectors/memorias-postgres.json      Configuración del conector Debezium para la base.
+|    |- connectors
+|       |- memorias-postgres.json      Configuración del conector Debezium para la base.
 |    |
-|    |- graphdb-from-docker     Archivos para cargar en GraphDB desde el Docker (son los mismos de las semana 1 y 2)
+|    |- graphdb-from-docker    Archivos para cargar en GraphDB desde el Docker (= semana 1 y 2)
 | 
 |- semana-4/                   CONSUMIDOR: TRADUCE EVENTOS A RDF Y SINCRONIZA GRAPHDB
 |    |- consumer.py            Script para consumir los cambios de Kafka y actualizar GraphDB
 |    |- mapping.py             Lógica de mapeo relacional → RDF (= semana 2)
 |    |- README-semana-4.md     Descripción del consumidor
+|
+|- semana-5/                   CONSULTAS SPARQLPARA VALIDAR
+|    |- Consultas.md           Consultas SPARQL para validar el grafo
+|
+|- requirements.txt            Dependencias de Python necesarias
+|- README.md                   Descripción del repositorio
 
 ```
 
@@ -133,12 +139,20 @@ Esperar ~30 s. Quedan disponibles: Kafka Connect (puerto 8083), Kafka UI (puerto
 
 **4. Cargar el grafo en GraphDB**
 
-Crear una vez el repositorio `memorias-repo` en http://localhost:7200 (Setup -> Repositories -> Create, con un ruleset RDFS/OWL para la inferencia - o directamente con el archivo `memorias-repository.ttl`). Después importar la ontología (ontologia_memorias_lifia.ttl) y los datos (memorias.ttl) desde la propia interfaz gráfica de GraphDB o mediante los siguientes comandos:
+Todo por consola, parado en `semana-3`. Primero crear el repositorio a partir del archivo de configuración (ya trae el id `memorias-repo` y el ruleset de inferencia, así no hay que elegir nada en la interfaz):
 ```bash
 cd ../semana-3
+curl -X POST http://localhost:7200/rest/repositories -H "Content-Type: multipart/form-data" -F "config=@graphdb-from-docker/memorias-repository.ttl"
+```
+
+También se puede hacer desde la interfaz gráfica: Setup -> Repositories -> Create, con un ruleset RDFS/OWL para la inferencia (o directamente con el archivo `memorias-repository.ttl`).
+
+Después importar la ontología (ontologia_memorias_lifia.ttl) y los datos (memorias.ttl) desde la propia interfaz gráfica de GraphDB o mediante los siguientes comandos:
+```bash
 curl -i -X POST -H "Content-Type: text/turtle" --data-binary @graphdb-from-docker/ontologia_memorias_lifia.ttl http://localhost:7200/repositories/memorias-repo/statements
 curl -i -X POST -H "Content-Type: text/turtle" --data-binary @graphdb-from-docker/memorias.ttl http://localhost:7200/repositories/memorias-repo/statements
 ```
+(Alternativa por interfaz gráfica: Setup -> Repositories -> Create para el repo, y la pestaña Import para subir los dos .ttl.)
 
 **OJO**: si se hace desde comando no se ve en la interfaz gráfica que se importaron, verificar con `curl -s http://localhost:7200/rest/repositories/memorias-repo/size`.
 

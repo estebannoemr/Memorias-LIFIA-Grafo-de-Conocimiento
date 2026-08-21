@@ -4,7 +4,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix lifia: <http://lifia.info.unlp.edu.ar/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vivo: <http://vivoweb.org/ontology/core#> .
@@ -13456,10 +13455,10 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
         <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction> ;
     rdfs:seeAlso <https://scholar.google.com/citations?user=XFYdMfgAAAAJ&hl=es>,
         <https://www.researchgate.net/profile/Maria-Riva-4> ;
-    owl:sameAs <https://orcid.org/0009-0007-0607-9855> ;
     foaf:depiction <https://centrolifia.wordpress.com/wp-content/uploads/2023/10/img202303251334422-1-e1741053829553.jpg> ;
     foaf:familyName "Riva" ;
-    foaf:givenName "Florencia" .
+    foaf:givenName "Florencia" ;
+    dblp:orcid "https://orcid.org/0009-0007-0607-9855"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/martin-urbieta> a vivo:Person,
         foaf:Person ;
@@ -15110,10 +15109,10 @@ documentos.""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction>,
         <http://lifia.info.unlp.edu.ar/resource/tema/requirements-engineering> ;
     rdfs:seeAlso <https://dblp.org/pid/62/1527.html> ;
-    owl:sameAs <https://orcid.org/0000-0002-7099-8131> ;
     foaf:depiction <https://centrolifia.wordpress.com/wp-content/uploads/2025/06/cesar-collazos.jpeg> ;
     foaf:familyName "Collazos" ;
-    foaf:givenName "Cesar A." .
+    foaf:givenName "Cesar A." ;
+    dblp:orcid "https://orcid.org/0000-0002-7099-8131"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/martin-moschettoni> a vivo:Person,
         foaf:Person ;
@@ -15999,10 +15998,10 @@ documentos.""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/technology-and-society>,
         <http://lifia.info.unlp.edu.ar/resource/tema/technology-transfer> ;
     vivo:overview "Cristian Cerro ingresó al Centro de Investigación LIFIA en el año 1997. Obtuvo el título de Licenciado en Informática y actualmente cursa la Maestría en Ingeniería de Software en la Universidad Nacional de La Plata (UNLP). En la Facultad de Informática se desempeñó como ayudante alumno desde el año 1999 y desde el año 2015 hasta la actualidad se desempeña como ayudante diplomado en las materias Orientación a Objetos I y II. Su trayectoria profesional combina la docencia universitaria, la investigación y el desarrollo de software en el ámbito público y privado. Como investigador en el LIFIA, ha participado en proyectos sobre Ingeniería de software aplicada, colaborando en soluciones tecnológicas para plataformas de participación ciudadana, agricultura familiar y gestión financiera gubernamental. En el sector productivo, ha coordinado equipos en el desarrollo de aplicaciones móviles para la Subsecretaría de Agricultura Familiar y sistemas de administración para el Ministerio de Economía entre otros. Su experiencia abarca roles como desarrollador, gestor y coordinador de proyectos de desarrollo de software."@es ;
-    owl:sameAs <https://orcid.org/0009-0009-4619-4836> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2025/05/cc.jpeg?w=723> ;
     foaf:familyName "Cerro" ;
-    foaf:givenName "Cristian " .
+    foaf:givenName "Cristian " ;
+    dblp:orcid "https://orcid.org/0009-0009-4619-4836"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/rosalina-nazarre> a vivo:Person,
         foaf:Person ;
@@ -16026,10 +16025,10 @@ documentos.""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering>,
         <http://lifia.info.unlp.edu.ar/resource/tema/technology-and-society> ;
     vivo:overview "Rosalina es Licenciada en Comunicación Social graduada de la Faculta de Periodismo y Comunicación Social de la Universidad Nacional de La Plata.  Ingresó al Lifia en el año 2006 para desempeñar tareas de gestión de infraestructura y organización interna.  Actualmente, también se encuentra realizando tareas de comunicación dentro del Centro."@es ;
-    owl:sameAs <https://orcid.org/0009-0005-3795-5008> ;
     foaf:depiction <https://centrolifia.wordpress.com/wp-content/uploads/2025/06/rosalina-nazarre.jpeg> ;
     foaf:familyName "Nazarre" ;
-    foaf:givenName "Rosalina" .
+    foaf:givenName "Rosalina" ;
+    dblp:orcid "https://orcid.org/0009-0005-3795-5008"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/dark-patterns-la-web-del-engano> a vivo:Project ;
     lifia:directorName "Juan Cruz Gardey,  Julián Grigera, Alejandra Garrido, Alejandra Lliteras" ;
@@ -16975,10 +16974,10 @@ documentos.""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction> ;
     rdfs:seeAlso <https://scholar.google.com/citations?user=KHhae3sAAAAJ>,
         <https://www.researchgate.net/profile/Francisco-Gindre> ;
-    owl:sameAs <https://orcid.org/0000-0001-6583-926X> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2024/03/francisco-gindre.jpg?w=1024> ;
     foaf:familyName "Gindre" ;
-    foaf:givenName "Francisco" .
+    foaf:givenName "Francisco" ;
+    dblp:orcid "https://orcid.org/0000-0001-6583-926X"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/evaluacion-y-reparacion-comunitaria-de-problemas-de-usabilidad-y-accesibilidad-en-aplicaciones-web-desktop-y-moviles> a vivo:Project ;
     lifia:amount "$769.860" ;
@@ -17418,10 +17417,10 @@ A su vez se realizara una implementación modelo para probar la factibilidad de 
         <http://lifia.info.unlp.edu.ar/resource/tema/knowledge-representation>,
         <http://lifia.info.unlp.edu.ar/resource/tema/semantic-web> ;
     rdfs:seeAlso <https://dblp.org/pid/69/6519.html> ;
-    owl:sameAs <https://orcid.org/0000-0002-3271-1742> ;
     foaf:depiction <https://centrolifia.wordpress.com/wp-content/uploads/2025/06/mario-lezoche.jpeg> ;
     foaf:familyName "Lezoche" ;
-    foaf:givenName "Mario" .
+    foaf:givenName "Mario" ;
+    dblp:orcid "https://orcid.org/0000-0002-3271-1742"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/natalia-correa> a vivo:Person,
         foaf:Person ;
@@ -17744,11 +17743,11 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
     vivo:freetextKeyword "artificial intelligence, quantum computing"@en,
         "inteligencia artificial, computación cuántica"@es ;
-    owl:sameAs <https://orcid.org/0009-0001-1115-6225> ;
     foaf:depiction <https://centrolifia.wordpress.com/wp-content/uploads/2025/06/jose-manuel-suarez-1.png> ;
     foaf:familyName "Suárez" ;
     foaf:givenName "José Manuel" ;
-    foaf:mbox "jo_m_suarez@hotmail.com" .
+    foaf:mbox "jo_m_suarez@hotmail.com" ;
+    dblp:orcid "https://orcid.org/0009-0001-1115-6225"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/agroknowledge> a vivo:Project ;
     lifia:amount "$108.000" ;
@@ -18059,10 +18058,10 @@ Estos objetivos buscan proporcionar una visión integral de la situación actual
         <http://lifia.info.unlp.edu.ar/resource/tema/requirements-engineering> ;
     rdfs:seeAlso <https://dblp.uni-trier.de/pid/329/4553.html>,
         <https://scholar.google.com/citations?user=e2u4JxEAAAAJ&hl=es&oi=ao> ;
-    owl:sameAs <https://orcid.org/0000-0002-5322-9314> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2023/06/photo_5170139592517593885_y-removebg-preview-2-1.png> ;
     foaf:familyName "Tanevitch" ;
-    foaf:givenName "Luciana" .
+    foaf:givenName "Luciana" ;
+    dblp:orcid "https://orcid.org/0000-0002-5322-9314"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/extraccion-y-analisis-del-conocimiento-combinando-grafos-de-conocimiento-e-inteligencia-artificial-generativa-en-la-construccion-del-observatorio-de-valores-del-suelo-de-la-provincia-de-buenos-aires> a vivo:Project ;
     lifia:directorName "Diego Torres" ;
@@ -18311,10 +18310,10 @@ Estos objetivos buscan proporcionar una visión integral de la situación actual
     vivo:overview "Investigador Externo. Associate Professor of Computer Science, University of Rome Unitelma Sapienza (Italy)"@en,
         "External Researcher. Profesor asociado de ciencias de la computación en  Universidad de Roma, Unitelma Sapienza (Italia)"@es ;
     rdfs:seeAlso <https://dblp.org/pid/94/2975.html> ;
-    owl:sameAs <https://orcid.org/0000-0002-8467-535X> ;
     foaf:depiction <https://centrolifia.wordpress.com/wp-content/uploads/2025/06/damiano-distante.jpeg> ;
     foaf:familyName "Distante" ;
-    foaf:givenName "Damiano" .
+    foaf:givenName "Damiano" ;
+    dblp:orcid "https://orcid.org/0000-0002-8467-535X"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/maria-dalponte-ayastuy> a vivo:Person,
         foaf:Person ;
@@ -18348,11 +18347,11 @@ Estos objetivos buscan proporcionar una visión integral de la situación actual
         <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction> ;
     vivo:freetextKeyword "[]"@en ;
     rdfs:seeAlso <https://scholar.google.com/citations?user=DsJ6eNUAAAAJ&hl=es> ;
-    owl:sameAs <https://orcid.org/0000-0002-1412-5694> ;
     foaf:depiction <https://lh3.googleusercontent.com/a/ACg8ocKs0d2PKwkhPMmYJCj7ty-oYCpIr0YTM1ARmawOk3169Imy_BM=s400-c> ;
     foaf:familyName "Dalponte Ayastuy" ;
     foaf:givenName "María" ;
-    foaf:mbox "mdalponte@unq.edu.ar" .
+    foaf:mbox "mdalponte@unq.edu.ar" ;
+    dblp:orcid "https://orcid.org/0000-0002-1412-5694"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/tema/arts-and-games> a cso:Topic,
         skos:Concept ;
@@ -18576,11 +18575,11 @@ http://cyted.org/es/run""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/requirements-engineering> ;
     rdfs:seeAlso <https://dblp.org/pid/329/3955.html>,
         <https://scholar.google.com/citations?user=zVHMbtAAAAAJ&hl=es> ;
-    owl:sameAs <https://orcid.org/0009-0007-7888-7544> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2024/05/juliana-delle-ville.jpeg> ;
     foaf:familyName "Delle Ville" ;
     foaf:givenName "Juliana" ;
-    foaf:mbox "julianadelleville@hotmail.com" .
+    foaf:mbox "julianadelleville@hotmail.com" ;
+    dblp:orcid "https://orcid.org/0009-0007-7888-7544"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento> a vivo:Project ;
     lifia:amount "$200.000" ;
@@ -19532,10 +19531,10 @@ http://cyted.org/es/run""" ;
     vivo:overview "Andrés Rodríguez se graduó como Diseñador Industrial en la Universidad Nacional de La Plata en 1987. Ha realizado trabajos de diseño en Neuquén, Buenos Aires y La Plata. Realizó estudios de Magíster en Ingeniería de Software en la UNLP. Se ha desempeñado como docente en las Universidades de Buenos Aires, del Comahue y La Plata. Desde su incorporación a Lifia en el año 2000 ha participado en diversos proyectos como líder, experto en usabilidad y mentor."@es ;
     rdfs:seeAlso <https://dblp.org/pid/150/5492-2.html>,
         <https://scholar.google.com/citations?user=Y5VxjVoAAAAJ&hl=es> ;
-    owl:sameAs <https://orcid.org/0000-0002-7600-6041> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/04/andres-rodriguez.jpg> ;
     foaf:familyName "Rodríguez" ;
-    foaf:givenName "Andrés" .
+    foaf:givenName "Andrés" ;
+    dblp:orcid "https://orcid.org/0000-0002-7600-6041"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-lliteras> a vivo:Person,
         foaf:Person ;
@@ -19628,11 +19627,11 @@ http://cyted.org/es/run""" ;
     vivo:freetextKeyword "Educación, Aprendizaje Móvil, Tecnología Informática Aplicada en Educación, Aplicaciones Educativas Móviles, Aplicaciones Educativas Móviles basadas en Posicionamiento, Plataformas Educativas, Educación a Distancia, Sistemas de Información Geográfica, Ingeniería de Software Aplicada a Educación, Recursos Humanos, Capacitación y Coaching. Pensamiento Computacional. Tecnopedagogía"@es ;
     vivo:overview """Alejandra Beatriz Lliteras ingresó a LIFIA como becaria a fines de 1997. Inició en temas de investigación relacionados a Sistemas de Información Geográfica y Computación Móvil. Luego se abocó en aspectos de la Ingeniería de Software para Aprendizaje Móvil, Plataformas Educativas, Alfabetización Digital Crítica en Datos e Inteligencia Artificial, Educación Abierta y Ciencias Abierta. \r
 En el año 2002 se recibió de Analista de Computación, en 2005 de Licenciada en Informática y en 2013 obtuvo su Especialización en Tecnología Informática Aplicada en Educación, títulos expedidos por la Facultad de Informática de la UNLP. Es Magister en Tecnología Informática Aplicada en Educación desde 2015. Ha trabajado en proyectos de Transferencia de Tecnología y de Formación Corporativa, para el sector público y privado, tanto en los aspectos de coordinación como de análisis y desarrollo. Desde 2002 posee cargo docente en la Facultad de Informática es actualmente Profesora Titular con Dedicación Exclusiva en las materias de Bases de Datos 1 y Bases de Datos 2. Es candidata a doctora en el doctorado de Ciencias Informáticas de la Facultad de Informática de la UNLP. Miembro investigadora doctoral del GO--GN."""@es ;
-    owl:sameAs <https://orcid.org/0000-0002-4148-1299> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2022/05/ale-1.jpg> ;
     foaf:familyName "Lliteras" ;
     foaf:givenName "Alejandra" ;
-    foaf:homepage <https://alfadatizando.wordpress.com/> .
+    foaf:homepage <https://alfadatizando.wordpress.com/> ;
+    dblp:orcid "https://orcid.org/0000-0002-4148-1299"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/sergio-firmenich> a vivo:Person,
         foaf:Person ;
@@ -19824,10 +19823,10 @@ En el año 2002 se recibió de Analista de Computación, en 2005 de Licenciada e
         <http://lifia.info.unlp.edu.ar/resource/tema/web-engineering> ;
     vivo:freetextKeyword "Ingeniería Web, Usabilidad, Metodologías de Desarrollo Dirigidas por Modelos, Metodologías Ágiles de Desarrollo"@es ;
     vivo:overview "Título de Analista de Computación en 2003, Título de Licenciado en Informática en 2010, Doctor en Ciencias Informáticas 2018, ingreso al LIFIA en 2003, Projectos: Mockup Driven Development, UX Refactoring"@es ;
-    owl:sameAs <https://orcid.org/0000-0002-7962-4312> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2024/05/julian-grigera.jpg> ;
     foaf:familyName "Grigera" ;
-    foaf:givenName "Julián" .
+    foaf:givenName "Julián" ;
+    dblp:orcid "https://orcid.org/0000-0002-7962-4312"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/tema/artificial-intelligence> a cso:Topic,
         skos:Concept ;
@@ -19938,10 +19937,10 @@ Cecilia Challiol ha dirigido grupos de investigación desde hace 12 años, esto 
     vivo:overview "Cecilia Challiol actualmente es Investigador Asistente de CONICET y docente de la Facultad de Informática (UNLP). Obtuvo su título de Licenciada en Informática en el año 2006 y el título de Doctora en Ciencias Informáticas en el año 2011, otorgados por la misma facultad en la que desarrolla actualmente tareas docentes. Su tema de la tesis doctoral fue “Desarrollo Dirigido por Modelos de Aplicación de Hipermedia Móvil”. En la formación continua que la Dra. Challiol realiza, se ha formado como facilitador de Aprendizaje Experiencial y Coach Ontológico con PNL (Programación Neuro-Lingüística). Se unió al LIFIA en el año 2005, y desde hace más de 12 años viene dirigiendo grupos de investigación. Su área de experticia son las Aplicaciones Móviles desde hace más de 15 años. En los últimos años ha explorado el co-diseño de este tipo de aplicaciones tanto in-situ como de forma distribuida; abordando así variadas formas de crear las mismas. Ha facilitado distintas experiencias de co-diseño donde se combinan distintos recursos, en particular técnicas de Design Thinking. "@es ;
     rdfs:seeAlso <https://scholar.google.com.ar/citations?user=SgW6BNsAAAAJ&hl>,
         <https://www.researchgate.net/profile/Cecilia-Challiol> ;
-    owl:sameAs <https://orcid.org/0000-0001-5140-0264> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/10/foto_cecilia-challiol.jpg?w=141> ;
     foaf:familyName "Challiol" ;
-    foaf:givenName "Cecilia" .
+    foaf:givenName "Cecilia" ;
+    dblp:orcid "https://orcid.org/0000-0001-5140-0264"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial> a vivo:Project ;
     lifia:coDirectorName "Alejandra Garrido" ;
@@ -20308,10 +20307,10 @@ Cecilia Challiol ha dirigido grupos de investigación desde hace 12 años, esto 
         "El área de investigación actual de la Dra. Garrido es la aplicación de la técnica y el proceso de refactoring en aplicaciones web, en especial para mejorar la experiencia de usuario. A pesar de que el refactoring es tradicionalmente concebido como transformaciones de código que mejoran sus cualidades internas (legibilidad, mantenibilidad, extensibilidad), la Dra. Garrido junto a su grupo de investigación del LIFIA definieron el refactoring de UX como las transformaciones a las interfaces web que permiten mejorar atributos de calidad externa como son la experiencia de usuario, usabilidad y accesibilidad. Su grupo trabaja en la construcción de herramientas para la aplicación automática y personalizada de estos refactorings, la medición de problemas de UX y su definición como deuda de UX, así como la incorporación de la mejora de UX en métodos ágiles."@es ;
     vivo:overview "Alejandra Garrido became a member of LIFIA in 1994, doing research in object-oriented (OO) software development and hypermedia. She developed an OO framework to augment applications with a hypermedia layer (“Building Application Frameworks”, Ch. 11, Wiley, 1999). She also worked on several design patterns that were presented at the Pattern Languages of Programs (PLoP) Conferences (“Pattern Languages of Program Design”, Addison Wesley, Vol 2-Ch 11, Vol 3-Ch 13, and “Design Patterns in Communications Software”, Ch. 10, Sigs, 2001). In 1997 she graduated as Lic. in Informatics from the Univ. of La Plata, Argentina, and started her graduate studies in the Univ. of Illinois at Urbana-Champaign, USA. For her MS and PhD studies she worked in the area of refactoring under the advice of Dr. Ralph Johnson. Her MS thesis (UIUC, 2000) proposes a catalog of refactorings for the C programming language. Her PhD thesis (UIUC, 2005) focuses on integrating C preprocessor directives during the analysis and refactoring of C programs, and defines strategies, algorithms, and a refactoring tool for their automatic application. Alejandra also worked at UIUC with Dr. José Meseguer during her postdoc, creating a formal specification of the C preprocessor and refactoring on Cpp directives. She also developed a formal specification of some refactorings for the Java language. In 2006, Alejandra moved back to Argentina and restarted working at LIFIA with a Postdoctoral Research Fellowship from CONICET. She is currently a CONICET Independent Researcher and Full Professor at UNLP. Since her graduate studies Alejandra was very much involved in the patterns community and was conference chair of PLoP 2000. She organized with Federico Balaguer the first Latin American Conference on Patterns in Argentina (SugarLoafPLoP-Tango Edition), which was held in Buenos Aires in 2016. Her research interests include software refactoring applied to the UX of web applications and agile methods."@en,
         "Alejandra Garrido se incorporó al LIFIA a fines de 1993 como investigadora en el área de orientación a objetos e hipermedia. Durante esos primeros años desarrolló un framework para aumentar aplicaciones orientadas a objetos con una vista hipermedial, el cual aparece como capítulo del libro “Building Application Frameworks” (Wiley, 1999). También publicó varios patrones de diseño que aparecen como capítulos de los libros “Pattern Languages of Program Design” Volumen 2 y Volumen 3 (Addison Wesley), y en “Design Patterns in Communications Software” (Sigs, 2001). En 1997 se graduó como Licenciada en Informática de la Universidad Nacional de La Plata, e inmediatamente comenzó sus estudios de postgrado en la Universidad de Illinois en Urbana-Champaign (UIUC), Estados Unidos, bajo la dirección del Dr. Ralph Johnson. Allí se especializó en el área de refactoring y fue la primera en proponer la aplicación de esta técnica para un lenguaje estructurado como C. Su tesis de “Master in Computer Science” (UIUC, 2000) propone un catálogo de refactorings para el lenguaje C y una herramienta para su aplicación automática. Su tesis de “PhD in Computer Science” (UIUC, 2005) se enfoca en integrar las directivas al preprocesador de C durante el análisis y el refactoring de programas. Al terminar el doctorado, realizó un postdoctorado con el Dr. José Meseguer también en UIUC, trabajando en la especificación formal de refactorings de código. En junio de 2006 Garrido recibió una Beca Postdoctoral para la Reinserción de Investigadores del CONICET, Argentina, lo que le permitió reinsertarse en el LIFIA, UNLP. Al año ingresó a la Carrera del Investigador Científico de CONICET, con lugar de trabajo en el LIFIA. Actualmente es Investigadora Independiente de CONICET y Profesora Titular en UNLP."@es ;
-    owl:sameAs <https://orcid.org/0000-0002-5052-705X> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/03/alejandra-garrido.jpeg?w=150> ;
     foaf:familyName "Garrido" ;
-    foaf:givenName "Alejandra " .
+    foaf:givenName "Alejandra " ;
+    dblp:orcid "https://orcid.org/0000-0002-5052-705X"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/gustavo-rossi> a vivo:Person,
         foaf:Person ;
@@ -20429,7 +20428,7 @@ Cecilia Challiol ha dirigido grupos de investigación desde hace 12 años, esto 
         <http://lifia.info.unlp.edu.ar/resource/tesis/self-refactoring-mejoras-automaticas-de-usabilidad-para-aplicaciones-web> ;
     lifia:positionAtCIC "N/A" ;
     lifia:positionAtCONICET "N/A" ;
-    lifia:positionAtLab "Investigador" ;
+    lifia:positionAtLab "Investigador Senior" ;
     lifia:positionAtUnlp "Profesor Emérito" ;
     lifia:slug "gustavo-rossi" ;
     lifia:startDate "1988-12-05"^^xsd:date ;
@@ -20457,11 +20456,11 @@ Cecilia Challiol ha dirigido grupos de investigación desde hace 12 años, esto 
     rdfs:seeAlso <https://dblp.uni-trier.de/pid/r/GustavoRossi.html>,
         <https://scholar.google.com/citations?hl=es&user=qqgXKN8AAAAJ>,
         <https://www.researchgate.net/profile/Gustavo-Rossi> ;
-    owl:sameAs <https://orcid.org/0000-0002-3348-2144> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/03/gustavo-2007.png> ;
     foaf:familyName "Rossi" ;
     foaf:givenName "Gustavo" ;
-    foaf:homepage <https://lifia.info.unlp.edu.ar/dr-gustavo-rossi/> .
+    foaf:homepage <https://lifia.info.unlp.edu.ar/dr-gustavo-rossi/> ;
+    dblp:orcid "https://orcid.org/0000-0002-3348-2144"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial> a vivo:Project ;
     lifia:coDirectorName "Leandro Antonelli" ;
@@ -20778,12 +20777,12 @@ Software and its engineering"""@es ;
     rdfs:seeAlso <https://dblp.org/pid/15/4063.html>,
         <https://scholar.google.com/citations?user=wxuNf3QAAAAJ&hl=es&oi=ao>,
         <https://www.researchgate.net/profile/Leandro-Antonelli-2> ;
-    owl:sameAs <https://orcid.org/0000-0003-1388-0337> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2024/03/lanto.jpg> ;
     foaf:familyName "Antonelli" ;
     foaf:givenName "Leandro" ;
     foaf:homepage <https://lifia.info.unlp.edu.ar/dr-leandro-antonelli/> ;
-    foaf:mbox "lanto2004@gmail.com" .
+    foaf:mbox "lanto2004@gmail.com" ;
+    dblp:orcid "https://orcid.org/0000-0003-1388-0337"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/claudia-pons> a vivo:Person,
         foaf:Person ;
@@ -21101,11 +21100,11 @@ Applied computing > Computers in other domains > Agriculture"""@es ;
     rdfs:seeAlso <https://dblp.uni-trier.de/pid/79/3798.html>,
         <https://scholar.google.com.ar/citations?user=3u0KkV8AAAAJ&hl=es>,
         <https://www.researchgate.net/profile/Diego-Torres-8> ;
-    owl:sameAs <https://orcid.org/0000-0001-7533-0133> ;
     foaf:depiction <https://magictowers.github.io/assets/img/foto_diego-800.webp> ;
     foaf:familyName "Torres" ;
     foaf:givenName "Diego " ;
-    foaf:mbox "phd.diego.torres@gmail.com" .
+    foaf:mbox "phd.diego.torres@gmail.com" ;
+    dblp:orcid "https://orcid.org/0000-0001-7533-0133"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez> a vivo:Person,
         foaf:Person ;
@@ -21311,11 +21310,11 @@ Human-centered computing > Collaborative and social computing > Collaborative an
     rdfs:seeAlso <https://dblp.org/pid/75/3330.html>,
         <https://scholar.google.com/citations?user=6mXC2PkAAAAJ>,
         <https://www.researchgate.net/profile/Alejandro-Fernandez-14> ;
-    owl:sameAs <https://orcid.org/0000-0002-7968-6871> ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2024/12/casco-beard-2024.jpg> ;
     foaf:familyName "Fernandez" ;
     foaf:givenName "Alejandro" ;
-    foaf:homepage <https://lifia.info.unlp.edu.ar/dr-alejandro-fernandez/> .
+    foaf:homepage <https://lifia.info.unlp.edu.ar/dr-alejandro-fernandez/> ;
+    dblp:orcid "https://orcid.org/0000-0002-7968-6871"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction> a cso:Topic,
         skos:Concept ;
