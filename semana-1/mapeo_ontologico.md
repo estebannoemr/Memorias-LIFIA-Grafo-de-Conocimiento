@@ -5,7 +5,7 @@ La idea de este mapeo es, para cada tabla y cada columna del dump, decidir con q
 - Tomé **VIVO** como base porque modela bien todo lo académico (personas, proyectos, becas) -> es una ontología pensada para describir investigadores y su producción y las entidades del LIFIA caen casi 1:1 en sus clases (Member → vivo:Person, Project → vivo:Project, Scholarship → vivo:Grant)
 - Para las publicaciones me apoyé en **DBLP** (Computer Science Bibliography) y **BIBO** (bibliographic ontology).
 - Para los temas, en **CSO** (Computer Science Ontology) con **SKOS**
-- Y cuando algo no encajaba, usé **FOAF** (para datos de personas), **Dublin Core** (para título, creador, fecha, tema) y **OWL** (para sameAs e inferencia).
+- Y cuando algo no encajaba, usé **FOAF** (para datos de personas), **Dublin Core** (para título, creador, fecha, tema) y **OWL** (para las inversas y la inferencia).
 - Lo que es puramente del LIFIA y no tiene equivalente estándar (por ejemplo, los cargos institucionales), lo definí con términos propios en `lifia:`.
 - Con las clases hice lo mismo: reuso las de VIVO, BIBO y FOAF directamente, y solo invento algo `lifia:` cuando no hay nada estándar que sirva.
 
@@ -92,8 +92,8 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
 
 - **Propiedades de datos:**
   - **id**: `dcterms:identifier`
-  - **firstName**: `foaf:firstName`
-  - **lastName**: `foaf:lastName`
+  - **firstName**: `foaf:givenName`
+  - **lastName**: `foaf:familyName`
   - **slug**: `lifia:slug`
   - **startDate**: `lifia:startDate`
   - **endDate**: `lifia:endDate`
@@ -117,9 +117,9 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
   - **avatarUrl**: `foaf:depiction`
   - **createdAt**: `dcterms:created`
   - **updatedAt**: `dcterms:modified`
+  - **orcid**: `dblp:orcid` → literal `xsd:anyURI` con la URL del ORCID. Es un literal (una propiedad de datos, no un enlace a un recurso): se usa la propiedad estándar de DBLP en vez de `owl:sameAs` para no crear una segunda identidad de la persona que duplique los conteos al razonar.
 
 - **Propiedades de objeto:**
-  - **orcid**: `owl:sameAs` → URI de ORCID (`https://orcid.org/{orcid}`)
   - **dblpProfile**: `rdfs:seeAlso`
   - **googleResearchProfile**: `rdfs:seeAlso`
   - **researchGateProfile**: `rdfs:seeAlso`
@@ -141,8 +141,8 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
   - **id**: `dcterms:identifier`
   - **slug**: `lifia:slug`
   - **type**: `lifia:publicationType` (además define la subclase BIBO: article → `bibo:AcademicArticle`, conferencia → `bibo:Article`, capítulo → `bibo:Chapter`, libro → `bibo:Book`, ...)
-  - **title**: `dcterms:title` + `dblp:title`
-  - **authors**: `dblp:bibtexAuthor` (string completo, incluye coautores externos)
+  - **title**: `dcterms:title`
+  - **authors**: `lifia:bibtexAuthors` (string completo, incluye coautores externos; término propio porque DBLP no tiene una propiedad para la cadena de autores)
   - **year**: `dblp:yearOfPublication`
   - **ranking**: `lifia:ranking` (p.ej. categoría CORE/Scimago)
   - **selfArchivingUrl**: `lifia:selfArchivingUrl`
@@ -156,8 +156,6 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
   - `_ProjectPublications`: `lifia:partOfProject` → Proyecto
   - `_ThesisPublications`: relación → Tesis
   - **venue** (de `bibtexData`): `bibo:presentedAt` / `dcterms:isPartOf` → Venue
-
-- **Ontologías:** DBLP / BIBO / DC
 
 ---
 
@@ -190,8 +188,6 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
   - `_ProjectScholarships`: `lifia:relatedScholarship` → Beca
   - `_ProjectTheses`: `lifia:relatedThesis` → Tesis
 
-- **Ontologías:** VIVO
-
 ---
 
 ### Beca (`Scholarship`)
@@ -218,8 +214,6 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
   - `_ScholarshipMembers`: `lifia:involvedMember` → Miembro
   - `_ProjectScholarships`: relación → Proyecto
   - `_ThesisScholarships`: relación → Tesis
-
-- **Ontologías:** VIVO
 
 ---
 
@@ -253,8 +247,6 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
   - `_ProjectTheses`: relación → Proyecto
   - `_ThesisScholarships`: relación → Beca
 
-- **Ontologías:** BIBO / VIVO
-
 <br>
 
 ---
@@ -279,7 +271,7 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
 ---
 
 ### Venue
-- **Clase:** `bibo:Conference`, `bibo:Journal`, `dblp:Venue`
+- **Clase:** `bibo:Conference`, `bibo:Journal`
 
 - **Origen:** no es una tabla; sale de parsear el JSON `Publication.bibtexData`
 
@@ -329,11 +321,11 @@ No todo lo que figura en el listado se resuelve leyendo una fila y copiando valo
 3. *Personas mencionadas por su nombre*: los campos `director`, `coDirector`, `student` y `otherAdvisors` de `Project`, `Scholarship` y `Thesis` guardan el nombre como texto y NO el `id` de `Member`. Para trazar la relación hacia la persona correcta hace falta una etapa de resolución de entidades que empareje esos nombres con la tabla `Member` y si no hay coincidencia que se conserve el nombre como literal.
 
 
-**Los perfiles externos van como enlaces**: antes que guardar `orcid` o `dblpProfile` como simples cadenas, se los expresa con `owl:sameAs`/`rdfs:seeAlso` hacia la URI externa correspondiente (ORCID, DBLP). Eso es lo que efectivamente conecta el grafo con **Linked Open Data**.
+**Los identificadores y perfiles externos van con propiedades específicas**: el ORCID se guarda con `dblp:orcid` (la propiedad estándar de DBLP, un literal con la URL del ORCID), y los otros perfiles (DBLP, Scholar, ResearchGate) con `rdfs:seeAlso` hacia la URI externa. El `rdfs:seeAlso` es lo que efectivamente enlaza el grafo con **Linked Open Data**, en vez de guardar esos perfiles como texto suelto.
 
 
 **Cuidado con los autores**: la columna `Publication.authors` trae la lista completa de firmantes como texto e incluye coautores ajenos al LIFIA, mientras que `_PublicationMembers` solo enlaza a los que están dados de alta como `Member`. Por eso conviven 2 caminos:
-1. `dblp:bibtexAuthor`, que preserva la autoría íntegra desde el string,
+1. `lifia:bibtexAuthors`, que preserva la autoría íntegra desde el string,
 2. `dcterms:creator` (vía la tabla de enlace) que apunta únicamente a los autores internos, que sí son nodos del grafo.
 
 

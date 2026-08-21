@@ -190,8 +190,7 @@ def venue_node(name, vtype, g):
     s = s[:70]  # limita la longitud del slug para evitar IRIs excesivamente largas. IMPORTANTE
     u = uri("venue", s) # URI de venue
 
-    g.add((u, RDF.type, BIBO.Conference if vtype == "conference" else BIBO.Journal))  # clase de venue
-    g.add((u, RDF.type, DBLP.Venue))  # clase de venue
+    g.add((u, RDF.type, BIBO.Conference if vtype == "conference" else BIBO.Journal))  # clase de venue (real de BIBO)
     g.add((u, RDFS.label, Literal(name)))  # etiqueta
 
     return u  # URI de venue
@@ -302,7 +301,7 @@ DATA = {
     "Publication": [
         ("id", DCTERMS.identifier, "str", None), ("slug", LIFIA.slug, "str", None),
         ("publicationType", LIFIA.publicationType, "str", None),  # se completa desde 'type'
-        ("title", DCTERMS.title, "str", None), ("authors", DBLP.bibtexAuthor, "str", None),
+        ("title", DCTERMS.title, "str", None), ("authors", LIFIA.bibtexAuthors, "str", None),
         ("year", DBLP.yearOfPublication, "gyear", None), ("ranking", LIFIA.ranking, "str", None),
         ("selfArchivingUrl", LIFIA.selfArchivingUrl, "uri", None),
         ("createdAt", DCTERMS.created, "dt", None), ("updatedAt", DCTERMS.modified, "dt", None),

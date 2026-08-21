@@ -71,8 +71,8 @@ Memorias-LIFIA-Grafo-de-Conocimiento/
 |    |- new_memorias_para_kgsw.dump  Dump de la base
 |
 |- semana-1/                    MAPEO DE LAS ENTIDADES
-|    |- mapeo_ontologico.md     Mapeo ontológico
-|    |- ontologia.ttl           Ontología OWL
+|    |- mapeo_ontologico.md            Mapeo ontológico
+|    |- ontologia_memorias_lifia.ttl   Ontología OWL
 |
 |- semana-2/                    CARGA INICIAL
 |    |- carga_inicial.py        Script ETL
@@ -80,7 +80,7 @@ Memorias-LIFIA-Grafo-de-Conocimiento/
 |    |- memorias.ttl            Grafo RDF
 |    |
 |    |- graphdb
-|        |- README.md                       Instrucciones para cargar en GraphDB
+|        |- README-semana-2-graphdb.md      Instrucciones para cargar en GraphDB
 |        |- Tripletas con inferencia.png    Cantidad de tripletas con inferencia
 |        |- Tripletas sin inferencia.png    Cantidad de tripletas sin inferencia
 |    
@@ -99,7 +99,7 @@ Memorias-LIFIA-Grafo-de-Conocimiento/
 |    |- mapping.py             Lógica de mapeo relacional → RDF (= semana 2)
 |    |- README-semana-4.md     Descripción del consumidor
 |
-|- semana-5/                   CONSULTAS SPARQLPARA VALIDAR
+|- semana-5/                   CONSULTAS SPARQL PARA VALIDAR
 |    |- Consultas.md           Consultas SPARQL para validar el grafo
 |
 |- requirements.txt            Dependencias de Python necesarias
@@ -171,28 +171,85 @@ python consumer.py
 Queda escuchando los cambios. Dejar esta terminal abierta.
 
 **7. Demostrar la sincronización**
-En OTRA terminal, hacer un cambio en la base, por ejemplo:
+
+Primero ver qué responde cada una de estas consultas (para luego comparar):
+
+*Ejemplo 1*:
+```bash
+curl -s -G http://localhost:7200/repositories/memorias-repo -H "Accept: text/csv" --data-urlencode "query=PREFIX lifia:<http://lifia.info.unlp.edu.ar/ontology#> SELECT ?p ?cargo WHERE { ?p lifia:positionAtLab ?cargo . FILTER(CONTAINS(?cargo,'Senior')) }"
+```
+
+*Ejemplo 2*:
+```bash
+curl -s -G http://localhost:7200/repositories/memorias-repo -H "Accept: text/csv" --data-urlencode "query=PREFIX lifia:<http://lifia.info.unlp.edu.ar/ontology#> PREFIX foaf:<http://xmlns.com/foaf/0.1/> SELECT ?nombre ?cargo WHERE { ?p foaf:givenName ?nombre ; foaf:familyName 'Torres' ; lifia:positionAtLab ?cargo FILTER(CONTAINS(?nombre,'Diego')) }"
+```
+
+*Ejemplo 3*:
+```bash
+curl -s -G http://localhost:7200/repositories/memorias-repo -H "Accept: text/csv" --data-urlencode "query=PREFIX lifia:<http://lifia.info.unlp.edu.ar/ontology#> SELECT ?p ?agencia WHERE { ?p lifia:fundingAgency ?agencia . FILTER(CONTAINS(?agencia,'CONICET')) }"
+```
+
+---
+
+En OTRA terminal, hacer un cambio en la base:
+
+*Ejemplo 1*:
 ```bash
 psql -U postgres -h localhost -d new_memorias -c "UPDATE public.\"Member\" SET \"positionAtLab\"='Investigador Senior' WHERE \"firstName\"='Gustavo';"
+```
+
+*Ejemplo 2*:
+```bash
+psql -U postgres -h localhost -d new_memorias -c "UPDATE public.\"Member\" SET \"positionAtLab\"='Profesor Titular' WHERE "firstName\"='Diego';"
+```
+
+*Ejemplo 3*:
+```bash
+psql -U postgres -h localhost -d new_memorias -c "UPDATE public.\"Project\" SET \"fundingAgency\"='CONICET' WHERE slug='ciencia-ciudadana-en-el-arbolado-urbano';"
 ```
 
 ---
 
 Yo desde bash (en Windows) tuve que usar:
+
+*Ejemplo 1*:
 ```bash
 "/c/Program Files/PostgreSQL/18/bin/psql.exe" -U postgres -h localhost -d new_memorias -c "UPDATE public.\"Member\" SET \"positionAtLab\"='Investigador Senior' WHERE \"firstName\"='Gustavo';"
 ```
 
+*Ejemplo 2* (ojo que Diego tiene un " " (espacio) al final):
+```bash
+"/c/Program Files/PostgreSQL/18/bin/psql.exe" -U postgres -h localhost -d new_memorias -c "UPDATE public.\"Member\" SET \"positionAtLab\"='Profesor Titular' WHERE \"firstName\"='Diego ';"
+```
+
+*Ejemplo 3*:
+```bash
+"/c/Program Files/PostgreSQL/18/bin/psql.exe" -U postgres -h localhost -d new_memorias -c "UPDATE public.\"Project\" SET \"fundingAgency\"='CONICET' WHERE slug='ciencia-ciudadana-en-el-arbolado-urbano';"
+```
+
 ---
 
-En la terminal del consumer aparece `u  Member  ok`. Falta verificar en GraphDB que el cambio llegó.
+En la terminal del consumer aparece `u  Member  ok` en el ejemplo 1 y 2, `u  Project  ok` en el ejemplo 3.. Falta verificar en GraphDB que el cambio llegó (son las mismas consultas que hicimos arriba).
 
 1. Por consola:
+*Ejemplo 1*:
 ```bash
 curl -s -G http://localhost:7200/repositories/memorias-repo -H "Accept: text/csv" --data-urlencode "query=PREFIX lifia:<http://lifia.info.unlp.edu.ar/ontology#> SELECT ?p ?cargo WHERE { ?p lifia:positionAtLab ?cargo . FILTER(CONTAINS(?cargo,'Senior')) }"
 ```
 
+*Ejemplo 2*:
+```bash
+curl -s -G http://localhost:7200/repositories/memorias-repo -H "Accept: text/csv" --data-urlencode "query=PREFIX lifia:<http://lifia.info.unlp.edu.ar/ontology#> PREFIX foaf:<http://xmlns.com/foaf/0.1/> SELECT ?nombre ?cargo WHERE { ?p foaf:givenName ?nombre ; foaf:familyName 'Torres' ; lifia:positionAtLab ?cargo FILTER(CONTAINS(?nombre,'Diego')) }"
+```
+
+*Ejemplo 3*:
+```bash
+curl -s -G http://localhost:7200/repositories/memorias-repo -H "Accept: text/csv" --data-urlencode "query=PREFIX lifia:<http://lifia.info.unlp.edu.ar/ontology#> SELECT ?p ?agencia WHERE { ?p lifia:fundingAgency ?agencia . FILTER(CONTAINS(?agencia,'CONICET')) }"
+```
+
 2. Por interfaz gráfica (en SPARQL):
+
+*Ejemplo 1*:
 ```SPARQL
 PREFIX lifia: <http://lifia.info.unlp.edu.ar/ontology#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -203,12 +260,31 @@ SELECT ?p ?nombre ?cargo WHERE {
 }
 ```
 
-También se puede buscar directamente a la persona por su nombre (los Member se representan como `foaf:Person` y el nombre va en `foaf:givenName`):
-```bash
-curl -s -G http://localhost:7200/repositories/memorias-repo -H "Accept: text/csv" --data-urlencode "query=PREFIX lifia:<http://lifia.info.unlp.edu.ar/ontology#> PREFIX foaf:<http://xmlns.com/foaf/0.1/> SELECT ?p ?nombre ?cargo WHERE { ?p foaf:givenName ?nombre . OPTIONAL { ?p lifia:positionAtLab ?cargo } FILTER(?nombre='Gustavo') }"
+*Ejemplo 2*:
+```SPARQL
+PREFIX lifia: <http://lifia.info.unlp.edu.ar/ontology#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?nombre ?cargo WHERE {
+  ?p foaf:givenName ?nombre ; foaf:familyName "Torres" ;
+     lifia:positionAtLab ?cargo .
+  FILTER(CONTAINS(?nombre, "Diego"))
+}
 ```
 
-**Para "apagar" todo**
+*Ejemplo 3*:
+```SPARQL
+PREFIX vivo: <http://vivoweb.org/ontology/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX lifia: <http://lifia.info.unlp.edu.ar/ontology#>
+SELECT ?titulo ?agencia WHERE {
+  ?p a vivo:Project ; dcterms:title ?titulo ; lifia:fundingAgency ?agencia .
+  FILTER(CONTAINS(?titulo, "Ciencia Ciudadana"))
+}
+```
+
+---
+
+**Para "apagar" o dar de baja todo**
 ```bash
 # Ctrl+C en la terminal del consumer, y después:
 cd ../semana-3

@@ -76,6 +76,8 @@ lifia:ranking          a owl:DatatypeProperty ; rdfs:domain bibo:Document ; rdfs
 lifia:selfArchivingUrl a owl:ObjectProperty ; rdfs:domain bibo:Document ; rdfs:label "URL de auto-archivo"@es ;
     rdfs:comment "Enlace (IRI) a la versión de auto-archivo; se guarda como recurso, no como literal."@es .
 lifia:publicationType  a owl:DatatypeProperty ; rdfs:domain bibo:Document ; rdfs:range xsd:string ; rdfs:label "tipo de publicación"@es .
+lifia:bibtexAuthors    a owl:DatatypeProperty ; rdfs:domain bibo:Document ; rdfs:range xsd:string ; rdfs:label "autores (texto BibTeX)"@es ;
+    rdfs:comment "Cadena completa de autores tal como viene en el BibTeX, incluidos coautores externos al LIFIA. La autoría resuelta a personas va por dcterms:creator."@es .
 
 # --- Scholarship ---
 lifia:scholarshipType a owl:DatatypeProperty ; rdfs:domain vivo:Grant ; rdfs:range xsd:string ; rdfs:label "tipo de beca"@es .
