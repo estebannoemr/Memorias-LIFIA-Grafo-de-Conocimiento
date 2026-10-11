@@ -136,6 +136,8 @@
     lifia:directorName "Gustavo Rossi, Sergio Firmenich" ;
     lifia:endDate "2024-04-01"^^xsd:date ;
     lifia:fundingAgency "CONICET" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/gustavo-rossi>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/sergio-firmenich> ;
     lifia:scholarshipType "Beca doctoral" ;
     lifia:slug "interfaces-conversacionales-basadas-en-contenido-web-un-camino-hacia-la-navegacion-por-voz" ;
     lifia:startDate "2021-04-01"^^xsd:date ;
@@ -676,6 +678,7 @@
     lifia:directorName "Dr. Cesar Alberto Collazos Ordoñez" ;
     lifia:endDate "2017-06-30"^^xsd:date ;
     lifia:featured false ;
+    lifia:hasCoDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez> ;
     lifia:level "PhD" ;
     lifia:slug "marco-de-trabajo-colaborativo-para-apoyar-procesos-de-gestion-de-conocimiento-desde-la-perspectiva-de-la-gamificacion-en-micros-y-medianas-empresas-de-ti" ;
     lifia:startDate "2014-01-01"^^xsd:date ;
@@ -809,6 +812,7 @@
     lifia:directorName "Mario Lezoche" ;
     lifia:endDate "2024-11-02"^^xsd:date ;
     lifia:fundingAgency "Organismo Internacional" ;
+    lifia:hasCoDirector <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
     lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/mario-lezoche> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
     lifia:scholarshipType "Beca doctoral" ;
@@ -888,7 +892,7 @@ Experiencia docente: Profesor particular de matemáticas desde 2020, impartiendo
     lifia:directorName "Diego Torres" ;
     lifia:endDate "2024-12-31"^^xsd:date ;
     lifia:featured false ;
-    lifia:fundingAgency "Facultad de Informática" ;
+    lifia:fundingAgency "CONICET" ;
     lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
     lifia:responsibleGroup "LIFIA" ;
@@ -3651,6 +3655,8 @@ and Advances in Information Systems and Technologies pp 1444-1451.ISBN\r
     lifia:directorName "Alejandro Fernandez, Leandro Antonelli" ;
     lifia:endDate "2024-03-31"^^xsd:date ;
     lifia:fundingAgency "LIFIA, Facultad de Informática, UNLP" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
     lifia:hasStudent <http://lifia.info.unlp.edu.ar/resource/persona/giuliana-maltempo> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez> ;
     lifia:relatedProject <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial> ;
@@ -6703,6 +6709,8 @@ Se implementó un prototipo funcional el cual permitió observar el comportamien
     lifia:directorName "Julian Grigera, Juan Cruz Gardey" ;
     lifia:endDate "2024-03-31"^^xsd:date ;
     lifia:fundingAgency "LIFIA, Facultad de Informática, UNLP" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/julian-grigera> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey>,
         <http://lifia.info.unlp.edu.ar/resource/persona/julian-grigera> ;
     lifia:relatedProject <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial> ;
@@ -6719,6 +6727,8 @@ Se implementó un prototipo funcional el cual permitió observar el comportamien
     lifia:directorName "Andrés Rodriguez, Cecilia Challiol" ;
     lifia:endDate "2024-03-31"^^xsd:date ;
     lifia:fundingAgency "Facultad de Informática, UNLP" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol> ;
     lifia:relatedProject <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial> ;
@@ -6932,6 +6942,8 @@ Se implementó un prototipo funcional el cual permitió observar el comportamien
     lifia:directorName "Joaquín Bogado, Alejadra Garrido, Claudia Pons" ;
     lifia:endDate "2026-12-23"^^xsd:date ;
     lifia:featured false ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/claudia-pons>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/joaquin-bogado> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido>,
         <http://lifia.info.unlp.edu.ar/resource/persona/claudia-pons>,
         <http://lifia.info.unlp.edu.ar/resource/persona/joaquin-bogado> ;
@@ -9778,6 +9790,8 @@ Se implementó un prototipo funcional el cual permitió observar el comportamien
     lifia:directorName "Sergio Firmenich, Alejandro Fernandez" ;
     lifia:endDate "2024-03-12"^^xsd:date ;
     lifia:featured false ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/sergio-firmenich> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/sergio-firmenich> ;
     lifia:level "Undergraduate" ;
@@ -10274,6 +10288,8 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:directorName "Andrés Rodriguez, Cecilia Challiol" ;
     lifia:endDate "2025-03-31"^^xsd:date ;
     lifia:fundingAgency "Facultad de Informática, UNLP" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol> ;
     lifia:relatedProject <http://lifia.info.unlp.edu.ar/resource/proyecto/metaversos-y-mundos-virtuales-los-desafios-de-las-interfaces-no-tradicionales>,
@@ -10292,6 +10308,8 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:directorName "Leandro Antonelli, Gabriela Perez" ;
     lifia:endDate "2025-03-31"^^xsd:date ;
     lifia:fundingAgency "Facultad de Informática, UNLP" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
     lifia:hasStudent <http://lifia.info.unlp.edu.ar/resource/persona/giuliana-maltempo> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
@@ -10312,6 +10330,8 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:directorName "Leandro Antonelli, Alejandro Fernandez" ;
     lifia:endDate "2025-03-31"^^xsd:date ;
     lifia:fundingAgency "Facultad de Informática, UNLP" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
     lifia:hasStudent <http://lifia.info.unlp.edu.ar/resource/persona/nicolas-ruffolo> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
@@ -10399,6 +10419,10 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:directorName "Julián Grigera, Alejandra Lliteras, Juan Cruz Gardey, Leonardo Germán Loza Bonora" ;
     lifia:endDate "2006-10-31"^^xsd:date ;
     lifia:featured false ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-lliteras>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/julian-grigera>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/leonardo-german-loza-bonora> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-lliteras>,
         <http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey>,
         <http://lifia.info.unlp.edu.ar/resource/persona/julian-grigera>,
@@ -10461,6 +10485,8 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:endDate "2024-09-30"^^xsd:date ;
     lifia:featured false ;
     lifia:fundingAgency "Facultad de Informática, UNLP" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol> ;
     lifia:producedPublication <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-rosalina-amneris-nazarre-cecilia-challiol-ailen> ;
@@ -12468,6 +12494,8 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:directorName "Diego Torres, Herve Panetto, Mario Lezoche" ;
     lifia:endDate "2028-11-02"^^xsd:date ;
     lifia:featured false ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/mario-lezoche> ;
     lifia:hasStudent <http://lifia.info.unlp.edu.ar/resource/persona/thomas-pallet> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
         <http://lifia.info.unlp.edu.ar/resource/persona/mario-lezoche> ;
@@ -12605,6 +12633,7 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:endDate "2028-11-05"^^xsd:date ;
     lifia:featured false ;
     lifia:hasCoDirector <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/mario-lezoche> ;
     lifia:hasStudent <http://lifia.info.unlp.edu.ar/resource/persona/carine-breidy> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
         <http://lifia.info.unlp.edu.ar/resource/persona/mario-lezoche> ;
@@ -13012,6 +13041,8 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:career "Magister en Ingeniería de Software" ;
     lifia:directorName "Alejandro Fernandez, Federico Balaguer" ;
     lifia:featured false ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/federico-balaguer> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/federico-balaguer> ;
     lifia:level "Masters" ;
@@ -13082,6 +13113,7 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:coDirectorName "Alejandro Fernandez, Ricardo Pérez Castillo" ;
     lifia:directorName "Mario Piattinni" ;
     lifia:featured false ;
+    lifia:hasCoDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez> ;
     lifia:level "Masters" ;
     lifia:progress 25 ;
@@ -13307,6 +13339,7 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:endDate "2024-09-30"^^xsd:date ;
     lifia:featured false ;
     lifia:fundingAgency "Facultad de Informática, UNLP" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
         <http://lifia.info.unlp.edu.ar/resource/persona/luciana-tanevitch> ;
     lifia:producedPublication <http://lifia.info.unlp.edu.ar/resource/publicacion/tanevitch_fernandez_del-rio_torres_2024> ;
@@ -13326,6 +13359,9 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:endDate "2021-10-01"^^xsd:date ;
     lifia:featured false ;
     lifia:fundingAgency "Facultad de Informática, UNLP." ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/claudia-pons>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/claudia-pons>,
         <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
         <http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville>,
@@ -13390,6 +13426,9 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     lifia:endDate "2025-10-01"^^xsd:date ;
     lifia:featured false ;
     lifia:fundingAgency "Facultad de Informática, UNLP." ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/giuliana-maltempo>,
         <http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville>,
@@ -14680,6 +14719,7 @@ Diego Torres""" ;
     lifia:directorName "Diego Torres, Mario Lezcohe, Hervé Panetto" ;
     lifia:endDate "2025-03-25"^^xsd:date ;
     lifia:featured false ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
     lifia:level "PhD" ;
     lifia:progress 100 ;
@@ -14939,6 +14979,9 @@ documentos.""" ;
     lifia:endDate "2023-10-01"^^xsd:date ;
     lifia:featured false ;
     lifia:fundingAgency "Facultad de Informática, UNLP." ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
         <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville>,
@@ -15813,6 +15856,10 @@ documentos.""" ;
     lifia:endDate "2024-09-30"^^xsd:date ;
     lifia:featured false ;
     lifia:fundingAgency "Facultad de Informática, UNLP" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-lliteras>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/julian-grigera> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido>,
         <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-lliteras>,
         <http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey>,
@@ -15835,6 +15882,8 @@ documentos.""" ;
     lifia:endDate "2024-09-30"^^xsd:date ;
     lifia:featured false ;
     lifia:fundingAgency "Facultad de Informática, UNLP" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville>,
         <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
     lifia:producedPublication <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-el-uso-de-la-inteligencia-artificial-ia-y-proce>,
@@ -15857,6 +15906,9 @@ documentos.""" ;
     lifia:endDate "2026-09-30"^^xsd:date ;
     lifia:featured false ;
     lifia:fundingAgency "Facultad de Informática, UNLP." ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/giuliana-maltempo>,
         <http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville>,
@@ -16404,6 +16456,8 @@ documentos.""" ;
     lifia:directorName "Diego Torres, Alejandro Fernandez" ;
     lifia:endDate "2024-04-24"^^xsd:date ;
     lifia:featured false ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
     lifia:level "Undergraduate" ;
@@ -16428,33 +16482,6 @@ documentos.""" ;
 
 <http://lifia.info.unlp.edu.ar/resource/venue/collaboration-in-knowledge-discovery-and-decision-making> a bibo:Conference ;
     rdfs:label "Collaboration in Knowledge Discovery and Decision Making" .
-
-<http://lifia.info.unlp.edu.ar/resource/persona/leonardo-german-loza-bonora> a vivo:Person,
-        foaf:Person ;
-    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/bonora_2022>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/loza_bonora_2025> ;
-    lifia:coursesAtUNLP "Orientación a Objetos 1, Orientación a Objetos 2" ;
-    lifia:highestDegree "Licenciado en Informática" ;
-    lifia:institutionalEmail "lloza@lifia.info.unlp.edu.ar" ;
-    lifia:positionAtCIC "N/A" ;
-    lifia:positionAtCONICET "N/A" ;
-    lifia:positionAtLab "Investigador" ;
-    lifia:positionAtUnlp "Jefe de Trabajos Prácticos" ;
-    lifia:sicadiCategory "DI5" ;
-    lifia:slug "leonardo-german-loza-bonora" ;
-    lifia:startDate "2022-05-01"^^xsd:date ;
-    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/dark-patterns-la-web-del-engano-y-el-rol-de-la-ia>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial> ;
-    dcterms:created "2026-05-20T15:37:51.213000"^^xsd:dateTime ;
-    dcterms:identifier "ae04e570-5102-4fe1-9c08-4b162592d447" ;
-    dcterms:modified "2026-05-22T21:52:34.821000"^^xsd:dateTime ;
-    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/artificial-intelligence>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/citizen-science>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction> ;
-    foaf:depiction <https://centrolifia.wordpress.com/wp-content/uploads/2025/06/leonardo-loza-bonora.jpeg> ;
-    foaf:familyName "Loza Bonora" ;
-    foaf:givenName "Leonardo Germán" .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/proyecto-de-extension-ciencia-ciudadana-en-el-censado-del-arbolado-urbano> a vivo:Project ;
     lifia:amount "$56.000" ;
@@ -16675,6 +16702,8 @@ documentos.""" ;
     lifia:career "Doctorado en Ciencias Informáticas, UNLP" ;
     lifia:directorName "Gustavo Rossi, Sergio Firmenich" ;
     lifia:featured false ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/gustavo-rossi>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/sergio-firmenich> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/gustavo-rossi>,
         <http://lifia.info.unlp.edu.ar/resource/persona/sergio-firmenich> ;
     lifia:level "PhD" ;
@@ -16755,6 +16784,33 @@ documentos.""" ;
     foaf:givenName "Francisco" ;
     dblp:orcid "https://orcid.org/0000-0001-6583-926X"^^xsd:anyURI .
 
+<http://lifia.info.unlp.edu.ar/resource/persona/leonardo-german-loza-bonora> a vivo:Person,
+        foaf:Person ;
+    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/bonora_2022>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/loza_bonora_2025> ;
+    lifia:coursesAtUNLP "Orientación a Objetos 1, Orientación a Objetos 2" ;
+    lifia:highestDegree "Licenciado en Informática" ;
+    lifia:institutionalEmail "lloza@lifia.info.unlp.edu.ar" ;
+    lifia:positionAtCIC "N/A" ;
+    lifia:positionAtCONICET "N/A" ;
+    lifia:positionAtLab "Investigador" ;
+    lifia:positionAtUnlp "Jefe de Trabajos Prácticos" ;
+    lifia:sicadiCategory "DI5" ;
+    lifia:slug "leonardo-german-loza-bonora" ;
+    lifia:startDate "2022-05-01"^^xsd:date ;
+    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/dark-patterns-la-web-del-engano-y-el-rol-de-la-ia>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial> ;
+    dcterms:created "2026-05-20T15:37:51.213000"^^xsd:dateTime ;
+    dcterms:identifier "ae04e570-5102-4fe1-9c08-4b162592d447" ;
+    dcterms:modified "2026-05-22T21:52:34.821000"^^xsd:dateTime ;
+    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/artificial-intelligence>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/citizen-science>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction> ;
+    foaf:depiction <https://centrolifia.wordpress.com/wp-content/uploads/2025/06/leonardo-loza-bonora.jpeg> ;
+    foaf:familyName "Loza Bonora" ;
+    foaf:givenName "Leonardo Germán" .
+
 <http://lifia.info.unlp.edu.ar/resource/proyecto/evaluacion-y-reparacion-comunitaria-de-problemas-de-usabilidad-y-accesibilidad-en-aplicaciones-web-desktop-y-moviles> a vivo:Project ;
     lifia:amount "$769.860" ;
     lifia:code "PICT-2015-3000 " ;
@@ -16817,7 +16873,9 @@ documentos.""" ;
     lifia:endDate "2022-12-31"^^xsd:date ;
     lifia:featured false ;
     lifia:fundingAgency "Facultad de Informática - Programa I+D+i con alumnos" ;
-    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey> ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/julian-grigera> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido>,
         <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-lliteras>,
         <http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey>,
@@ -16921,6 +16979,8 @@ documentos.""" ;
     lifia:directorName "Diego Torres, Mario Lezoche, Hervé Panetto" ;
     lifia:endDate "2024-10-07"^^xsd:date ;
     lifia:featured false ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/mario-lezoche> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
     lifia:level "PhD" ;
     lifia:progress 100 ;
@@ -17167,37 +17227,6 @@ A su vez se realizara una implementación modelo para probar la factibilidad de 
         <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
     dcterms:title "Modelado de Sistemas Colaborativos" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/mario-lezoche> a vivo:Person,
-        foaf:Person ;
-    lifia:affiliations "Université de Lorraine" ;
-    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/ferreirone_2026>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/leutwyler_2023>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/leutwyler_2024>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/leutwyler_lezoche_panetto_torres_2023>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-leutwyler-nicolas-lezoche-mario-panetto-herve-t>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2023-a-method-to-obtain-a-knowledge-representation-fro>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2023-scenarios-shared-understanding-and-group-decisi>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-knowledge-extraction-from-the-lel-glossary-using> ;
-    lifia:highestDegree "Doctor" ;
-    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/advanced-ai-based-dynamic-integration-of-heterogeneous-data-for-semantic-clusters-formalisation-in-human-centric-intelligent-enterprise-systems>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/cognitive-digital-twins-and-semantic-interoperability-in-logistics-systems> ;
-    lifia:positionAtCIC "N/A" ;
-    lifia:positionAtLab "Investigador externo" ;
-    lifia:positionAtUnlp "N/A" ;
-    lifia:slug "mario-lezoche" ;
-    lifia:startDate "2022-01-01"^^xsd:date ;
-    dcterms:created "2026-05-20T15:37:51.130000"^^xsd:dateTime ;
-    dcterms:identifier "5798e7b6-11d0-4edc-8689-6b62fa6d8e73" ;
-    dcterms:modified "2026-05-22T21:52:34.647000"^^xsd:dateTime ;
-    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/artificial-intelligence>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/knowledge-representation>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/semantic-web> ;
-    rdfs:seeAlso <https://dblp.org/pid/69/6519.html> ;
-    foaf:depiction <https://centrolifia.wordpress.com/wp-content/uploads/2025/06/mario-lezoche.jpeg> ;
-    foaf:familyName "Lezoche" ;
-    foaf:givenName "Mario" ;
-    dblp:orcid "https://orcid.org/0000-0002-3271-1742"^^xsd:anyURI .
-
 <http://lifia.info.unlp.edu.ar/resource/persona/natalia-correa> a vivo:Person,
         foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/46007315>,
@@ -17265,6 +17294,8 @@ A su vez se realizara una implementación modelo para probar la factibilidad de 
     lifia:directorName "Diego Torres, Alejandro Fernandez" ;
     lifia:endDate "2025-04-30"^^xsd:date ;
     lifia:featured false ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> ;
     lifia:hasStudent <http://lifia.info.unlp.edu.ar/resource/persona/maria-dalponte-ayastuy> ;
     lifia:involvedMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
         <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
@@ -17289,34 +17320,6 @@ A su vez se realizara una implementación modelo para probar la factibilidad de 
     dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/citizen-science>,
         <http://lifia.info.unlp.edu.ar/resource/tema/design-thinking> ;
     dcterms:title "Ludificación adaptativa en proyectos de ciencia ciudadana" .
-
-<http://lifia.info.unlp.edu.ar/resource/persona/joaquin-bogado> a vivo:Person,
-        foaf:Person ;
-    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/suarez_bibbo_bogado_fernandez_2025> ;
-    lifia:category "V" ;
-    lifia:highestDegree "Doctor" ;
-    lifia:institutionalEmail "joaquin.bogado@lifia.info.unlp.edu.ar" ;
-    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/asistentes-basados-en-modelos-de-lenguaje-para-programacion-en-computacion-cuantica>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/rags-para-refactorizacion-de-codigo-qiskit-en-software-cuantico> ;
-    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/deuda-tecnica-en-entornos-de-desarrollo-con-copilots> ;
-    lifia:positionAtLab "Investigador" ;
-    lifia:positionAtUnlp "Ayudante Diplomado" ;
-    lifia:slug "joaquin-bogado" ;
-    lifia:startDate "2024-02-01"^^xsd:date ;
-    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/construccion-de-rag-aspectos-de-ingenieria-de-software-en-proyectos-con-ia-generativa>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-cuantico>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-cuantico-en-la-era-nisq-recursos-copilotos-y-educacion>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ripaisc-red-iberoamericana-para-el-avance-de-la-ingenieria-de-software-cuantico> ;
-    dcterms:created "2026-05-20T15:37:51.486000"^^xsd:dateTime ;
-    dcterms:identifier "0ab5df90-4d80-4d0c-8133-9eb96e0d2c1c" ;
-    dcterms:modified "2026-05-22T21:52:35.775000"^^xsd:dateTime ;
-    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/artificial-intelligence>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/quantum-computing>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
-    foaf:depiction <https://rucaps.wordpress.com/wp-content/uploads/2026/02/joaquin-bogado.jpeg> ;
-    foaf:familyName "Bogado" ;
-    foaf:givenName "Joaquín" .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/agrofair-agro-knowledge-integration-developing-a-fair-data-science-approach-for-adding-value-to-the-agricultural-supply-chain> a vivo:Project ;
     lifia:endDate "2022-12-31"^^xsd:date ;
@@ -17453,6 +17456,34 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/03/gabriel-2007.png> ;
     foaf:familyName "Baum" ;
     foaf:givenName "Gabriel " .
+
+<http://lifia.info.unlp.edu.ar/resource/persona/joaquin-bogado> a vivo:Person,
+        foaf:Person ;
+    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/suarez_bibbo_bogado_fernandez_2025> ;
+    lifia:category "V" ;
+    lifia:highestDegree "Doctor" ;
+    lifia:institutionalEmail "joaquin.bogado@lifia.info.unlp.edu.ar" ;
+    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/asistentes-basados-en-modelos-de-lenguaje-para-programacion-en-computacion-cuantica>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/rags-para-refactorizacion-de-codigo-qiskit-en-software-cuantico> ;
+    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/deuda-tecnica-en-entornos-de-desarrollo-con-copilots> ;
+    lifia:positionAtLab "Investigador" ;
+    lifia:positionAtUnlp "Ayudante Diplomado" ;
+    lifia:slug "joaquin-bogado" ;
+    lifia:startDate "2024-02-01"^^xsd:date ;
+    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/construccion-de-rag-aspectos-de-ingenieria-de-software-en-proyectos-con-ia-generativa>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-cuantico>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-cuantico-en-la-era-nisq-recursos-copilotos-y-educacion>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ripaisc-red-iberoamericana-para-el-avance-de-la-ingenieria-de-software-cuantico> ;
+    dcterms:created "2026-05-20T15:37:51.486000"^^xsd:dateTime ;
+    dcterms:identifier "0ab5df90-4d80-4d0c-8133-9eb96e0d2c1c" ;
+    dcterms:modified "2026-05-22T21:52:35.775000"^^xsd:dateTime ;
+    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/artificial-intelligence>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/quantum-computing>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
+    foaf:depiction <https://rucaps.wordpress.com/wp-content/uploads/2026/02/joaquin-bogado.jpeg> ;
+    foaf:familyName "Bogado" ;
+    foaf:givenName "Joaquín" .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/jorge-hernandez-hormazabal> a vivo:Person,
         foaf:Person ;
@@ -17604,39 +17635,36 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
     rdfs:label "logic" ;
     skos:prefLabel "logic" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/federico-balaguer> a vivo:Person,
+<http://lifia.info.unlp.edu.ar/resource/persona/mario-lezoche> a vivo:Person,
         foaf:Person ;
-    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/85825794>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/balaguer2026bootstrapping>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/massacesi_yommi_perez_lozano_david_mendoza_balaguer_2024>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-alejandra-garrido-rosana-t-vaccare-braga-federi>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-federico-balaguer-roberto-di-cosmo-alejandra-gar>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-cristian-cerro-federico-balaguer-y-alejandro-alva> ;
-    lifia:category "4" ;
+    lifia:affiliations "Université de Lorraine" ;
+    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/ferreirone_2026>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/leutwyler_2023>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/leutwyler_2024>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/leutwyler_lezoche_panetto_torres_2023>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-leutwyler-nicolas-lezoche-mario-panetto-herve-t>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2023-a-method-to-obtain-a-knowledge-representation-fro>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2023-scenarios-shared-understanding-and-group-decisi>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-knowledge-extraction-from-the-lel-glossary-using> ;
     lifia:highestDegree "Doctor" ;
-    lifia:institutionalEmail "federico.balaguer@lifia.info.unlp.edu.ar" ;
-    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/diseno-e-implementacion-de-una-solucion-para-realizar-experimentos-con-pulseras-y-mangas-con-capacidades-hapticos> ;
-    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/optimizacion-del-consumo-de-energia-en-sistemas-de-monitoreo-remoto-basados-en-redes-de-sensores-inalambricas> ;
+    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/advanced-ai-based-dynamic-integration-of-heterogeneous-data-for-semantic-clusters-formalisation-in-human-centric-intelligent-enterprise-systems>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/cognitive-digital-twins-and-semantic-interoperability-in-logistics-systems> ;
     lifia:positionAtCIC "N/A" ;
-    lifia:positionAtCONICET "N/A" ;
-    lifia:positionAtLab "Investigador" ;
-    lifia:positionAtUnlp "Profesor Titular" ;
-    lifia:slug "federico-balaguer" ;
-    lifia:startDate "2015-01-01"^^xsd:date ;
-    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/companero-haptico-con-ia-generativa-para-ayudar-a-la-autorregulacion-de-personas-neurodivergentes>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/dispositivos-vestibles-de-iot-para-seguridad-en-plantas-oilgas>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-para-ingenieria-de-software-web-adaptable-y-agil-basada-en-modelos-con-soporte-semantico-y-de-crowdsourcing> ;
-    dcterms:created "2026-05-20T15:37:49.650000"^^xsd:dateTime ;
-    dcterms:identifier "f6c790b1-a82b-4559-9f0e-18c57f2f5696" ;
-    dcterms:modified "2026-05-22T21:52:33.637000"^^xsd:dateTime ;
-    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/haptic-interfaces>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/industry-4-0> ;
-    foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2024/03/fede-balaguer.png> ;
-    foaf:familyName "Balaguer" ;
-    foaf:givenName "Federico" .
+    lifia:positionAtLab "Investigador externo" ;
+    lifia:positionAtUnlp "N/A" ;
+    lifia:slug "mario-lezoche" ;
+    lifia:startDate "2022-01-01"^^xsd:date ;
+    dcterms:created "2026-05-20T15:37:51.130000"^^xsd:dateTime ;
+    dcterms:identifier "5798e7b6-11d0-4edc-8689-6b62fa6d8e73" ;
+    dcterms:modified "2026-05-22T21:52:34.647000"^^xsd:dateTime ;
+    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/artificial-intelligence>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/knowledge-representation>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/semantic-web> ;
+    rdfs:seeAlso <https://dblp.org/pid/69/6519.html> ;
+    foaf:depiction <https://centrolifia.wordpress.com/wp-content/uploads/2025/06/mario-lezoche.jpeg> ;
+    foaf:familyName "Lezoche" ;
+    foaf:givenName "Mario" ;
+    dblp:orcid "https://orcid.org/0000-0002-3271-1742"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/optimizacion-y-recursos-en-la-computacion-cuantica-aplicada-a-la-ingenieria-de-software> a vivo:Project ;
     lifia:amount "1.975.800" ;
@@ -17678,6 +17706,8 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
     lifia:endDate "2022-12-31"^^xsd:date ;
     lifia:featured false ;
     lifia:fundingAgency "Facultad de Informática - Programa I+D+i con alumnos" ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
         <http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville>,
         <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> ;
@@ -17706,6 +17736,40 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
         skos:Concept ;
     rdfs:label "fintech" ;
     skos:prefLabel "fintech" .
+
+<http://lifia.info.unlp.edu.ar/resource/persona/federico-balaguer> a vivo:Person,
+        foaf:Person ;
+    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/85825794>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/balaguer2026bootstrapping>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/massacesi_yommi_perez_lozano_david_mendoza_balaguer_2024>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-alejandra-garrido-rosana-t-vaccare-braga-federi>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-federico-balaguer-roberto-di-cosmo-alejandra-gar>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-cristian-cerro-federico-balaguer-y-alejandro-alva> ;
+    lifia:category "4" ;
+    lifia:highestDegree "Doctor" ;
+    lifia:institutionalEmail "federico.balaguer@lifia.info.unlp.edu.ar" ;
+    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/diseno-e-implementacion-de-una-solucion-para-realizar-experimentos-con-pulseras-y-mangas-con-capacidades-hapticos> ;
+    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/optimizacion-del-consumo-de-energia-en-sistemas-de-monitoreo-remoto-basados-en-redes-de-sensores-inalambricas> ;
+    lifia:positionAtCIC "N/A" ;
+    lifia:positionAtCONICET "N/A" ;
+    lifia:positionAtLab "Investigador" ;
+    lifia:positionAtUnlp "Profesor Titular" ;
+    lifia:slug "federico-balaguer" ;
+    lifia:startDate "2015-01-01"^^xsd:date ;
+    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/companero-haptico-con-ia-generativa-para-ayudar-a-la-autorregulacion-de-personas-neurodivergentes>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/dispositivos-vestibles-de-iot-para-seguridad-en-plantas-oilgas>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-para-ingenieria-de-software-web-adaptable-y-agil-basada-en-modelos-con-soporte-semantico-y-de-crowdsourcing> ;
+    dcterms:created "2026-05-20T15:37:49.650000"^^xsd:dateTime ;
+    dcterms:identifier "f6c790b1-a82b-4559-9f0e-18c57f2f5696" ;
+    dcterms:modified "2026-05-22T21:52:33.637000"^^xsd:dateTime ;
+    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/haptic-interfaces>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/industry-4-0> ;
+    foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2024/03/fede-balaguer.png> ;
+    foaf:familyName "Balaguer" ;
+    foaf:givenName "Federico" .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/giuliana-maltempo> a vivo:Person,
         foaf:Person ;
@@ -17880,6 +17944,8 @@ Estos objetivos buscan proporcionar una visión integral de la situación actual
     lifia:endDate "2021-12-31"^^xsd:date ;
     lifia:featured false ;
     lifia:fundingAgency "Facultad de Informática, UNLP" ;
+    lifia:hasCoDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez> ;
     lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/julian-grigera> ;
     lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido>,
         <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
@@ -18304,6 +18370,55 @@ http://cyted.org/es/run""" ;
     rdfs:label "digital humanities" ;
     skos:prefLabel "digital humanities" .
 
+<http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento> a vivo:Project ;
+    lifia:amount "$200.000" ;
+    lifia:coDirectorName "Alejandra Garrido" ;
+    lifia:code "11/F21" ;
+    lifia:directorName "Alejandro Fernandez" ;
+    lifia:endDate "2017-12-31"^^xsd:date ;
+    lifia:featured false ;
+    lifia:fundingAgency "UNLP (programa de incentivos)" ;
+    lifia:hasCoDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido> ;
+    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez> ;
+    lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-lliteras>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/alicia-diaz>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/catalina-mostaccio>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/claudia-pons>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/cristian-cerro>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/gabriel-baum>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-bosetti>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/gustavo-rossi>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/javier-bazzocco>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/jonathan-martin>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/julian-grigera>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/luis-mariano-bibbo>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/matias-urbieta>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/natalia-correa>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/rodolfo-gonzalez>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/rosalina-nazarre>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/roxana-giandini>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/sergio-firmenich>,
+        <http://lifia.info.unlp.edu.ar/resource/persona/silvia-gordillo> ;
+    lifia:producedPublication <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-applying-mda-and-omg-robotic-specification-for-de> ;
+    lifia:relatedThesis <http://lifia.info.unlp.edu.ar/resource/tesis/analisis-de-herramientas-de-generacion-automatica-de-codigo-android-a-partir-de-modelos> ;
+    lifia:slug "ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento" ;
+    lifia:startDate "2016-01-01"^^xsd:date ;
+    dcterms:abstract "La web ha evolucionado para transformarse en una red que conecta algo más que computadores; conecta personas, organizaciones, el conocimiento que estas generan, y una infinidad de dispositivos y recursos físicos que ahora pueden ser parte de aplicaciones más ricas e inteligentes en términos de adaptarse a las necesidades y expectativas de sus usuarios. Esta nueva situación requiere de nuevos soportes teóricos, técnicas de desarrollo, métodos y por supuesto la generación de pruebas de concepto para validar estas ideas. En este proyecto enfocaremos la problemática de la concepción y desarrollo de este nuevo tipo de aplicaciones desde tres ejes, que al mismo tiempo actúan como sub- proyectos interrelacionados lo que permite una adecuada especialización: Desarrollos Conducidos por Modelos y Aplicaciones. Adaptación y Agilidad en Aplicaciones Web y Móviles. La Web del Conocimiento: Crowdsourcing, Ludificación y Web Semántica" ;
+    dcterms:created "2026-05-20T15:37:51.930000"^^xsd:dateTime ;
+    dcterms:identifier "72936f86-13ea-4e8f-92bd-d44e77a509cd" ;
+    dcterms:modified "2026-05-22T21:49:01.735000"^^xsd:dateTime ;
+    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/web-engineering> ;
+    dcterms:title "Ingeniería ágil y conducida por modelos, de software adaptable para la web del conocimiento " .
+
 <http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville> a vivo:Person,
         foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/77845150>,
@@ -18356,55 +18471,6 @@ http://cyted.org/es/run""" ;
     foaf:givenName "Juliana" ;
     foaf:mbox "julianadelleville@hotmail.com" ;
     dblp:orcid "https://orcid.org/0009-0007-7888-7544"^^xsd:anyURI .
-
-<http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento> a vivo:Project ;
-    lifia:amount "$200.000" ;
-    lifia:coDirectorName "Alejandra Garrido" ;
-    lifia:code "11/F21" ;
-    lifia:directorName "Alejandro Fernandez" ;
-    lifia:endDate "2017-12-31"^^xsd:date ;
-    lifia:featured false ;
-    lifia:fundingAgency "UNLP (programa de incentivos)" ;
-    lifia:hasCoDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido> ;
-    lifia:hasDirector <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez> ;
-    lifia:hasProjectMember <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-lliteras>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/alicia-diaz>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/catalina-mostaccio>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/claudia-pons>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/cristian-cerro>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/diego-torres>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/gabriel-baum>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-bosetti>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/gustavo-rossi>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/javier-bazzocco>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/jonathan-martin>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/julian-grigera>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/luis-mariano-bibbo>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/matias-urbieta>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/natalia-correa>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/rodolfo-gonzalez>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/rosalina-nazarre>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/roxana-giandini>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/sergio-firmenich>,
-        <http://lifia.info.unlp.edu.ar/resource/persona/silvia-gordillo> ;
-    lifia:producedPublication <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-applying-mda-and-omg-robotic-specification-for-de> ;
-    lifia:relatedThesis <http://lifia.info.unlp.edu.ar/resource/tesis/analisis-de-herramientas-de-generacion-automatica-de-codigo-android-a-partir-de-modelos> ;
-    lifia:slug "ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento" ;
-    lifia:startDate "2016-01-01"^^xsd:date ;
-    dcterms:abstract "La web ha evolucionado para transformarse en una red que conecta algo más que computadores; conecta personas, organizaciones, el conocimiento que estas generan, y una infinidad de dispositivos y recursos físicos que ahora pueden ser parte de aplicaciones más ricas e inteligentes en términos de adaptarse a las necesidades y expectativas de sus usuarios. Esta nueva situación requiere de nuevos soportes teóricos, técnicas de desarrollo, métodos y por supuesto la generación de pruebas de concepto para validar estas ideas. En este proyecto enfocaremos la problemática de la concepción y desarrollo de este nuevo tipo de aplicaciones desde tres ejes, que al mismo tiempo actúan como sub- proyectos interrelacionados lo que permite una adecuada especialización: Desarrollos Conducidos por Modelos y Aplicaciones. Adaptación y Agilidad en Aplicaciones Web y Móviles. La Web del Conocimiento: Crowdsourcing, Ludificación y Web Semántica" ;
-    dcterms:created "2026-05-20T15:37:51.930000"^^xsd:dateTime ;
-    dcterms:identifier "72936f86-13ea-4e8f-92bd-d44e77a509cd" ;
-    dcterms:modified "2026-05-22T21:49:01.735000"^^xsd:dateTime ;
-    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/web-engineering> ;
-    dcterms:title "Ingeniería ágil y conducida por modelos, de software adaptable para la web del conocimiento " .
 
 <http://lifia.info.unlp.edu.ar/resource/tema/quantum-computing> a cso:Topic,
         skos:Concept ;
@@ -18525,69 +18591,6 @@ http://cyted.org/es/run""" ;
     foaf:givenName "Luis Mariano" ;
     foaf:mbox "lmbibbo@gmail.com" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey> a vivo:Person,
-        foaf:Person ;
-    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/84162132>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/bonora_2022>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfchigrigeragrgr19>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfkbsegrigeraggr18>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/diulio_2021>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/fernandez_2021>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2020>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2020-1>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2022>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2022-1>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2023>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2024>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2024-1>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/grigera_2023-1>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/julian_grigera_tycho_2021>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raverta_2026>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2020-guy-camilleri-leandro-antonelli-pascale-zarate>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-grigera-j-gardey-j-garrido-a-and-rossi-g>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-juan-cruz-gardey-julian-grigera-gustavo-rossi-an>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-ana-liz-lubomirsky-juan-cruz-gardey-alejandra-ga>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-paladino-j-l-lliteras-a-b-gardey-j-c>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-scopel-i-gomez-l-lliteras-a-b-gardey-j>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-web-design-designing-for-usability-inclusion-a>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_2023> ;
-    lifia:highestDegree "Doctor en Ciencias Informáticas" ;
-    lifia:institutionalEmail "jcgardey@lifia.info.unlp.edu.ar" ;
-    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/extension-de-navegador-para-captura-de-interaccion>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/introduccion-a-la-investigacion-cientifica-4>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/metodos-y-herramientas-de-desarrollo-y-evaluacion-de-refactorings-para-la-mejora-de-la-experiencia-de-usuario-en-aplicaciones-web-1>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/pensamiento-computacional-a-traves-de-la-visualizacion-de-datos> ;
-    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/estudio-de-perfil-de-usuarios-web-a-partir-de-registros-de-interaccion> ;
-    lifia:positionAtCIC "N/A" ;
-    lifia:positionAtCONICET "N/A" ;
-    lifia:positionAtLab "Investigador" ;
-    lifia:positionAtUnlp "Ayudante Diplomado" ;
-    lifia:slug "juan-cruz-gardey" ;
-    lifia:startDate "2018-01-01"^^xsd:date ;
-    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/dark-patterns-la-web-del-engano>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/dark-patterns-la-web-del-engano-y-el-rol-de-la-ia>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/desarrollo-de-herramientas-inteligentes-para-la-gestion-y-toma-de-decisiones-en-el-ambito-de-la-ciencia-abierta-y-ciudadana>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/evaluacion-y-reparacion-comunitaria-de-problemas-de-usabilidad-y-accesibilidad-en-aplicaciones-web-desktop-y-moviles>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/mejora-continua-de-experiencia-de-usuario-en-aplicaciones-web>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/plataforma-para-la-visualizacion-de-datos-con-fines-educativos-en-nivel-secundario-para-ciencias-sociales-y-humanidades>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ruc-aps-enhancing-and-implementing-knowledge-based-ict-solutions-within-high-risk-and-uncertain-conditions-for-agriculture-production-systems>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-para-ingenieria-de-software-web-adaptable-y-agil-basada-en-modelos-con-soporte-semantico-y-de-crowdsourcing>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ux-driven-development-monitorizacion-continua-de-la-experiencia-del-usuario-durante-el-desarrollo-y-mantenimiento-agil-de-aplicaciones-interactivas> ;
-    dcterms:created "2026-05-20T15:37:50.099000"^^xsd:dateTime ;
-    dcterms:identifier "1f79c15b-24c0-4148-b6a2-604b2789d640" ;
-    dcterms:modified "2026-05-22T21:52:33.750000"^^xsd:dateTime ;
-    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/digital-humanities>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
-    vivo:freetextKeyword "Refactorización de aplicaciones web, automatización de la evaluación de usabilidad, análisis de interacción de usuarios."@es ;
-    vivo:overview "Juan Cruz se graduó de Licenciado en Sistemas en la UNLP en diciembre de 2017. En el año 2018 ingresó al LIFIA para iniciar el Doctorado en Ciencias Informáticas. Su investigación se centra en el soporte de la evaluación de la usabilidad en aplicaciones web."@es ;
-    foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/04/jcgardey.png> ;
-    foaf:familyName "Gardey" ;
-    foaf:givenName "Juan Cruz " .
-
 <http://lifia.info.unlp.edu.ar/resource/persona/silvia-gordillo> a vivo:Person,
         foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2020>,
@@ -18659,6 +18662,69 @@ http://cyted.org/es/run""" ;
     foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/03/silvia-2007.png> ;
     foaf:familyName "Gordillo" ;
     foaf:givenName "Silvia" .
+
+<http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey> a vivo:Person,
+        foaf:Person ;
+    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/84162132>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/bonora_2022>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfchigrigeragrgr19>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfkbsegrigeraggr18>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/diulio_2021>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/fernandez_2021>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2020>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2020-1>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2022>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2022-1>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2023>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2024>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2024-1>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/grigera_2023-1>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/julian_grigera_tycho_2021>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raverta_2026>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2020-guy-camilleri-leandro-antonelli-pascale-zarate>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-grigera-j-gardey-j-garrido-a-and-rossi-g>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-juan-cruz-gardey-julian-grigera-gustavo-rossi-an>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-ana-liz-lubomirsky-juan-cruz-gardey-alejandra-ga>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-paladino-j-l-lliteras-a-b-gardey-j-c>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-scopel-i-gomez-l-lliteras-a-b-gardey-j>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-web-design-designing-for-usability-inclusion-a>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_2023> ;
+    lifia:highestDegree "Doctor en Ciencias Informáticas" ;
+    lifia:institutionalEmail "jcgardey@lifia.info.unlp.edu.ar" ;
+    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/extension-de-navegador-para-captura-de-interaccion>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/introduccion-a-la-investigacion-cientifica-4>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/metodos-y-herramientas-de-desarrollo-y-evaluacion-de-refactorings-para-la-mejora-de-la-experiencia-de-usuario-en-aplicaciones-web-1>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/pensamiento-computacional-a-traves-de-la-visualizacion-de-datos> ;
+    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/estudio-de-perfil-de-usuarios-web-a-partir-de-registros-de-interaccion> ;
+    lifia:positionAtCIC "N/A" ;
+    lifia:positionAtCONICET "N/A" ;
+    lifia:positionAtLab "Investigador" ;
+    lifia:positionAtUnlp "Ayudante Diplomado" ;
+    lifia:slug "juan-cruz-gardey" ;
+    lifia:startDate "2018-01-01"^^xsd:date ;
+    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/dark-patterns-la-web-del-engano>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/dark-patterns-la-web-del-engano-y-el-rol-de-la-ia>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/desarrollo-de-herramientas-inteligentes-para-la-gestion-y-toma-de-decisiones-en-el-ambito-de-la-ciencia-abierta-y-ciudadana>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/evaluacion-y-reparacion-comunitaria-de-problemas-de-usabilidad-y-accesibilidad-en-aplicaciones-web-desktop-y-moviles>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/mejora-continua-de-experiencia-de-usuario-en-aplicaciones-web>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/plataforma-para-la-visualizacion-de-datos-con-fines-educativos-en-nivel-secundario-para-ciencias-sociales-y-humanidades>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ruc-aps-enhancing-and-implementing-knowledge-based-ict-solutions-within-high-risk-and-uncertain-conditions-for-agriculture-production-systems>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-para-ingenieria-de-software-web-adaptable-y-agil-basada-en-modelos-con-soporte-semantico-y-de-crowdsourcing>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ux-driven-development-monitorizacion-continua-de-la-experiencia-del-usuario-durante-el-desarrollo-y-mantenimiento-agil-de-aplicaciones-interactivas> ;
+    dcterms:created "2026-05-20T15:37:50.099000"^^xsd:dateTime ;
+    dcterms:identifier "1f79c15b-24c0-4148-b6a2-604b2789d640" ;
+    dcterms:modified "2026-05-22T21:52:33.750000"^^xsd:dateTime ;
+    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/digital-humanities>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
+    vivo:freetextKeyword "Refactorización de aplicaciones web, automatización de la evaluación de usabilidad, análisis de interacción de usuarios."@es ;
+    vivo:overview "Juan Cruz se graduó de Licenciado en Sistemas en la UNLP en diciembre de 2017. En el año 2018 ingresó al LIFIA para iniciar el Doctorado en Ciencias Informáticas. Su investigación se centra en el soporte de la evaluación de la usabilidad en aplicaciones web."@es ;
+    foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/04/jcgardey.png> ;
+    foaf:familyName "Gardey" ;
+    foaf:givenName "Juan Cruz " .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/desarrollo-de-herramientas-inteligentes-para-la-gestion-y-toma-de-decisiones-en-el-ambito-de-la-ciencia-abierta-y-ciudadana> a vivo:Project ;
     lifia:amount "$230.000" ;
@@ -18738,69 +18804,6 @@ http://cyted.org/es/run""" ;
         skos:Concept ;
     rdfs:label "technology and society" ;
     skos:prefLabel "technology and society" .
-
-<http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez> a vivo:Person,
-        foaf:Person ;
-    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/p_rez_2025>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/perez_2025>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2016-claudia-pons-gabriela-perez-roxana-giandini-and>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-applying-mda-and-omg-robotic-specification-for-de>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-natalia-correa-gabriela-perez-catalina-mostaccio>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-agustin-de-luca-matias-irigoitia-gabriela-pere>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-augusto-recordon-silvia-ruiz-diaz-claudia-pons>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-claudia-pons-gabriela-perez-gabriel-baum-2022>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-automatizacion-de-documentos-judiciales-utilizand>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-evaluacion-de-modelos-de-procesamiento-de-lengua>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-integracion-de-diferentes-tecnicas-para-visualizar>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/reabtic> ;
-    lifia:highestDegree "Licenciada en Informática" ;
-    lifia:institutionalEmail "gabriela.perez@lifia.info.unlp.edu.ar" ;
-    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/algoritmos-geneticos-en-el-entrenamiento-de-redes-neuronales-artificiales>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/ingenieria-de-caracteristicas-para-el-analisis-de-grandes-datos-1>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/introduccion-a-la-investigacion-cientifica-1>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/introduccion-a-la-investigacion-cientifica-5>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/tecnicas-de-inteligencia-artificial-basadas-en-una-integracion-de-la-logica-simbolica-y-no-simbolica-1>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/tecnicas-de-nlp-e-ia-aplicadas-a-escritos-judiciales-1>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/tecnicas-de-nlp-e-ia-aplicadas-a-escritos-judiciales-3> ;
-    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/abordando-el-problema-de-la-explicablilidad-en-redes-neuronales-artificiales-mediante-logica-simbolica-y-algoritmos-geneticos>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/analisis-de-la-tecnica-transfer-learning-en-machine-learning-a-traves-de-un-caso-de-estudio-la-clasificacion-de-productos-en-el-banco-alimentario-de-la-plata>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/estudio-de-metodos-y-tecnicas-de-aprendizaje-por-transferencia-en-el-contexto-de-aprendizaje-automatico>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/identificacion-de-propiedades-biologicas-en-organismos-utilizando-tecnicas-de-machine-learning-sobre-secuencias-de-genoma-completo>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/integracion-de-diferentes-tecnicas-para-visualizar-la-influencia-de-regiones-de-una-imagen-en-su-clasificacion-por-una-red-neuronal>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/inteligencia-artificial-explicable-tecnicas-de-extraccion-de-reglas-en-redes-neuronales-artificiales>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/modelado-de-sistemas-colaborativos>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/modelo-combinado-de-co-training-y-aprendizaje-por-transferencia-para-clasificacion-de-documentos-a-partir-de-un-analisis-comparativo-de-modelos-de-aprendizaje-semi-supervisados>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/physical-bits-entorno-de-desarrollo-integrado-para-robotica-educativa>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/tecnicas-de-inteligencia-artificial-explicable-basadas-en-una-integracion-de-logica-simbolica-y-no-simbolica>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/unificacion-de-herramientas-high-tech-para-prevencion-de-fraudes-en-tiempo-real>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/uso-de-modelos-economicos-basados-en-agentes-para-la-ensenanza-e-investigacion-de-la-economia-argentina> ;
-    lifia:positionAtCIC "N/A" ;
-    lifia:positionAtCONICET "N/A" ;
-    lifia:positionAtLab "Investigador" ;
-    lifia:positionAtUnlp "Profesor Adjunto" ;
-    lifia:slug "gabriela-perez" ;
-    lifia:startDate "2015-01-01"^^xsd:date ;
-    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/desarrollo-de-herramientas-inteligentes-para-la-gestion-y-toma-de-decisiones-en-el-ambito-de-la-ciencia-abierta-y-ciudadana>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/especificaciones-de-calidad-utilizando-soporte-semantico-procesamiento-del-lenguaje-natural-y-machine-learning>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/mejorando-la-transparencia-y-equidad-en-procesos-juridicos-mediante-procesamiento-de-lenguaje-natural>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/representacion-de-conocimiento-usando-grafos-de-conocimiento-a-partir-de-lenguaje-natural-combinando-tecnicas-de-nlp-ml-y-ai-generativas>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/soporte-a-la-decision-colaborativa-para-la-adquisicion-de-conocimiento-en-agricultura-usando-tecnicas-de-ia>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-de-inteligencia-artificial-neuro-simbolica>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-de-nlp-y-ai-aplicadas-a-textos-semiestructurados-para-identificar-similitud-y-extraer-informacion>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-para-ingenieria-de-software-web-adaptable-y-agil-basada-en-modelos-con-soporte-semantico-y-de-crowdsourcing>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/uso-de-nlp-ai-y-llms-a-textos-semiestructurados-para-mejorar-la-calidad-y-extraer-informacion> ;
-    dcterms:created "2026-05-20T15:37:50.667000"^^xsd:dateTime ;
-    dcterms:identifier "61764001-3bbd-4b0b-a9ca-e4ce158cfd1a" ;
-    dcterms:modified "2026-05-22T21:52:34.151000"^^xsd:dateTime ;
-    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/ai-assisted-development>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/artificial-intelligence>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
-    foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2024/03/gabriela-perez.png> ;
-    foaf:familyName "Perez" ;
-    foaf:givenName "Gabriela " .
 
 <http://lifia.info.unlp.edu.ar/resource/tema/web-engineering> a cso:Topic,
         skos:Concept ;
@@ -18886,6 +18889,69 @@ http://cyted.org/es/run""" ;
         skos:Concept ;
     rdfs:label "design thinking" ;
     skos:prefLabel "design thinking" .
+
+<http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez> a vivo:Person,
+        foaf:Person ;
+    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/p_rez_2025>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/perez_2025>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2016-claudia-pons-gabriela-perez-roxana-giandini-and>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-applying-mda-and-omg-robotic-specification-for-de>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-natalia-correa-gabriela-perez-catalina-mostaccio>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-agustin-de-luca-matias-irigoitia-gabriela-pere>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-augusto-recordon-silvia-ruiz-diaz-claudia-pons>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-claudia-pons-gabriela-perez-gabriel-baum-2022>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-automatizacion-de-documentos-judiciales-utilizand>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-evaluacion-de-modelos-de-procesamiento-de-lengua>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-integracion-de-diferentes-tecnicas-para-visualizar>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/reabtic> ;
+    lifia:highestDegree "Licenciada en Informática" ;
+    lifia:institutionalEmail "gabriela.perez@lifia.info.unlp.edu.ar" ;
+    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/algoritmos-geneticos-en-el-entrenamiento-de-redes-neuronales-artificiales>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/ingenieria-de-caracteristicas-para-el-analisis-de-grandes-datos-1>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/introduccion-a-la-investigacion-cientifica-1>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/introduccion-a-la-investigacion-cientifica-5>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/tecnicas-de-inteligencia-artificial-basadas-en-una-integracion-de-la-logica-simbolica-y-no-simbolica-1>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/tecnicas-de-nlp-e-ia-aplicadas-a-escritos-judiciales-1>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/tecnicas-de-nlp-e-ia-aplicadas-a-escritos-judiciales-3> ;
+    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/abordando-el-problema-de-la-explicablilidad-en-redes-neuronales-artificiales-mediante-logica-simbolica-y-algoritmos-geneticos>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/analisis-de-la-tecnica-transfer-learning-en-machine-learning-a-traves-de-un-caso-de-estudio-la-clasificacion-de-productos-en-el-banco-alimentario-de-la-plata>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/estudio-de-metodos-y-tecnicas-de-aprendizaje-por-transferencia-en-el-contexto-de-aprendizaje-automatico>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/identificacion-de-propiedades-biologicas-en-organismos-utilizando-tecnicas-de-machine-learning-sobre-secuencias-de-genoma-completo>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/integracion-de-diferentes-tecnicas-para-visualizar-la-influencia-de-regiones-de-una-imagen-en-su-clasificacion-por-una-red-neuronal>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/inteligencia-artificial-explicable-tecnicas-de-extraccion-de-reglas-en-redes-neuronales-artificiales>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/modelado-de-sistemas-colaborativos>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/modelo-combinado-de-co-training-y-aprendizaje-por-transferencia-para-clasificacion-de-documentos-a-partir-de-un-analisis-comparativo-de-modelos-de-aprendizaje-semi-supervisados>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/physical-bits-entorno-de-desarrollo-integrado-para-robotica-educativa>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/tecnicas-de-inteligencia-artificial-explicable-basadas-en-una-integracion-de-logica-simbolica-y-no-simbolica>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/unificacion-de-herramientas-high-tech-para-prevencion-de-fraudes-en-tiempo-real>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/uso-de-modelos-economicos-basados-en-agentes-para-la-ensenanza-e-investigacion-de-la-economia-argentina> ;
+    lifia:positionAtCIC "N/A" ;
+    lifia:positionAtCONICET "N/A" ;
+    lifia:positionAtLab "Investigador" ;
+    lifia:positionAtUnlp "Profesor Adjunto" ;
+    lifia:slug "gabriela-perez" ;
+    lifia:startDate "2015-01-01"^^xsd:date ;
+    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/desarrollo-de-herramientas-inteligentes-para-la-gestion-y-toma-de-decisiones-en-el-ambito-de-la-ciencia-abierta-y-ciudadana>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/especificaciones-de-calidad-utilizando-soporte-semantico-procesamiento-del-lenguaje-natural-y-machine-learning>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/mejorando-la-transparencia-y-equidad-en-procesos-juridicos-mediante-procesamiento-de-lenguaje-natural>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/representacion-de-conocimiento-usando-grafos-de-conocimiento-a-partir-de-lenguaje-natural-combinando-tecnicas-de-nlp-ml-y-ai-generativas>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/soporte-a-la-decision-colaborativa-para-la-adquisicion-de-conocimiento-en-agricultura-usando-tecnicas-de-ia>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-de-inteligencia-artificial-neuro-simbolica>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-de-nlp-y-ai-aplicadas-a-textos-semiestructurados-para-identificar-similitud-y-extraer-informacion>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-para-ingenieria-de-software-web-adaptable-y-agil-basada-en-modelos-con-soporte-semantico-y-de-crowdsourcing>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/uso-de-nlp-ai-y-llms-a-textos-semiestructurados-para-mejorar-la-calidad-y-extraer-informacion> ;
+    dcterms:created "2026-05-20T15:37:50.667000"^^xsd:dateTime ;
+    dcterms:identifier "61764001-3bbd-4b0b-a9ca-e4ce158cfd1a" ;
+    dcterms:modified "2026-05-22T21:52:34.151000"^^xsd:dateTime ;
+    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/ai-assisted-development>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/artificial-intelligence>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
+    foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2024/03/gabriela-perez.png> ;
+    foaf:familyName "Perez" ;
+    foaf:givenName "Gabriela " .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/ruc-aps-enhancing-and-implementing-knowledge-based-ict-solutions-within-high-risk-and-uncertain-conditions-for-agriculture-production-systems> a vivo:Project ;
     lifia:amount "EUR 1.332.000" ;
@@ -19228,90 +19294,6 @@ http://cyted.org/es/run""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/design-thinking> ;
     dcterms:title "Diseño participativo de aplicaciones de ciencia ciudadana y gestión del conocimiento" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez> a vivo:Person,
-        foaf:Person ;
-    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/10114537065993706698>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/41995821>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/51833739>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/85825794>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/carvajal_growing_2020>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2025>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2025-1>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dalponte_ayastuy_2025>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfchigrigeragrgr19>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfclihcrodriguezgr15>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfinteraccionrodriguezfh18>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfinteraccionrodriguezlr14>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpjournalsrccrodriguezgr15>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2022>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2022-1>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2024>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2024-1>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/mandarino_bootstrapping_2022>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-carlos-carvajal-lema-huizilopoztli-luna-garcia-a>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-duarte-yesica-rodriguez-andres-2022-explora>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-historia-de-la-ipohci-a-rodriguez-perspectivas-en>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-perspectivas-en-la-interaccion-humano-tecnologia>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-web-design-designing-for-usability-inclusion-a>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_2023>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_2024>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_approach_2022>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_fernandez_2024>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_modeling_2023>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/santana_2022>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/santana_2022-1>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/santana_2022-2> ;
-    lifia:category "4" ;
-    lifia:highestDegree "Doctor en Ciencias Informáticas" ;
-    lifia:institutionalEmail "andres.rodriguez@lifia.info.unlp.edu.ar" ;
-    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/diseno-e-implementacion-de-una-solucion-para-realizar-experimentos-con-pulseras-y-mangas-con-capacidades-hapticos>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/introduccion-a-la-investigacion-cientifica-8>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/metaversos-y-mundos-virtuales-los-desafios-de-las-interfaces-no-tradicionales-1> ;
-    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/desarrollo-de-herramienta-para-la-deteccion-de-smells-de-ux-en-prototipos-tempranos>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/deteccion-de-malos-olores-de-diseno-y-usabilidad-en-disenos-de-interfaces-de-baja-fidelidad>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/experiencia-de-usuario-de-estudiantes-de-carreras-stem-utilizando-smart-glasses>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/gestion-de-la-atencion-en-sistemas-de-informacion-en-vehiculos-ivis-desde-el-diseno-temprano>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/gestion-de-notificaciones-en-dispositivos-moviles-de-chicosas-en-edad-escolar>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/gestion-y-mitigacion-de-la-deuda-tecnica-en-el-sector-publico-estudio-de-caso-en-la-tesoreria-general-de-la-provincia-de-buenos-aires>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/modernizacion-de-aplicaciones-moviles-estudio-de-un-caso-de-migracion-a-nueva-tecnologia>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/plataforma-integrada-para-el-diseno-ux-con-interacciones-vibrotactiles>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/propuesta-de-un-sistema-para-mejorar-la-comunicacion-y-toma-de-decisiones-entre-disenadores-ux-y-desarrolladores-para-gestion-de-la-deuda-de-ux>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/recomendaciones-para-juegos-serios-basadas-en-analiticas-de-aprendizaje>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/soporte-al-proceso-de-analisis-e-interpretacion-de-variantes-geneticas-en-exoma-humano>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/soporte-de-decisiones-multicriterio-para-la-compra-de-productos-online-una-propuesta-desde-la-aumentacion-web> ;
-    lifia:positionAtCIC "N/A" ;
-    lifia:positionAtCONICET "N/A" ;
-    lifia:positionAtLab "Investigador" ;
-    lifia:positionAtUnlp "Profesor Titular" ;
-    lifia:slug "andres-rodriguez" ;
-    lifia:startDate "2015-01-01"^^xsd:date ;
-    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/companero-haptico-con-ia-generativa-para-ayudar-a-la-autorregulacion-de-personas-neurodivergentes>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/desarrollo-de-herramientas-inteligentes-para-la-gestion-y-toma-de-decisiones-en-el-ambito-de-la-ciencia-abierta-y-ciudadana>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/dispositivos-vestibles-de-iot-para-seguridad-en-plantas-oilgas>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/mejora-continua-de-experiencia-de-usuario-en-aplicaciones-web>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/metaversos-como-disenar-para-una-tecnologia-que-aun-no-existe>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/metaversos-y-mundos-virtuales-los-desafios-de-las-interfaces-no-tradicionales>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ruc-aps-enhancing-and-implementing-knowledge-based-ict-solutions-within-high-risk-and-uncertain-conditions-for-agriculture-production-systems>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-para-ingenieria-de-software-web-adaptable-y-agil-basada-en-modelos-con-soporte-semantico-y-de-crowdsourcing>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ux-driven-development-monitorizacion-continua-de-la-experiencia-del-usuario-durante-el-desarrollo-y-mantenimiento-agil-de-aplicaciones-interactivas> ;
-    dcterms:created "2026-05-20T15:37:50.726000"^^xsd:dateTime ;
-    dcterms:identifier "0164e379-d4be-4282-b254-4166ae9ccb63" ;
-    dcterms:modified "2026-05-22T21:52:34.191000"^^xsd:dateTime ;
-    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/haptic-interfaces>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
-    vivo:freetextKeyword "Interacción hombre-máquina. Diseño centrado en el usuario. Técnicas de bocetado y prototipado. Interacciones enactivas"@es ;
-    vivo:overview "Andrés Rodríguez se graduó como Diseñador Industrial en la Universidad Nacional de La Plata en 1987. Ha realizado trabajos de diseño en Neuquén, Buenos Aires y La Plata. Realizó estudios de Magíster en Ingeniería de Software en la UNLP. Se ha desempeñado como docente en las Universidades de Buenos Aires, del Comahue y La Plata. Desde su incorporación a Lifia en el año 2000 ha participado en diversos proyectos como líder, experto en usabilidad y mentor."@es ;
-    rdfs:seeAlso <https://dblp.org/pid/150/5492-2.html>,
-        <https://scholar.google.com/citations?user=Y5VxjVoAAAAJ&hl=es> ;
-    foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/04/andres-rodriguez.jpg> ;
-    foaf:familyName "Rodríguez" ;
-    foaf:givenName "Andrés" ;
-    dblp:orcid "https://orcid.org/0000-0002-7600-6041"^^xsd:anyURI .
-
 <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-lliteras> a vivo:Person,
         foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/2021>,
@@ -19408,6 +19390,90 @@ En el año 2002 se recibió de Analista de Computación, en 2005 de Licenciada e
     foaf:givenName "Alejandra" ;
     foaf:homepage <https://alfadatizando.wordpress.com/> ;
     dblp:orcid "https://orcid.org/0000-0002-4148-1299"^^xsd:anyURI .
+
+<http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez> a vivo:Person,
+        foaf:Person ;
+    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/10114537065993706698>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/41995821>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/51833739>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/85825794>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/carvajal_growing_2020>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2025>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2025-1>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dalponte_ayastuy_2025>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfchigrigeragrgr19>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfclihcrodriguezgr15>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfinteraccionrodriguezfh18>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfinteraccionrodriguezlr14>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpjournalsrccrodriguezgr15>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2022>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2022-1>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2024>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/gardey_2024-1>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/mandarino_bootstrapping_2022>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-carlos-carvajal-lema-huizilopoztli-luna-garcia-a>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-duarte-yesica-rodriguez-andres-2022-explora>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-historia-de-la-ipohci-a-rodriguez-perspectivas-en>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-perspectivas-en-la-interaccion-humano-tecnologia>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-web-design-designing-for-usability-inclusion-a>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_2023>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_2024>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_approach_2022>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_fernandez_2024>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/rodriguez_modeling_2023>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/santana_2022>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/santana_2022-1>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/santana_2022-2> ;
+    lifia:category "4" ;
+    lifia:highestDegree "Doctor en Ciencias Informáticas" ;
+    lifia:institutionalEmail "andres.rodriguez@lifia.info.unlp.edu.ar" ;
+    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/diseno-e-implementacion-de-una-solucion-para-realizar-experimentos-con-pulseras-y-mangas-con-capacidades-hapticos>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/introduccion-a-la-investigacion-cientifica-8>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/metaversos-y-mundos-virtuales-los-desafios-de-las-interfaces-no-tradicionales-1> ;
+    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/desarrollo-de-herramienta-para-la-deteccion-de-smells-de-ux-en-prototipos-tempranos>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/deteccion-de-malos-olores-de-diseno-y-usabilidad-en-disenos-de-interfaces-de-baja-fidelidad>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/experiencia-de-usuario-de-estudiantes-de-carreras-stem-utilizando-smart-glasses>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/gestion-de-la-atencion-en-sistemas-de-informacion-en-vehiculos-ivis-desde-el-diseno-temprano>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/gestion-de-notificaciones-en-dispositivos-moviles-de-chicosas-en-edad-escolar>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/gestion-y-mitigacion-de-la-deuda-tecnica-en-el-sector-publico-estudio-de-caso-en-la-tesoreria-general-de-la-provincia-de-buenos-aires>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/modernizacion-de-aplicaciones-moviles-estudio-de-un-caso-de-migracion-a-nueva-tecnologia>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/plataforma-integrada-para-el-diseno-ux-con-interacciones-vibrotactiles>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/propuesta-de-un-sistema-para-mejorar-la-comunicacion-y-toma-de-decisiones-entre-disenadores-ux-y-desarrolladores-para-gestion-de-la-deuda-de-ux>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/recomendaciones-para-juegos-serios-basadas-en-analiticas-de-aprendizaje>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/soporte-al-proceso-de-analisis-e-interpretacion-de-variantes-geneticas-en-exoma-humano>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/soporte-de-decisiones-multicriterio-para-la-compra-de-productos-online-una-propuesta-desde-la-aumentacion-web> ;
+    lifia:positionAtCIC "N/A" ;
+    lifia:positionAtCONICET "N/A" ;
+    lifia:positionAtLab "Investigador" ;
+    lifia:positionAtUnlp "Profesor Titular" ;
+    lifia:slug "andres-rodriguez" ;
+    lifia:startDate "2015-01-01"^^xsd:date ;
+    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/companero-haptico-con-ia-generativa-para-ayudar-a-la-autorregulacion-de-personas-neurodivergentes>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/desarrollo-de-herramientas-inteligentes-para-la-gestion-y-toma-de-decisiones-en-el-ambito-de-la-ciencia-abierta-y-ciudadana>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/dispositivos-vestibles-de-iot-para-seguridad-en-plantas-oilgas>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/mejora-continua-de-experiencia-de-usuario-en-aplicaciones-web>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/metaversos-como-disenar-para-una-tecnologia-que-aun-no-existe>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/metaversos-y-mundos-virtuales-los-desafios-de-las-interfaces-no-tradicionales>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ruc-aps-enhancing-and-implementing-knowledge-based-ict-solutions-within-high-risk-and-uncertain-conditions-for-agriculture-production-systems>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-para-ingenieria-de-software-web-adaptable-y-agil-basada-en-modelos-con-soporte-semantico-y-de-crowdsourcing>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ux-driven-development-monitorizacion-continua-de-la-experiencia-del-usuario-durante-el-desarrollo-y-mantenimiento-agil-de-aplicaciones-interactivas> ;
+    dcterms:created "2026-05-20T15:37:50.726000"^^xsd:dateTime ;
+    dcterms:identifier "0164e379-d4be-4282-b254-4166ae9ccb63" ;
+    dcterms:modified "2026-05-22T21:52:34.191000"^^xsd:dateTime ;
+    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/haptic-interfaces>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
+    vivo:freetextKeyword "Interacción hombre-máquina. Diseño centrado en el usuario. Técnicas de bocetado y prototipado. Interacciones enactivas"@es ;
+    vivo:overview "Andrés Rodríguez se graduó como Diseñador Industrial en la Universidad Nacional de La Plata en 1987. Ha realizado trabajos de diseño en Neuquén, Buenos Aires y La Plata. Realizó estudios de Magíster en Ingeniería de Software en la UNLP. Se ha desempeñado como docente en las Universidades de Buenos Aires, del Comahue y La Plata. Desde su incorporación a Lifia en el año 2000 ha participado en diversos proyectos como líder, experto en usabilidad y mentor."@es ;
+    rdfs:seeAlso <https://dblp.org/pid/150/5492-2.html>,
+        <https://scholar.google.com/citations?user=Y5VxjVoAAAAJ&hl=es> ;
+    foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/04/andres-rodriguez.jpg> ;
+    foaf:familyName "Rodríguez" ;
+    foaf:givenName "Andrés" ;
+    dblp:orcid "https://orcid.org/0000-0002-7600-6041"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/sergio-firmenich> a vivo:Person,
         foaf:Person ;
@@ -19608,115 +19674,6 @@ En el año 2002 se recibió de Analista de Computación, en 2005 de Licenciada e
         skos:Concept ;
     rdfs:label "artificial intelligence" ;
     skos:prefLabel "artificial intelligence" .
-
-<http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol> a vivo:Person,
-        foaf:Person ;
-    lifia:affiliations "LIFIA (Facultad de Informática, UNLP), CONICET" ;
-    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/38502065>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/38856919>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/41995821>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/48162037>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/antonelli_2020>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2019>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2020>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2025>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2025-1>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfhtverzinitclg15>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfhtverzinitclg15a>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconficsezimbellovclg17>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpjournalskerfortiercfrrg14>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/g_mez_torres_2019>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/ortiz_2024>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2016-agustina-m-zimbello-cecilia-challiol-experimen>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-alejandra-b-lliteras-cecilia-challiol-silvia-e>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-cecilia-challiol-alejandra-b-lliteras-silvia-e>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2018-cecilia-challiol-alejandra-b-lliteras-silvia-e>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2018-estevan-r-gomez-torres-cecilia-challiol-silvia-e>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2018-franco-m-borrelli-pedro-brost-cecilia-challiol>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2019-cecilia-challiol-franco-m-borrelli-facundo-i-m>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2019-estevan-gomez-torres-cecilia-challiol-silvia-e>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2019-facundo-i-mendiburu-cecilia-challiol-silvia-e>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2020-cynthia-l-corso-cecilia-challiol-mercedes-x-hu>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2020-cynthia-l-corso-cecilia-challiol-meta-framewor>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2020-estevan-gomez-torres-cecilia-challiol-silvia-e>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-cynthia-l-corso-cecilia-challiol-analisis-de-as>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-franco-m-borrelli-candela-m-rouaux-servat-fran>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-claudia-ortiz-cecilia-challiol-walter-panessi-c>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-claudia-ortiz-cecilia-challiol-walter-panessi-d>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-cynthia-l-corso-cecilia-challiol-centrarse-en>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-cynthia-l-corso-cecilia-challiol-explorando-el>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-franco-m-borrelli-candela-m-rouaux-servat-fran>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-walter-panessi-cecilia-challiol-claudia-ortiz-u>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2023-claudia-ortiz-cecilia-challiol-walter-panessi-d>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2023-franco-m-borrelli-cecilia-challiol-comparing-a>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-franco-m-borrelli-cecilia-challiol-object-recog>,
-        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-rosalina-amneris-nazarre-cecilia-challiol-ailen> ;
-    lifia:category "3" ;
-    lifia:coursesAtUNLP "Jefe de Trabajos Prácticos Ordinario con Dedicación Simple, en la Facultad de Informática (UNLP) desde 2010 hasta la actualidad. Profesora del curso de doctorado “Técnicas de Design Thinking para el diseño de aplicaciones móviles”." ;
-    lifia:highestDegree "Doctora en Ciencias Informáticas" ;
-    lifia:institutionalEmail "cecilia.challiol@lifia.info.unlp.edu.ar" ;
-    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/diseno-e-implementacion-de-una-herramienta-de-soporte-para-conducir-experiencias-de-co-diseno-en-modalidad-distribuida-usando-tecnicas-de-design-thinking>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/diseno-e-implementacion-de-una-solucion-que-brinde-soporte-para-testear-entornos-de-co-diseno-asistidos-por-tecnologia>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/introduccion-a-la-investigacion-cientifica-8>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/metaversos-y-mundos-virtuales-los-desafios-de-las-interfaces-no-tradicionales-1>,
-        <http://lifia.info.unlp.edu.ar/resource/beca/prototipado-in-situ-de-aplicaciones-moviles-sensibles-al-contexto> ;
-    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/abordaje-de-diseno-participativo-con-personas-neurodiversas-conducido-desde-la-vision-de-design-thinking-para-generar-soluciones-de-software>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/co-diseno-in-situ-y-creacion-de-juegos-moviles-basados-en-posicionamiento-en-espacios-indoor>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/coordinacion-de-grupos-en-juegos-moviles-basados-en-posicionamiento>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/cultibar-solucion-informatica-para-investigadores-para-facilitar-la-carga-muestral-de-biomasa-agua-y-radiacion>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/desarrollo-dirigido-por-modelos-para-el-uso-de-contextos-en-aplicaciones-moviles>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/diseno-centrado-en-las-personas-el-desafio-de-empatizar>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/enfoque-para-mejorar-la-interaccion-humano-computadora-en-sistemas-de-produccion-en-pymes-mediante-tecnicas-de-design-thinking>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/entorno-de-soporte-para-el-testeo-de-aplicaciones-de-co-diseno>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/experiencia-lectora-en-el-metaverso-el-caso-de-los-libros-de-pilar>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/exploracion-del-posicionamiento-indoor-mediante-el-reconocimiento-de-objetos-con-el-fin-de-co-disenar-y-co-testear-aplicaciones-moviles-sensibles-al-contexto>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/explorando-el-uso-de-nfc-en-un-juego-de-postas-basadas-en-posicionamiento>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/flowtion-herramienta-de-soporte-para-facilitar-experiencias-de-co-diseno-virtual>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/framework-para-brindar-soporte-a-la-integracion-de-diferentes-mecanismos-de-sensado-de-posicionamiento-en-aplicaciones-moviles>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/herramienta-para-co-disenar-aplicaciones-moviles-basadas-en-posicionamiento-in-situ-en-espacios-indoor>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/herramienta-para-facilitar-la-creacion-de-actividades-educativas-posicionadas>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/herramienta-prototipica-de-creacion-in-situ-de-plantillas-de-muestras-posicionadas>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/juego-movil-de-postas-basado-en-posicionamiento>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/modelo-de-gestos-considerando-contexto>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/modelo-de-reglas-para-juegos-moviles-basados-en-posicionamiento>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/prototipo-de-asistencia-indoor-dentro-un-supermercado>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/prototipo-informatico-de-simulacion-para-la-ensenanza-de-la-neuroanatomia-humana>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/solucion-de-modelado-para-el-posicionamiento-continuo-de-entregas-en-el-marco-de-repartos-a-domicilio>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/solucion-de-modelado-para-la-integracion-de-servicios-gastronomicos-contextuales>,
-        <http://lifia.info.unlp.edu.ar/resource/tesis/uso-de-codigos-bidimensionales-y-posicionamiento-para-el-reencuentro-de-mascotas-con-sus-duenos> ;
-    lifia:positionAtCIC "N/A" ;
-    lifia:positionAtCONICET "Investigador Asistente" ;
-    lifia:positionAtLab "Investigador" ;
-    lifia:positionAtUnlp "Profesor Adjunto" ;
-    lifia:sicadiCategory " DI2 (1/7/2024)" ;
-    lifia:slug "cecilia-challiol" ;
-    lifia:startDate "2005-01-01"^^xsd:date ;
-    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/companero-haptico-con-ia-generativa-para-ayudar-a-la-autorregulacion-de-personas-neurodivergentes>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/desarrollo-de-herramientas-inteligentes-para-la-gestion-y-toma-de-decisiones-en-el-ambito-de-la-ciencia-abierta-y-ciudadana>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/diseno-participativo-de-aplicaciones-de-ciencia-ciudadana-y-gestion-del-conocimiento>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/explorando-estrategias-de-interaccion-para-la-toma-de-datos-y-el-soporte-a-la-toma-de-decisiones-en-la-horticultura>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/metaversos-como-disenar-para-una-tecnologia-que-aun-no-existe>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/metaversos-y-mundos-virtuales-los-desafios-de-las-interfaces-no-tradicionales>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/ruc-aps-enhancing-and-implementing-knowledge-based-ict-solutions-within-high-risk-and-uncertain-conditions-for-agriculture-production-systems>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial>,
-        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-para-ingenieria-de-software-web-adaptable-y-agil-basada-en-modelos-con-soporte-semantico-y-de-crowdsourcing> ;
-    dcterms:created "2026-05-20T15:37:49.943000"^^xsd:dateTime ;
-    dcterms:identifier "c7492eb7-fa6f-4d35-9fe6-f68f5b88fad3" ;
-    dcterms:modified "2026-05-22T21:52:35.977000"^^xsd:dateTime ;
-    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/design-thinking>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction>,
-        <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
-    vivo:freetextKeyword """El área de experticia de Cecilia Challiol son las Aplicaciones Móviles desde hace más de 15 años, focalizándose en aquellas que consideran el contexto del usuario para brindar alguna información o servicios (sensibles al contexto). Buscando usar buenas prácticas de la Ingeniería de Software en una etapa temprana de diseño para lograr que estas aplicaciones evolucionen adaptándose a nuevos requerimientos. Además, en los últimos años ha explorado el co-diseño in-situ de este tipo de aplicaciones incorporando una visión más precisa del lugar físico donde luego estas se utilizan. Por otro lado, viene explorando además el co-diseño distribuido de este tipo de aplicaciones. \r
-Cecilia Challiol ha dirigido grupos de investigación desde hace 12 años, esto la ha motivado a ir incorporando nuevos y variados recursos para poder mejorar las dinámicas de equipo como así también incorporar nuevas técnicas en el aula. Se formó como facilitador de Aprendizaje Experiencial y Coach Ontológico con PNL (Programación Neuro-Lingüística); esto le ha permitido llevar a cabo experiencias vivenciales donde los participantes sean partícipes del proceso de co-diseño pero además puedan transpolar ese conocimiento a su vida profesional. Para estas experiencias de co-diseño propone un abordaje usando técnicas de Design Thinking."""@es ;
-    vivo:overview "Cecilia Challiol actualmente es Investigador Asistente de CONICET y docente de la Facultad de Informática (UNLP). Obtuvo su título de Licenciada en Informática en el año 2006 y el título de Doctora en Ciencias Informáticas en el año 2011, otorgados por la misma facultad en la que desarrolla actualmente tareas docentes. Su tema de la tesis doctoral fue “Desarrollo Dirigido por Modelos de Aplicación de Hipermedia Móvil”. En la formación continua que la Dra. Challiol realiza, se ha formado como facilitador de Aprendizaje Experiencial y Coach Ontológico con PNL (Programación Neuro-Lingüística). Se unió al LIFIA en el año 2005, y desde hace más de 12 años viene dirigiendo grupos de investigación. Su área de experticia son las Aplicaciones Móviles desde hace más de 15 años. En los últimos años ha explorado el co-diseño de este tipo de aplicaciones tanto in-situ como de forma distribuida; abordando así variadas formas de crear las mismas. Ha facilitado distintas experiencias de co-diseño donde se combinan distintos recursos, en particular técnicas de Design Thinking. "@es ;
-    rdfs:seeAlso <https://scholar.google.com.ar/citations?user=SgW6BNsAAAAJ&hl>,
-        <https://www.researchgate.net/profile/Cecilia-Challiol> ;
-    foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/10/foto_cecilia-challiol.jpg?w=141> ;
-    foaf:familyName "Challiol" ;
-    foaf:givenName "Cecilia" ;
-    dblp:orcid "https://orcid.org/0000-0001-5140-0264"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial> a vivo:Project ;
     lifia:coDirectorName "Alejandra Garrido" ;
@@ -19971,6 +19928,115 @@ Cecilia Challiol ha dirigido grupos de investigación desde hace 12 años, esto 
     dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction>,
         <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
     dcterms:title "Técnicas y herramientas para ingeniería de software web adaptable y ágil basada en modelos con soporte semántico y de crowdsourcing" .
+
+<http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol> a vivo:Person,
+        foaf:Person ;
+    lifia:affiliations "LIFIA (Facultad de Informática, UNLP), CONICET" ;
+    lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/38502065>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/38856919>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/41995821>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/48162037>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/antonelli_2020>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2019>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2020>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2025>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2025-1>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfhtverzinitclg15>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfhtverzinitclg15a>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconficsezimbellovclg17>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpjournalskerfortiercfrrg14>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/g_mez_torres_2019>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/ortiz_2024>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2016-agustina-m-zimbello-cecilia-challiol-experimen>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-alejandra-b-lliteras-cecilia-challiol-silvia-e>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-cecilia-challiol-alejandra-b-lliteras-silvia-e>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2018-cecilia-challiol-alejandra-b-lliteras-silvia-e>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2018-estevan-r-gomez-torres-cecilia-challiol-silvia-e>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2018-franco-m-borrelli-pedro-brost-cecilia-challiol>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2019-cecilia-challiol-franco-m-borrelli-facundo-i-m>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2019-estevan-gomez-torres-cecilia-challiol-silvia-e>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2019-facundo-i-mendiburu-cecilia-challiol-silvia-e>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2020-cynthia-l-corso-cecilia-challiol-mercedes-x-hu>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2020-cynthia-l-corso-cecilia-challiol-meta-framewor>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2020-estevan-gomez-torres-cecilia-challiol-silvia-e>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-cynthia-l-corso-cecilia-challiol-analisis-de-as>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2021-franco-m-borrelli-candela-m-rouaux-servat-fran>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-claudia-ortiz-cecilia-challiol-walter-panessi-c>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-claudia-ortiz-cecilia-challiol-walter-panessi-d>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-cynthia-l-corso-cecilia-challiol-centrarse-en>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-cynthia-l-corso-cecilia-challiol-explorando-el>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-franco-m-borrelli-candela-m-rouaux-servat-fran>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2022-walter-panessi-cecilia-challiol-claudia-ortiz-u>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2023-claudia-ortiz-cecilia-challiol-walter-panessi-d>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2023-franco-m-borrelli-cecilia-challiol-comparing-a>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-franco-m-borrelli-cecilia-challiol-object-recog>,
+        <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-rosalina-amneris-nazarre-cecilia-challiol-ailen> ;
+    lifia:category "3" ;
+    lifia:coursesAtUNLP "Jefe de Trabajos Prácticos Ordinario con Dedicación Simple, en la Facultad de Informática (UNLP) desde 2010 hasta la actualidad. Profesora del curso de doctorado “Técnicas de Design Thinking para el diseño de aplicaciones móviles”." ;
+    lifia:highestDegree "Doctora en Ciencias Informáticas" ;
+    lifia:institutionalEmail "cecilia.challiol@lifia.info.unlp.edu.ar" ;
+    lifia:involvedInScholarship <http://lifia.info.unlp.edu.ar/resource/beca/diseno-e-implementacion-de-una-herramienta-de-soporte-para-conducir-experiencias-de-co-diseno-en-modalidad-distribuida-usando-tecnicas-de-design-thinking>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/diseno-e-implementacion-de-una-solucion-que-brinde-soporte-para-testear-entornos-de-co-diseno-asistidos-por-tecnologia>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/introduccion-a-la-investigacion-cientifica-8>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/metaversos-y-mundos-virtuales-los-desafios-de-las-interfaces-no-tradicionales-1>,
+        <http://lifia.info.unlp.edu.ar/resource/beca/prototipado-in-situ-de-aplicaciones-moviles-sensibles-al-contexto> ;
+    lifia:involvedInThesis <http://lifia.info.unlp.edu.ar/resource/tesis/abordaje-de-diseno-participativo-con-personas-neurodiversas-conducido-desde-la-vision-de-design-thinking-para-generar-soluciones-de-software>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/co-diseno-in-situ-y-creacion-de-juegos-moviles-basados-en-posicionamiento-en-espacios-indoor>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/coordinacion-de-grupos-en-juegos-moviles-basados-en-posicionamiento>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/cultibar-solucion-informatica-para-investigadores-para-facilitar-la-carga-muestral-de-biomasa-agua-y-radiacion>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/desarrollo-dirigido-por-modelos-para-el-uso-de-contextos-en-aplicaciones-moviles>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/diseno-centrado-en-las-personas-el-desafio-de-empatizar>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/enfoque-para-mejorar-la-interaccion-humano-computadora-en-sistemas-de-produccion-en-pymes-mediante-tecnicas-de-design-thinking>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/entorno-de-soporte-para-el-testeo-de-aplicaciones-de-co-diseno>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/experiencia-lectora-en-el-metaverso-el-caso-de-los-libros-de-pilar>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/exploracion-del-posicionamiento-indoor-mediante-el-reconocimiento-de-objetos-con-el-fin-de-co-disenar-y-co-testear-aplicaciones-moviles-sensibles-al-contexto>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/explorando-el-uso-de-nfc-en-un-juego-de-postas-basadas-en-posicionamiento>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/flowtion-herramienta-de-soporte-para-facilitar-experiencias-de-co-diseno-virtual>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/framework-para-brindar-soporte-a-la-integracion-de-diferentes-mecanismos-de-sensado-de-posicionamiento-en-aplicaciones-moviles>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/herramienta-para-co-disenar-aplicaciones-moviles-basadas-en-posicionamiento-in-situ-en-espacios-indoor>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/herramienta-para-facilitar-la-creacion-de-actividades-educativas-posicionadas>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/herramienta-prototipica-de-creacion-in-situ-de-plantillas-de-muestras-posicionadas>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/juego-movil-de-postas-basado-en-posicionamiento>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/modelo-de-gestos-considerando-contexto>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/modelo-de-reglas-para-juegos-moviles-basados-en-posicionamiento>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/prototipo-de-asistencia-indoor-dentro-un-supermercado>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/prototipo-informatico-de-simulacion-para-la-ensenanza-de-la-neuroanatomia-humana>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/solucion-de-modelado-para-el-posicionamiento-continuo-de-entregas-en-el-marco-de-repartos-a-domicilio>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/solucion-de-modelado-para-la-integracion-de-servicios-gastronomicos-contextuales>,
+        <http://lifia.info.unlp.edu.ar/resource/tesis/uso-de-codigos-bidimensionales-y-posicionamiento-para-el-reencuentro-de-mascotas-con-sus-duenos> ;
+    lifia:positionAtCIC "N/A" ;
+    lifia:positionAtCONICET "Investigador Asistente" ;
+    lifia:positionAtLab "Investigador" ;
+    lifia:positionAtUnlp "Profesor Adjunto" ;
+    lifia:sicadiCategory " DI2 (1/7/2024)" ;
+    lifia:slug "cecilia-challiol" ;
+    lifia:startDate "2005-01-01"^^xsd:date ;
+    lifia:worksOnProject <http://lifia.info.unlp.edu.ar/resource/proyecto/companero-haptico-con-ia-generativa-para-ayudar-a-la-autorregulacion-de-personas-neurodivergentes>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/desarrollo-de-herramientas-inteligentes-para-la-gestion-y-toma-de-decisiones-en-el-ambito-de-la-ciencia-abierta-y-ciudadana>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/diseno-participativo-de-aplicaciones-de-ciencia-ciudadana-y-gestion-del-conocimiento>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/explorando-estrategias-de-interaccion-para-la-toma-de-datos-y-el-soporte-a-la-toma-de-decisiones-en-la-horticultura>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-agil-y-conducida-por-modelos-de-software-adaptable-para-la-web-del-conocimiento>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ingenieria-de-software-centrada-en-el-usuario-de-plataformas-de-participacion-ciudadana-motorizadas-por-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/metaversos-como-disenar-para-una-tecnologia-que-aun-no-existe>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/metaversos-y-mundos-virtuales-los-desafios-de-las-interfaces-no-tradicionales>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/ruc-aps-enhancing-and-implementing-knowledge-based-ict-solutions-within-high-risk-and-uncertain-conditions-for-agriculture-production-systems>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-de-ingenieria-de-software-para-el-desarrollo-agil-de-soluciones-colaborativas-basadas-en-crowdsourcing-y-colaboracion-modelos-e-inteligencia-artificial>,
+        <http://lifia.info.unlp.edu.ar/resource/proyecto/tecnicas-y-herramientas-para-ingenieria-de-software-web-adaptable-y-agil-basada-en-modelos-con-soporte-semantico-y-de-crowdsourcing> ;
+    dcterms:created "2026-05-20T15:37:49.943000"^^xsd:dateTime ;
+    dcterms:identifier "c7492eb7-fa6f-4d35-9fe6-f68f5b88fad3" ;
+    dcterms:modified "2026-05-22T21:52:35.977000"^^xsd:dateTime ;
+    dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/design-thinking>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction>,
+        <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
+    vivo:freetextKeyword """El área de experticia de Cecilia Challiol son las Aplicaciones Móviles desde hace más de 15 años, focalizándose en aquellas que consideran el contexto del usuario para brindar alguna información o servicios (sensibles al contexto). Buscando usar buenas prácticas de la Ingeniería de Software en una etapa temprana de diseño para lograr que estas aplicaciones evolucionen adaptándose a nuevos requerimientos. Además, en los últimos años ha explorado el co-diseño in-situ de este tipo de aplicaciones incorporando una visión más precisa del lugar físico donde luego estas se utilizan. Por otro lado, viene explorando además el co-diseño distribuido de este tipo de aplicaciones. \r
+Cecilia Challiol ha dirigido grupos de investigación desde hace 12 años, esto la ha motivado a ir incorporando nuevos y variados recursos para poder mejorar las dinámicas de equipo como así también incorporar nuevas técnicas en el aula. Se formó como facilitador de Aprendizaje Experiencial y Coach Ontológico con PNL (Programación Neuro-Lingüística); esto le ha permitido llevar a cabo experiencias vivenciales donde los participantes sean partícipes del proceso de co-diseño pero además puedan transpolar ese conocimiento a su vida profesional. Para estas experiencias de co-diseño propone un abordaje usando técnicas de Design Thinking."""@es ;
+    vivo:overview "Cecilia Challiol actualmente es Investigador Asistente de CONICET y docente de la Facultad de Informática (UNLP). Obtuvo su título de Licenciada en Informática en el año 2006 y el título de Doctora en Ciencias Informáticas en el año 2011, otorgados por la misma facultad en la que desarrolla actualmente tareas docentes. Su tema de la tesis doctoral fue “Desarrollo Dirigido por Modelos de Aplicación de Hipermedia Móvil”. En la formación continua que la Dra. Challiol realiza, se ha formado como facilitador de Aprendizaje Experiencial y Coach Ontológico con PNL (Programación Neuro-Lingüística). Se unió al LIFIA en el año 2005, y desde hace más de 12 años viene dirigiendo grupos de investigación. Su área de experticia son las Aplicaciones Móviles desde hace más de 15 años. En los últimos años ha explorado el co-diseño de este tipo de aplicaciones tanto in-situ como de forma distribuida; abordando así variadas formas de crear las mismas. Ha facilitado distintas experiencias de co-diseño donde se combinan distintos recursos, en particular técnicas de Design Thinking. "@es ;
+    rdfs:seeAlso <https://scholar.google.com.ar/citations?user=SgW6BNsAAAAJ&hl>,
+        <https://www.researchgate.net/profile/Cecilia-Challiol> ;
+    foaf:depiction <https://lifia.info.unlp.edu.ar/wp-content/uploads/2021/10/foto_cecilia-challiol.jpg?w=141> ;
+    foaf:familyName "Challiol" ;
+    foaf:givenName "Cecilia" ;
+    dblp:orcid "https://orcid.org/0000-0001-5140-0264"^^xsd:anyURI .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido> a vivo:Person,
         foaf:Person ;
@@ -20827,7 +20893,7 @@ Software and its engineering"""@es ;
         <http://lifia.info.unlp.edu.ar/resource/tesis/resolucion-de-preguntas-espacio-temporales-en-grafos-de-conocimiento-dinamicos>,
         <http://lifia.info.unlp.edu.ar/resource/tesis/un-enfoque-para-la-deteccion-de-pares-atributo-valor-en-descripciones-en-lenguaje-natural-en-el-contexto-de-la-oferta-inmobiliaria> ;
     lifia:positionAtCIC "Investigador Asociado" ;
-    lifia:positionAtLab "Researcher" ;
+    lifia:positionAtLab "Profesor Titular" ;
     lifia:positionAtUnlp "Profesor Titular" ;
     lifia:sicadiCategory "DI1 " ;
     lifia:slug "diego-torres" ;
@@ -20881,6 +20947,11 @@ Applied computing > Computers in other domains > Agriculture"""@es ;
     foaf:givenName "Diego " ;
     foaf:mbox "phd.diego.torres@gmail.com" ;
     dblp:orcid "https://orcid.org/0000-0001-7533-0133"^^xsd:anyURI .
+
+<http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction> a cso:Topic,
+        skos:Concept ;
+    rdfs:label "human-computer interaction" ;
+    skos:prefLabel "human-computer interaction" .
 
 <http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez> a vivo:Person,
         foaf:Person ;
@@ -21091,9 +21162,4 @@ Human-centered computing > Collaborative and social computing > Collaborative an
     foaf:givenName "Alejandro" ;
     foaf:homepage <https://lifia.info.unlp.edu.ar/dr-alejandro-fernandez/> ;
     dblp:orcid "https://orcid.org/0000-0002-7968-6871"^^xsd:anyURI .
-
-<http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction> a cso:Topic,
-        skos:Concept ;
-    rdfs:label "human-computer interaction" ;
-    skos:prefLabel "human-computer interaction" .
 

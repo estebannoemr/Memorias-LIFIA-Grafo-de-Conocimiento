@@ -413,14 +413,21 @@ def emit_entity(g, table, row, person_index, stats=None):
         add_literal(g, s, litpred, val, "str")          # se conserva el literal
 
         for name in split_persons(val):
-            pu = resolve_person(name, person_index)      # se intenta resolver a un Member
+            partes = [name]
+            # si el texto entero no coincide y tiene comas, es una lista ("Diego Torres, Herve Panetto"):
+            # se prueba cada parte. si coincide entero ("Garrido, Alejandra") se deja como está
+            if "," in name and resolve_person(name, person_index) is None:
+                partes = [_clean_name(p) for p in name.split(",") if p.strip()]
 
-            if pu is not None:  # si se encontró un miembro
-                g.add((s, objpred, pu))  # agrega la propiedad de objeto
+            for parte in partes:
+                pu = resolve_person(parte, person_index)      # se intenta resolver a un Member
 
-                if stats is not None:
-                    stats["resolved"] = stats.get("resolved", 0) + 1  # aumenta el número de miembros resueltos
+                if pu is not None:  # si se encontró un miembro
+                    g.add((s, objpred, pu))  # agrega la propiedad de objeto
 
-            elif stats is not None:  # si no se encontró un miembro
-                stats["unresolved"] = stats.get("unresolved", 0) + 1  # aumenta el número de miembros no resueltos
+                    if stats is not None:
+                        stats["resolved"] = stats.get("resolved", 0) + 1  # aumenta el número de miembros resueltos
+
+                elif stats is not None:  # si no se encontró un miembro
+                    stats["unresolved"] = stats.get("unresolved", 0) + 1  # aumenta el número de miembros no resueltos
     return s

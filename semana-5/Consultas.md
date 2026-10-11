@@ -1,6 +1,6 @@
 # Consultas SPARQL - Memorias del LIFIA
 
-Consultas de ejemplo sobre el grafo, una por una. Se ejecutan en el Workbench de GraphDB (http://localhost:7200 -> SPARQL) sobre el repositorio `memorias-repo`. Cada una va con su equivalente en SQL y el resultado esperado sobre los datos actuales (19.853 tripletas sin razonar).
+Consultas de ejemplo sobre el grafo, una por una. Se ejecutan en el Workbench de GraphDB (http://localhost:7200 -> SPARQL) sobre el repositorio `memorias-repo`. Cada una va con su equivalente en SQL y el resultado esperado sobre los datos actuales (19.700 tripletas sin razonar).
 
 Los prefijos van al principio de cada consulta:
 
@@ -145,7 +145,7 @@ Para comprobar el efecto del razonamiento, se ejecuta la misma consulta con la o
 SELECT (COUNT(*) AS ?tripletas) WHERE { ?s ?p ?o }
 ```
 
-Con "Include inferred" desactivad, el resultado corresponde a las tripletas explícitamente almacenadas en el repositorio: 19.853 entre datos y ontología.
+Con "Include inferred" desactivado, el resultado corresponde a las tripletas explícitamente almacenadas en el repositorio: 19.700 entre datos y ontología.
 
 Al activar "Include inferred", el resultado incluye además las tripletas que el razonador puede deducir a partir de las relaciones y axiomas definidos en la ontología, por lo que el total aumenta. La cantidad exacta depende del ruleset configurado en el repositorio y se puede consultar directamente en GraphDB. El total con inferidas también se puede ver por consola con `curl -s http://localhost:7200/repositories/memorias-repo/size`.
 
@@ -163,10 +163,10 @@ La siguiente consulta permite observar directamente esta diferencia:
 SELECT (COUNT(*) AS ?relacionesGenericasInferidas) WHERE { ?x dcterms:relation ?y }
 ```
 
-**Resultado esperado:** 0 sin razonar, 3063 con razonamiento.
+**Resultado esperado:** 0 sin razonar, 3068 con razonamiento.
 
 
-Esto muestra una diferencia importante respecto de la base relacional: las 3063 relaciones genéricas no fueron cargadas explícitamente por el ETL ni existen como una columna o tabla en PostgreSQL. Se obtienen a partir de la semántica definida en la ontología. El razonador toma las relaciones específicas (`lifia:authorOf`, participación en proyectos, dirección de tesis, etc) y las relaciona con el concepto más general `dcterms:relation`.
+Esto muestra una diferencia importante respecto de la base relacional: las 3068 relaciones genéricas no fueron cargadas explícitamente por el ETL ni existen como una columna o tabla en PostgreSQL. Se obtienen a partir de la semántica definida en la ontología. El razonador toma las relaciones específicas (`lifia:authorOf`, participación en proyectos, dirección de tesis, etc) y las relaciona con el concepto más general `dcterms:relation`.
 
 
 ---
@@ -178,7 +178,32 @@ Aclaración sobre las otras inferencias posibles:
 
 - Las equivalencias de clase con vocabularios externos (DBLP, FOAF, schema.org) tampoco generan nuevas instancias en este repositorio, ya que las ontologías externas correspondientes no están importadas.
 
-Por eso, el ejemplo utilizado para mostrar la inferencia es `dcterms:relation`: al ejecutar la consulta con el razonamiento desactivado se obtienen 0 relaciones explícitas, mientras que con el razonamiento activado se obtienen 3063, producto de las relaciones específicas declaradas como subpropiedades de `dcterms:relation`.
+Por eso, el ejemplo utilizado para mostrar la inferencia es `dcterms:relation`: al ejecutar la consulta con el razonamiento desactivado se obtienen 0 relaciones explícitas, mientras que con el razonamiento activado se obtienen 3068, producto de las relaciones específicas declaradas como subpropiedades de `dcterms:relation`.
+
+---
+
+## C7 - Un tema escrito de distintas formas
+
+Pregunta: ¿qué recursos tienen el tema "inteligencia artificial"?
+
+En la base, las palabras clave de las tesis están en la columna `keywords` como texto, y este tema aparece escrito de 3 formas: "Inteligencia Artificial", "Inteligencia artificial" e "inteligencia artificial". La carga las normaliza y quedan en un único nodo, `res:tema/inteligencia-artificial`.
+```sparql
+SELECT (COUNT(DISTINCT ?x) AS ?recursos) WHERE {
+  ?x dcterms:subject <http://lifia.info.unlp.edu.ar/resource/tema/inteligencia-artificial> .
+}
+```
+
+**Resultado esperado:** 8.
+
+**SQL equivalente:**
+```sql
+SELECT COUNT(*) FROM "Thesis" WHERE keywords LIKE '%Inteligencia Artificial%';          -- 2
+SELECT COUNT(*) FROM "Thesis" WHERE lower(keywords) LIKE '%inteligencia artificial%';   -- 8
+```
+
+Buscando el texto tal cual, SQL encuentra 2 de las 8 -> para llegar a 8 hay que normalizar en la consulta (`lower`), y para buscar en toda la base habría que repetirlo en las 5 tablas. En SPARQL la normalización ya se hizo en la carga.
+
+La normalización une mayúsculas y tildes, pero no traducciones: "artificial intelligence" es otro nodo. Para unirlos haría falta un enlace explícito, por ejemplo `skos:exactMatch`, que queda como trabajo futuro.
 
 ---
 
@@ -188,8 +213,8 @@ De estas consultas se pueden sacar 3 cosas.
 
 La 1° es que la migración a RDF quedó fiel, ya que en C1, C2, C3 y C5, la consulta SPARQL da exactamente los mismos números que su equivalente en SQL sobre la base original. O sea, al pasar los datos al grafo no se perdió ni se inventó nada. Y como el ORCID se modeló con un literal (`dblp:orcid`) y no con `owl:sameAs`, los conteos dan igual con el razonador prendido o apagado, sin duplicar personas (cosa que me había pasado y tuve que arreglarlo).
 
-La 2° es sobre la forma de consultar. Preguntas que en SQL necesitan varios JOINs en SPARQL se escriben como un recorrido por el grafo. El caso más claro es C5 -> 3 JOINs sobre 2 tablas de unión contra 1 único patrón "Persona -> Proyecto -> Publicación". Esto hace que la consulta refleje de forma más directa las relaciones que existen en el modelo.
+La 2° es sobre la forma de consultar. Preguntas que en SQL necesitan varios JOINs en SPARQL se escriben como un recorrido por el grafo. El caso más claro es C5 -> 3 JOINs sobre 2 tablas de unión contra 1 único patrón "Persona -> Proyecto -> Publicación". Esto hace que la consulta refleje de forma más directa las relaciones que existen en el modelo. Algo parecido pasa con los temas (C7): como la carga los normalizó en un único nodo, buscar uno es un solo patrón, mientras que en SQL hay que normalizar el texto en la consulta y recorrer todas las tablas que tienen etiquetas. Con una búsqueda literal, SQL devuelve 2 de las 8 tesis.
 
-La 3° es la **inferencia**, que es donde aparece el aporte semántico del modelo. Con el razonador activado, el grafo puede responder relaciones que no fueron almacenadas explícitamente, sino que se deducen a partir de la ontología. El ejemplo mostrado en C6 es `dcterms:relation`, que pasa de 0 relaciones explícitas a 3063 inferidas. Ahí ya no hay un SQL equivalente posible (o si lo hay, es muy complicado de plantear), porque esa información no existe en la base relacional -> es lo que agrega representar el dominio con semántica.
+La 3° es la **inferencia**, que es donde aparece el aporte semántico del modelo. Con el razonador activado, el grafo puede responder relaciones que no fueron almacenadas explícitamente, sino que se deducen a partir de la ontología. El ejemplo mostrado en C6 es `dcterms:relation`, que pasa de 0 relaciones explícitas a 3068 inferidas. Ahí ya no hay un SQL equivalente posible (o si lo hay, es muy complicado de plantear), porque esa información no existe en la base relacional -> es lo que agrega representar el dominio con semántica.
 
 **Sumado al pipeline CDC, que mantiene el grafo actualizado ante los cambios del portal, el RESULTADO es un Grafo de Conocimiento que conserva la información de la base original, permite recorrer sus relaciones mediante SPARQL y agrega relaciones inferidas a partir de la semántica definida en la ontología**.

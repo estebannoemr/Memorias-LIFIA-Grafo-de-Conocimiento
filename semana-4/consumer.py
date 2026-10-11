@@ -29,6 +29,7 @@ Requisitos:
 
 import os
 import json
+import time
 import requests
 import psycopg2
 import psycopg2.extras
@@ -47,6 +48,9 @@ STATEMENTS      = "%s/repositories/%s/statements" % (GRAPHDB_URL, GRAPHDB_REPO)
 # un tópico de kafka por tabla: memorias.public.Member, memorias.public.Project, ...
 TOPIC_PATTERN   = r"^memorias\.public\..+"
 IDENTIFIER      = str(M.DCTERMS.identifier)
+
+# segundos de espera antes de reintentar un evento cuando graphdb no responde
+ESPERA_REINTENTO = 5
 
 # para las tablas de join necesito el nombre de la tabla a partir del tipo de iri
 TABLE_BY_TIPO = {v: k for k, v in M.TIPO.items()}
@@ -171,14 +175,25 @@ def handle(conn, person_index, table, op, before, after):
             sparql_update("DELETE DATA {\n%s}" % g.serialize(format="nt"))
 
 
+def es_falla_de_graphdb(e):
+    # graphdb caído o sin responder: en ese caso conviene reintentar, no saltear el evento
+    if isinstance(e, (requests.exceptions.ConnectionError, requests.exceptions.Timeout)):
+        return True
+    return (isinstance(e, requests.exceptions.HTTPError) and e.response is not None
+            and e.response.status_code >= 500)
+
+
 def main():
     from confluent_kafka import Consumer
     conn = pg()
     person_index = load_person_index(conn)
 
-    # me conecto a kafka y me suscribo a todos los tópicos memorias.public.*
+    # me conecto a kafka y me suscribo a todos los tópicos memorias.public.*.
+    # el commit automático está apagado: cada mensaje se confirma a mano, recién
+    # cuando el cambio quedó aplicado en graphdb (así no se pierde si graphdb está caído)
     consumer = Consumer({"bootstrap.servers": KAFKA_BOOTSTRAP,
-                         "group.id": "memorias-rdf-consumer", "auto.offset.reset": "earliest"})
+                         "group.id": "memorias-rdf-consumer", "auto.offset.reset": "earliest",
+                         "enable.auto.commit": False})
     consumer.subscribe([TOPIC_PATTERN])
 
     print("Escuchando %s ... (Ctrl+C para cortar)" % TOPIC_PATTERN)
@@ -195,15 +210,28 @@ def main():
 
             # de qué tabla vino el cambio
             table = (env.get("source") or {}).get("table") or msg.topic().split(".")[-1]
-            try:
-                handle(conn, person_index, table, op, env.get("before"), env.get("after"))
-                print("  %s %-20s ok" % (op, table))
+            while True:
+                try:
+                    handle(conn, person_index, table, op, env.get("before"), env.get("after"))
+                    print("  %s %-20s ok" % (op, table))
 
-                # si cambió un Member, refresco el índice de resolución para que quede actualizado
-                if table == "Member":
-                    person_index.clear(); person_index.update(load_person_index(conn))
-            except Exception as e:
-                print("  ERROR %s/%s: %s" % (table, op, e))
+                    # si cambió un Member, refresco el índice de resolución para que quede actualizado
+                    if table == "Member":
+                        person_index.clear(); person_index.update(load_person_index(conn))
+                    break
+                except Exception as e:
+                    if es_falla_de_graphdb(e):
+                        # graphdb no responde: espero y vuelvo a intentar el mismo evento
+                        print("  GraphDB no responde (%s), reintento en %d s..." % (type(e).__name__, ESPERA_REINTENTO))
+                        time.sleep(ESPERA_REINTENTO)
+                        continue
+                    # otro error (dato raro, bug): lo muestro y sigo, para no trabar la cola
+                    print("  ERROR %s/%s: %s" % (table, op, e))
+                    break
+
+            # recién ahora confirmo el mensaje en kafka: si el programa se corta antes,
+            # al volver a arrancar el evento se procesa de nuevo
+            consumer.commit(message=msg, asynchronous=False)
 
     except KeyboardInterrupt:
         pass

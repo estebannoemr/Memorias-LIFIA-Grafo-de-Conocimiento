@@ -118,7 +118,7 @@ Prerrequisitos (una sola vez): PostgreSQL 18 con la base `new_memorias` restaura
 **1. Entorno de Python**
 ```bash
 python -m venv venv
-source venv/bin/activate
+source venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
@@ -129,6 +129,12 @@ export PGPASSWORD=postgres
 python carga_inicial.py
 ```
 Debería imprimir los conteos por entidad y ~19.000 tripletas.
+
+Resolución de nombres: en proyectos, tesis y becas -> los directores / estudiantes están escritos como texto, no como el id de una persona.
+
+La carga busca cada nombre entre los integrantes del LIFIA y, si coincide, agrega un enlace a esa persona (por ejemplo lifia:hasDirector).
+
+Los 316 sin resolver son en su mayoría personas externas que no están en la tabla de Member, y algunos son Member escritos de otra forma, como 'Silvia E. Gordillo'. En esos casos el nombre igual se guarda como texto, así que no se pierde el dato. La coincidencia es exacta a propósito: prefiero dejar un nombre sin enlazar antes que enlazarlo a la persona equivocada.
 
 **3. Levantar la infraestructura (Kafka + Debezium + GraphDB)**
 ```bash
@@ -163,6 +169,8 @@ curl -i -X POST -H "Content-Type: text/turtle" --data-binary @graphdb-from-docke
 ```
 El estado del conector debería quedar en `RUNNING`.
 
+Si se quiere dar de baja, se puede hacer con `curl -X DELETE http://localhost:8083/connectors/memorias-connector`.
+
 **6. Correr el consumidor (sincronización en vivo)**
 ```bash
 cd ../semana-4
@@ -174,17 +182,17 @@ Queda escuchando los cambios. Dejar esta terminal abierta.
 
 Primero ver qué responde cada una de estas consultas (para luego comparar):
 
-*Ejemplo 1*:
+*Ejemplo 1* (busca todos los investigadores/personas que ocupan un cargo de nivel 'Senior' en el laboratorio):
 ```bash
 curl -s -G http://localhost:7200/repositories/memorias-repo -H "Accept: text/csv" --data-urlencode "query=PREFIX lifia:<http://lifia.info.unlp.edu.ar/ontology#> SELECT ?p ?cargo WHERE { ?p lifia:positionAtLab ?cargo . FILTER(CONTAINS(?cargo,'Senior')) }"
 ```
 
-*Ejemplo 2*:
+*Ejemplo 2* (busca el nombre y el cargo dentro del laboratorio para la persona cuyo nombre contiene 'Diego' y su apellido es 'Torres'):
 ```bash
 curl -s -G http://localhost:7200/repositories/memorias-repo -H "Accept: text/csv" --data-urlencode "query=PREFIX lifia:<http://lifia.info.unlp.edu.ar/ontology#> PREFIX foaf:<http://xmlns.com/foaf/0.1/> SELECT ?nombre ?cargo WHERE { ?p foaf:givenName ?nombre ; foaf:familyName 'Torres' ; lifia:positionAtLab ?cargo FILTER(CONTAINS(?nombre,'Diego')) }"
 ```
 
-*Ejemplo 3*:
+*Ejemplo 3* (busca todos los proyectos/publicaciones financiados por una agencia de financiamiento que contenga la sigla 'CONICET'):
 ```bash
 curl -s -G http://localhost:7200/repositories/memorias-repo -H "Accept: text/csv" --data-urlencode "query=PREFIX lifia:<http://lifia.info.unlp.edu.ar/ontology#> SELECT ?p ?agencia WHERE { ?p lifia:fundingAgency ?agencia . FILTER(CONTAINS(?agencia,'CONICET')) }"
 ```
@@ -281,6 +289,45 @@ SELECT ?titulo ?agencia WHERE {
   FILTER(CONTAINS(?titulo, "Ciencia Ciudadana"))
 }
 ```
+
+<br>
+
+---
+
+**8. Demostrar que no se pierden cambios si GraphDB está caído**
+
+El consumer confirma cada mensaje de Kafka recién cuando el cambio quedó en GraphDB. Si GraphDB no responde, reintenta el mismo evento cada 5 segundos hasta que vuelva.
+
+Con el consumer corriendo (paso 6), en OTRA terminal apagar GraphDB:
+```bash
+docker stop memorias-graphdb
+```
+
+Hacer un cambio en la base (por ejemplo, devolver a Gustavo su cargo original):
+```bash
+psql -U postgres -h localhost -d new_memorias -c "UPDATE public.\"Member\" SET \"positionAtLab\"='Investigador' WHERE slug='gustavo-rossi';"
+```
+
+Desde bash en Windows:
+```bash
+"/c/Program Files/PostgreSQL/18/bin/psql.exe" -U postgres -h localhost -d new_memorias -c "UPDATE public.\"Member\" SET \"positionAtLab\"='Investigador' WHERE slug='gustavo-rossi';"
+```
+
+En la terminal del consumer aparece cada 5 segundos:
+```
+  GraphDB no responde (ConnectionError), reintento en 5 s...
+```
+
+Volver a levantar GraphDB:
+```bash
+docker start memorias-graphdb
+```
+
+Cuando GraphDB termina de arrancar (unos 20-30 s), el consumer aplica el cambio pendiente y muestra `u  Member  ok`. Verificar que llegó:
+```bash
+curl -s -G http://localhost:7200/repositories/memorias-repo -H "Accept: text/csv" --data-urlencode "query=PREFIX lifia:<http://lifia.info.unlp.edu.ar/ontology#> SELECT ?cargo WHERE { <http://lifia.info.unlp.edu.ar/resource/persona/gustavo-rossi> lifia:positionAtLab ?cargo }"
+```
+Devuelve `Investigador`: el cambio que se hizo con GraphDB apagado no se perdió.
 
 ---
 

@@ -19,6 +19,8 @@ Archivos:
 
 Para las tablas de unión, un create agrega la propiedad de objeto entre los dos recursos y un delete la quita.
 
+Cada mensaje de Kafka se confirma recién cuando el cambio quedó aplicado en GraphDB (el commit automático está desactivado). Si GraphDB no responde, el consumer muestra "GraphDB no responde, reintento en 5 s..." y vuelve a intentar el mismo evento hasta que funcione, así no se pierde ningún cambio. Si el consumer se corta antes de confirmar, al volver a arrancar procesa ese evento de nuevo (no genera duplicados, porque insertar una tripleta que ya existe no la repite).
+
 ---
 
 ## Requisitos previos
