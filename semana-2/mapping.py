@@ -263,7 +263,7 @@ JOINS = {
 
 # ------ clases por entidad
 CLASSES = {
-    "Member":      [FOAF.Person, VIVO.Person],
+    "Member":      [FOAF.Person],
     "Project":     [VIVO.Project],
     "Publication": [DBLP.Publication, BIBO.Document],
     "Scholarship": [VIVO.Grant],

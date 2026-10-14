@@ -212,8 +212,7 @@
         <http://lifia.info.unlp.edu.ar/resource/tema/logic> ;
     dcterms:title "Técnicas de Inteligencia artificial basadas en una integración de la lógica simbólica y no-simbólica" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/sergio-katz> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/sergio-katz> a foaf:Person ;
     lifia:positionAtLab "Personal de apoyo" ;
     lifia:slug "sergio-katz" ;
     lifia:startDate "1988-01-01"^^xsd:date ;
@@ -843,8 +842,7 @@
     dcterms:modified "2026-05-22T21:52:07.558000"^^xsd:dateTime ;
     dcterms:title "Relevamiento y análisis del estado del arte en prácticas de requerimientos en la Argentina" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/carine-breidy> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/carine-breidy> a foaf:Person ;
     lifia:affiliations "CRAN, Universite de Lorraine" ;
     lifia:highestDegree "Máster en Ingeniería Estadística y Numérica - Ciencia de Datos, Universidad de Lille." ;
     lifia:institutionalEmail "carine.breidy@lifia.info.unlp.edu.ar" ;
@@ -869,8 +867,7 @@ Experiencia docente: Profesor particular de matemáticas desde 2020, impartiendo
     foaf:givenName "Carine" ;
     foaf:mbox "carinebreidy@gmail.com " .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/thomas-pallet> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/thomas-pallet> a foaf:Person ;
     lifia:affiliations "CRAN, Universite de Lorraine" ;
     lifia:institutionalEmail "thomas.pallet@lifia.info.unlp.edu.ar" ;
     lifia:positionAtCIC "N/A" ;
@@ -6899,8 +6896,7 @@ Se implementó un prototipo funcional el cual permitió observar el comportamien
         <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction> ;
     dcterms:title "Técnicas de Procesamiento de Lenguaje Natural (NLP) e Inteligencia Artificial (IA) para la producción de escritos judiciales en Lenguaje Claro" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/matias-menni> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/matias-menni> a foaf:Person ;
     lifia:endDate "2024-12-31"^^xsd:date ;
     lifia:highestDegree "Doctor" ;
     lifia:positionAtCIC "N/A" ;
@@ -10348,8 +10344,7 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
         <http://lifia.info.unlp.edu.ar/resource/tema/human-ai-collaboration> ;
     dcterms:title "Técnicas de NLP e IA aplicadas a escritos judiciales" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/javier-bazzocco> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/javier-bazzocco> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/lliteras_2021> ;
     lifia:coursesAtUNLP "Bases de datos I y II (Licenciatura en Sistemas)" ;
     lifia:endDate "2024-12-31"^^xsd:date ;
@@ -10371,8 +10366,7 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     foaf:familyName "Bazzocco" ;
     foaf:givenName "Javier" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/jonathan-martin> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/jonathan-martin> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfscccmartintf17> ;
     lifia:endDate "2022-03-15"^^xsd:date ;
     lifia:highestDegree "Licenciado en Sistemas" ;
@@ -13218,8 +13212,7 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     dcterms:modified "2026-05-22T21:51:43.388000"^^xsd:dateTime ;
     dcterms:title "Jonathan Martin (UNLP)" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/carlos-nusch> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/carlos-nusch> a foaf:Person ;
     lifia:affiliations "Dirección PREBI-SEDICI" ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/51958845>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/52541310>,
@@ -13243,8 +13236,7 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     foaf:familyName "Nusch" ;
     foaf:givenName "Carlos" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/florencia-riva> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/florencia-riva> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/48162037>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/tacuri_2025> ;
     lifia:highestDegree "Lic. en Sociología" ;
@@ -13271,8 +13263,7 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     foaf:givenName "Florencia" ;
     dblp:orcid "https://orcid.org/0009-0007-0607-9855"^^xsd:anyURI .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/martin-urbieta> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/martin-urbieta> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/82979690>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/urbieta_2023>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/urbieta_2023-1>,
@@ -13294,8 +13285,7 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     foaf:familyName "Urbieta" ;
     foaf:givenName "Martín" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/milagros-jacinto> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/milagros-jacinto> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/reabtic> ;
     lifia:endDate "2023-12-31"^^xsd:date ;
     lifia:institutionalEmail "mili.aylen.j@gmail.com" ;
@@ -13313,8 +13303,7 @@ Sobre estas formalizaciones se construyó un prototipo funcional que demuestra e
     foaf:givenName "Milagros" ;
     foaf:mbox "mili.aylen.j@gmail.com" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/nicolas-ruffolo> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/nicolas-ruffolo> a foaf:Person ;
     lifia:institutionalEmail "nruffolo@lifia.info.unlp.edu.ar" ;
     lifia:positionAtLab "Estudiante de grado" ;
     lifia:positionAtUnlp "Ayudante Diplomado" ;
@@ -14906,8 +14895,7 @@ documentos.""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/quantum-computing> ;
     dcterms:title "QML - Aplicabilidad de técnicas de aprendizaje automático sobre la computación cuántica" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/cesar-a-collazos> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/cesar-a-collazos> a foaf:Person ;
     lifia:affiliations "Departamento de Sistemas, Universidad del Cauca" ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/101007978-3-031-91690-8_14>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/lopez_erazo_2026>,
@@ -14933,8 +14921,7 @@ documentos.""" ;
     foaf:givenName "Cesar A." ;
     dblp:orcid "https://orcid.org/0000-0002-7099-8131"^^xsd:anyURI .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/martin-moschettoni> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/martin-moschettoni> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/reabtic> ;
     lifia:endDate "2024-12-31"^^xsd:date ;
     lifia:institutionalEmail "moschettonimartin@hotmail.com" ;
@@ -14953,8 +14940,7 @@ documentos.""" ;
     foaf:givenName "Martin" ;
     foaf:mbox "moschettonimartin@hotmail.com" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/rodolfo-gonzalez> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/rodolfo-gonzalez> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfiseudgonzalezfr19>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2020-rodolfo-gonzalez-sergio-firmenich-alejandro-fern>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/sergio_firmenich_collaborative_2021> ;
@@ -15794,8 +15780,7 @@ documentos.""" ;
 <http://lifia.info.unlp.edu.ar/resource/venue/web-engineering-14th-international-conference-icwe-2014-toulouse-franc> a bibo:Conference ;
     rdfs:label "Web Engineering, 14th International Conference, ICWE 2014, Toulouse, France, July 1-4, 2014. Proceedings" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/cristian-cerro> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/cristian-cerro> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-cristian-cerro-federico-balaguer-y-alejandro-alva> ;
     lifia:highestDegree "Licenciado en Informática" ;
     lifia:institutionalEmail "cristian@lifia.info.unlp.edu.ar" ;
@@ -15824,8 +15809,7 @@ documentos.""" ;
     foaf:givenName "Cristian " ;
     dblp:orcid "https://orcid.org/0009-0009-4619-4836"^^xsd:anyURI .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/rosalina-nazarre> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/rosalina-nazarre> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/46007315>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-rosalina-amneris-nazarre-cecilia-challiol-ailen>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2024-rosalina-nazarre-natalia-correa-lucia-de-antuen> ;
@@ -16725,8 +16709,7 @@ documentos.""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/human-computer-interaction> ;
     dcterms:title "Generating Conversational Interfaces from Web sites" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/catalina-mostaccio> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/catalina-mostaccio> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/p_rez_2025>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/perez_2025>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-natalia-correa-gabriela-perez-catalina-mostaccio>,
@@ -16757,8 +16740,7 @@ documentos.""" ;
     foaf:familyName "Mostaccio" ;
     foaf:givenName "Catalina" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/francisco-gindre> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/francisco-gindre> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/62043866>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/gindre_2026>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/ibarra_2026>,
@@ -16784,8 +16766,7 @@ documentos.""" ;
     foaf:givenName "Francisco" ;
     dblp:orcid "https://orcid.org/0000-0001-6583-926X"^^xsd:anyURI .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/leonardo-german-loza-bonora> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/leonardo-german-loza-bonora> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/bonora_2022>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/loza_bonora_2025> ;
     lifia:coursesAtUNLP "Orientación a Objetos 1, Orientación a Objetos 2" ;
@@ -17035,8 +17016,7 @@ documentos.""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/web-engineering> ;
     dcterms:title "Métodos y herramientas para la abstracción de modelos de objetos en contenido web por parte de los usuarios finales" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/marcos-guillermo-lammers> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/marcos-guillermo-lammers> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/75774219> ;
     lifia:highestDegree "Licenciatura en Informática" ;
     lifia:institutionalEmail "marcos.lammers@lifia.info.unlp.edu.ar" ;
@@ -17227,8 +17207,7 @@ A su vez se realizara una implementación modelo para probar la factibilidad de 
         <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
     dcterms:title "Modelado de Sistemas Colaborativos" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/natalia-correa> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/natalia-correa> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/46007315>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2017-natalia-correa-gabriela-perez-catalina-mostaccio>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2018-correa-natalia-los-e-portfolios-como-metodologia>,
@@ -17388,8 +17367,7 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
     rdfs:label "explainable ai" ;
     skos:prefLabel "explainable ai" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/alicia-diaz> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/alicia-diaz> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfcriwgmendozazdf14>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfsemwebtorressmd14>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpjournalsrcctorresdccf17>,
@@ -17421,8 +17399,7 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
     foaf:familyName "Diaz" ;
     foaf:givenName "Alicia" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/gabriel-baum> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/gabriel-baum> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/baum_2022>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/baum_procesos_2023>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/moncaut_2022>,
@@ -17457,8 +17434,7 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
     foaf:familyName "Baum" ;
     foaf:givenName "Gabriel " .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/joaquin-bogado> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/joaquin-bogado> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/suarez_bibbo_bogado_fernandez_2025> ;
     lifia:category "V" ;
     lifia:highestDegree "Doctor" ;
@@ -17485,8 +17461,7 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
     foaf:familyName "Bogado" ;
     foaf:givenName "Joaquín" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/jorge-hernandez-hormazabal> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/jorge-hernandez-hormazabal> a foaf:Person ;
     lifia:affiliations "The University of Liverpool, Management School" ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/alemany_2020>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/boshkoska_2019>,
@@ -17522,8 +17497,7 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
     foaf:givenName "Jorge" ;
     foaf:homepage <https://www.liverpool.ac.uk/management/staff/jorge-hernandez-hormazabal/> .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/jose-manuel-suarez> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/jose-manuel-suarez> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/bibbo_2024>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/suarez_bibbo_bogado_fernandez_2025> ;
     lifia:coursesAtUNLP "Patrones de Arquitectura de Software, Orientación a Objetos I" ;
@@ -17635,8 +17609,7 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
     rdfs:label "logic" ;
     skos:prefLabel "logic" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/mario-lezoche> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/mario-lezoche> a foaf:Person ;
     lifia:affiliations "Université de Lorraine" ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/ferreirone_2026>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/leutwyler_2023>,
@@ -17737,8 +17710,7 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
     rdfs:label "fintech" ;
     skos:prefLabel "fintech" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/federico-balaguer> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/federico-balaguer> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/85825794>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/balaguer2026bootstrapping>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/massacesi_yommi_perez_lozano_david_mendoza_balaguer_2024>,
@@ -17771,8 +17743,7 @@ Chile Julio Hurtado, Universidad del Cauca, Popayán-Colombia""" ;
     foaf:familyName "Balaguer" ;
     foaf:givenName "Federico" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/giuliana-maltempo> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/giuliana-maltempo> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/hurtado_2024>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/l_pez_erazo_2025>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/lopez_erazo_2026>,
@@ -17864,8 +17835,7 @@ Estos objetivos buscan proporcionar una visión integral de la situación actual
         <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
     dcterms:title "Ingeniería de Software Cuántico" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/luciana-tanevitch> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/luciana-tanevitch> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/11420767>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/bazzana2021construccion>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/bazzana2023implementacion>,
@@ -18119,8 +18089,7 @@ Estos objetivos buscan proporcionar una visión integral de la situación actual
     rdfs:label "formal methods" ;
     skos:prefLabel "formal methods" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/damiano-distante> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/damiano-distante> a foaf:Person ;
     lifia:affiliations "Associate Professor of Computer Science, University of Rome Unitelma Sapienza (Italy)" ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfic3kdistantefcv14>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconficwebosettiffwrd18>,
@@ -18157,8 +18126,7 @@ Estos objetivos buscan proporcionar una visión integral de la situación actual
     foaf:givenName "Damiano" ;
     dblp:orcid "https://orcid.org/0000-0002-8467-535X"^^xsd:anyURI .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/maria-dalponte-ayastuy> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/maria-dalponte-ayastuy> a foaf:Person ;
     lifia:affiliations "Universidad Nacional de Quilmes" ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/10114534713913471431>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/dalponte_ayastuy_2021>,
@@ -18287,8 +18255,7 @@ http://cyted.org/es/run""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/technology-and-society> ;
     dcterms:title "Extensibilidad de navegadores Web basada en P2P: apropiación, producción y consumo de servicios y contenidos por parte de usuarios finales en el marco de la aumentación Web" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/gabriela-bosetti> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/gabriela-bosetti> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/2020>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/bosetti_2022>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfewgdssfernandezbfz19>,
@@ -18419,8 +18386,7 @@ http://cyted.org/es/run""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/web-engineering> ;
     dcterms:title "Ingeniería ágil y conducida por modelos, de software adaptable para la web del conocimiento " .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/juliana-delle-ville> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/77845150>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/81527790>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/bazzana2021construccion>,
@@ -18477,8 +18443,7 @@ http://cyted.org/es/run""" ;
     rdfs:label "quantum computing" ;
     skos:prefLabel "quantum computing" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/roxana-giandini> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/roxana-giandini> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/antonelli_2020>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/bibbo_2022>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpjournalsecrdistantegcgr14>,
@@ -18537,8 +18502,7 @@ http://cyted.org/es/run""" ;
     rdfs:label "ai-assisted development" ;
     skos:prefLabel "ai-assisted development" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/luis-mariano-bibbo> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/luis-mariano-bibbo> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/10555537210413721067>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/69797207>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/aparicio_morales_2024>,
@@ -18591,8 +18555,7 @@ http://cyted.org/es/run""" ;
     foaf:givenName "Luis Mariano" ;
     foaf:mbox "lmbibbo@gmail.com" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/silvia-gordillo> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/silvia-gordillo> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/challiol_2020>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfhtverzinitclg15>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfhtverzinitclg15a>,
@@ -18663,8 +18626,7 @@ http://cyted.org/es/run""" ;
     foaf:familyName "Gordillo" ;
     foaf:givenName "Silvia" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/juan-cruz-gardey> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/84162132>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/bonora_2022>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/dblpconfchigrigeragrgr19>,
@@ -18815,8 +18777,7 @@ http://cyted.org/es/run""" ;
     rdfs:label "citizen science" ;
     skos:prefLabel "citizen science" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/matias-urbieta> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/matias-urbieta> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/2021>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/82979690>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/cajas_2020>,
@@ -18890,8 +18851,7 @@ http://cyted.org/es/run""" ;
     rdfs:label "design thinking" ;
     skos:prefLabel "design thinking" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/gabriela-perez> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/p_rez_2025>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/perez_2025>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/raw-2016-claudia-pons-gabriela-perez-roxana-giandini-and>,
@@ -19294,8 +19254,7 @@ http://cyted.org/es/run""" ;
         <http://lifia.info.unlp.edu.ar/resource/tema/design-thinking> ;
     dcterms:title "Diseño participativo de aplicaciones de ciencia ciudadana y gestión del conocimiento" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/alejandra-lliteras> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/alejandra-lliteras> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/2021>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/2023>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/2025>,
@@ -19391,8 +19350,7 @@ En el año 2002 se recibió de Analista de Computación, en 2005 de Licenciada e
     foaf:homepage <https://alfadatizando.wordpress.com/> ;
     dblp:orcid "https://orcid.org/0000-0002-4148-1299"^^xsd:anyURI .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/andres-rodriguez> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/10114537065993706698>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/41995821>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/51833739>,
@@ -19475,8 +19433,7 @@ En el año 2002 se recibió de Analista de Computación, en 2005 de Licenciada e
     foaf:givenName "Andrés" ;
     dblp:orcid "https://orcid.org/0000-0002-7600-6041"^^xsd:anyURI .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/sergio-firmenich> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/sergio-firmenich> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/2020>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/2021-1>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/2022>,
@@ -19566,8 +19523,7 @@ En el año 2002 se recibió de Analista de Computación, en 2005 de Licenciada e
     foaf:familyName "Firmenich" ;
     foaf:givenName "Sergio" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/julian-grigera> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/julian-grigera> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/84162132>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/antonelli_2019>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/antonelli_2020>,
@@ -19929,8 +19885,7 @@ En el año 2002 se recibió de Analista de Computación, en 2005 de Licenciada e
         <http://lifia.info.unlp.edu.ar/resource/tema/software-engineering> ;
     dcterms:title "Técnicas y herramientas para ingeniería de software web adaptable y ágil basada en modelos con soporte semántico y de crowdsourcing" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/cecilia-challiol> a foaf:Person ;
     lifia:affiliations "LIFIA (Facultad de Informática, UNLP), CONICET" ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/38502065>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/38856919>,
@@ -20038,8 +19993,7 @@ Cecilia Challiol ha dirigido grupos de investigación desde hace 12 años, esto 
     foaf:givenName "Cecilia" ;
     dblp:orcid "https://orcid.org/0000-0001-5140-0264"^^xsd:anyURI .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/alejandra-garrido> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/41995821>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/70313106>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/70483860>,
@@ -20154,8 +20108,7 @@ Cecilia Challiol ha dirigido grupos de investigación desde hace 12 años, esto 
     foaf:givenName "Alejandra " ;
     dblp:orcid "https://orcid.org/0000-0002-5052-705X"^^xsd:anyURI .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/gustavo-rossi> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/gustavo-rossi> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/101007978-3-032-06336-6_4>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/2020>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/2022>,
@@ -20270,7 +20223,7 @@ Cecilia Challiol ha dirigido grupos de investigación desde hace 12 años, esto 
         <http://lifia.info.unlp.edu.ar/resource/tesis/self-refactoring-mejoras-automaticas-de-usabilidad-para-aplicaciones-web> ;
     lifia:positionAtCIC "N/A" ;
     lifia:positionAtCONICET "N/A" ;
-    lifia:positionAtLab "Investigador Senior" ;
+    lifia:positionAtLab "Investigador" ;
     lifia:positionAtUnlp "Profesor Emérito" ;
     lifia:slug "gustavo-rossi" ;
     lifia:startDate "1988-12-05"^^xsd:date ;
@@ -20464,8 +20417,7 @@ Cecilia Challiol ha dirigido grupos de investigación desde hace 12 años, esto 
     dcterms:title "Técnicas y herramientas de ingeniería de software para el desarrollo ágil de soluciones colaborativas basadas en crowdsourcing y colaboración, modelos e inteligencia artificial" ;
     foaf:homepage <https://cyt.proyectos.unlp.edu.ar/projects/11-F029> .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/leandro-antonelli> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/51958845>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/52541310>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/77845150>,
@@ -20626,8 +20578,7 @@ Software and its engineering"""@es ;
     foaf:mbox "lanto2004@gmail.com" ;
     dblp:orcid "https://orcid.org/0000-0003-1388-0337"^^xsd:anyURI .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/claudia-pons> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/claudia-pons> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/50246362>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/65832727>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/66847945>,
@@ -20771,8 +20722,7 @@ Software and its engineering"""@es ;
     rdfs:label "software engineering" ;
     skos:prefLabel "software engineering" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/diego-torres> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/10114534713913471431>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/104108eai13-7-2018163482>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/11420767>,
@@ -20953,8 +20903,7 @@ Applied computing > Computers in other domains > Agriculture"""@es ;
     rdfs:label "human-computer interaction" ;
     skos:prefLabel "human-computer interaction" .
 
-<http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez> a vivo:Person,
-        foaf:Person ;
+<http://lifia.info.unlp.edu.ar/resource/persona/alejandro-fernandez> a foaf:Person ;
     lifia:authorOf <http://lifia.info.unlp.edu.ar/resource/publicacion/101007978-3-031-91690-8_14>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/101007978-3-032-06336-6_4>,
         <http://lifia.info.unlp.edu.ar/resource/publicacion/104108eai13-7-2018163482>,

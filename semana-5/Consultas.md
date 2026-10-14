@@ -1,6 +1,6 @@
 # Consultas SPARQL - Memorias del LIFIA
 
-Consultas de ejemplo sobre el grafo, una por una. Se ejecutan en el Workbench de GraphDB (http://localhost:7200 -> SPARQL) sobre el repositorio `memorias-repo`. Cada una va con su equivalente en SQL y el resultado esperado sobre los datos actuales (19.700 tripletas sin razonar).
+Consultas de ejemplo sobre el grafo, una por una. Se ejecutan en el Workbench de GraphDB (http://localhost:7200 -> SPARQL) sobre el repositorio `memorias-repo`. Cada una va con su equivalente en SQL y el resultado esperado sobre los datos actuales (aprox 19.700 tripletas sin razonar).
 
 Los prefijos van al principio de cada consulta:
 
@@ -145,7 +145,7 @@ Para comprobar el efecto del razonamiento, se ejecuta la misma consulta con la o
 SELECT (COUNT(*) AS ?tripletas) WHERE { ?s ?p ?o }
 ```
 
-Con "Include inferred" desactivado, el resultado corresponde a las tripletas explícitamente almacenadas en el repositorio: 19.700 entre datos y ontología.
+Con "Include inferred" desactivado, el resultado corresponde a las tripletas explícitamente almacenadas en el repositorio: aprox 19.700 entre datos y ontología.
 
 Al activar "Include inferred", el resultado incluye además las tripletas que el razonador puede deducir a partir de las relaciones y axiomas definidos en la ontología, por lo que el total aumenta. La cantidad exacta depende del ruleset configurado en el repositorio y se puede consultar directamente en GraphDB. El total con inferidas también se puede ver por consola con `curl -s http://localhost:7200/repositories/memorias-repo/size`.
 

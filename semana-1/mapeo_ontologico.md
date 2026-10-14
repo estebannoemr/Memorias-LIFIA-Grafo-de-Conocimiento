@@ -2,7 +2,7 @@
 
 La idea de este mapeo es, para cada tabla y cada columna del dump, decidir con qué término de las ontologías la represento.
 
-- Tomé **VIVO** como base porque modela bien todo lo académico (personas, proyectos, becas) -> es una ontología pensada para describir investigadores y su producción y las entidades del LIFIA caen casi 1:1 en sus clases (Member → vivo:Person, Project → vivo:Project, Scholarship → vivo:Grant)
+- Tomé **VIVO** como base porque modela bien todo lo académico (proyectos, becas) -> es una ontología pensada para describir investigadores y su producción y las entidades del LIFIA caen casi 1:1 en sus clases (Project → vivo:Project, Scholarship → vivo:Grant)
 - Para las publicaciones me apoyé en **DBLP** (Computer Science Bibliography) y **BIBO** (bibliographic ontology).
 - Para los temas, en **CSO** (Computer Science Ontology) con **SKOS**
 - Y cuando algo no encajaba, usé **FOAF** (para datos de personas), **Dublin Core** (para título, creador, fecha, tema) y **OWL** (para las inversas y la inferencia).
@@ -30,7 +30,7 @@ Todas las instancias siguen el mismo molde: `{base}{tipo}/{identificador}`
 
 En Turtle/SPARQL se abrevia con un prefijo propio para las instancias (`res:`), distinto del `lifia:` que usa el vocabulario: ` @prefix res: <http://lifia.info.unlp.edu.ar/resource/> . `
 
-Conviene aclarar que el alcance de esta base es que se aplica **únicamente a los datos** (Matías Urbieta, tal publicación, tal proyecto). Los términos de las ontologías (`vivo:Person`, `cso:Topic`, `bibo:doi`) conservan sus propios namespaces de VIVO, BIBO, FOAF, DBLP, Dublin Core, SKOS y CSO -> no se copian ni se reescriben bajo `lifia:`.
+Conviene aclarar que el alcance de esta base es que se aplica **únicamente a los datos** (Matías Urbieta, tal publicación, tal proyecto). Los términos de las ontologías (`cso:Topic`, `bibo:doi`) conservan sus propios namespaces de VIVO, BIBO, FOAF, DBLP, Dublin Core, SKOS y CSO -> no se copian ni se reescriben bajo `lifia:`.
 
 ### 2. Tipos y su tabla
 
@@ -88,7 +88,7 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
 
 ### Miembro (`Member`)
 
-- **Clase:** `foaf:Person`, `vivo:Person`
+- **Clase:** `foaf:Person`
 
 - **Propiedades de datos:**
   - **id**: `dcterms:identifier`
