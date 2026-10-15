@@ -5,7 +5,7 @@ La idea de este mapeo es, para cada tabla y cada columna del dump, decidir con q
 - Tomé **VIVO** como base porque modela bien todo lo académico (proyectos, becas) -> es una ontología pensada para describir investigadores y su producción y las entidades del LIFIA caen casi 1:1 en sus clases (Project → vivo:Project, Scholarship → vivo:Grant)
 - Para las publicaciones me apoyé en **DBLP** (Computer Science Bibliography) y **BIBO** (bibliographic ontology).
 - Para los temas, en **CSO** (Computer Science Ontology) con **SKOS**
-- Y cuando algo no encajaba, usé **FOAF** (para datos de personas), **Dublin Core** (para título, creador, fecha, tema) y **OWL** (para las inversas y la inferencia).
+- Y cuando algo no encajaba, usé **FOAF** (para datos de personas), **Dublin Core** (para identificador, título, resumen, fechas y tema) y **OWL** (para las inversas y la inferencia).
 - Lo que es puramente del LIFIA y no tiene equivalente estándar (por ejemplo, los cargos institucionales), lo definí con términos propios en `lifia:`.
 - Con las clases hice lo mismo: reuso las de VIVO, BIBO y FOAF directamente, y solo invento algo `lifia:` cuando no hay nada estándar que sirva.
 
@@ -105,9 +105,9 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
   - **sicadiCategory**: `lifia:sicadiCategory`
   - **positionAtCIC**: `lifia:positionAtCIC`
   - **positionAtCONICET**: `lifia:positionAtCONICET`
-  - **personalEmail**: `foaf:mbox`
-  - **institutionalEmail**: `lifia:institutionalEmail`
-  - **phone**: `foaf:phone`
+  - **personalEmail**: `foaf:mbox` → IRI `mailto:` (en FOAF es propiedad de objeto, el valor no es un texto)
+  - **institutionalEmail**: `lifia:institutionalEmail` → IRI `mailto:`; declarada `rdfs:subPropertyOf foaf:mbox`
+  - **phone**: `foaf:phone` → IRI `tel:` (también de objeto en FOAF)
   - **webPage**: `foaf:homepage`
   - **shortCvInSpanish**: `vivo:overview` / `dcterms:description` (`@es`)
   - **shortCvInEnglish**: `vivo:overview` / `dcterms:description` (`@en`)
@@ -124,7 +124,7 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
   - **googleResearchProfile**: `rdfs:seeAlso`
   - **researchGateProfile**: `rdfs:seeAlso`
   - **tags**: `dcterms:subject` → `cso:Topic`
-  - `_PublicationMembers`: `lifia:authorOf` → Publicación
+  - `_PublicationMembers`: `dblp:authorOf` → Publicación
   - `_ProjectMembers`: `lifia:worksOnProject` → Proyecto
   - `_ScholarshipMembers`: `lifia:involvedInScholarship` → Beca
   - `_ThesisMembers`: `lifia:involvedInThesis` → Tesis
@@ -140,9 +140,9 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
 - **Propiedades de datos:**
   - **id**: `dcterms:identifier`
   - **slug**: `lifia:slug`
-  - **type**: `lifia:publicationType` (además define la subclase BIBO: article → `bibo:AcademicArticle`, conferencia → `bibo:Article`, capítulo → `bibo:Chapter`, libro → `bibo:Book`, ...)
+  - **type**: `dblp:bibtexType` → clase de la ontología bibtex (`bibtex:Article`, `bibtex:Inproceedings`, `bibtex:Inbook`, `bibtex:Book`, `bibtex:Misc`), porque los valores de la columna son justamente tipos de entrada BibTeX. Además define la subclase BIBO: article → `bibo:AcademicArticle`, conferencia → `bibo:Article`, capítulo → `bibo:Chapter`, libro → `bibo:Book`, etc..
   - **title**: `dcterms:title`
-  - **authors**: `lifia:bibtexAuthors` (string completo, incluye coautores externos; término propio porque DBLP no tiene una propiedad para la cadena de autores)
+  - **authors**: `lifia:bibtexAuthors` (texto completo de la columna `authors`, con el formato de autores de BibTeX; incluye coautores externos. Término propio porque DBLP no tiene una propiedad para la lista de autores como texto).
   - **year**: `dblp:yearOfPublication`
   - **ranking**: `lifia:ranking` (p.ej. categoría CORE/Scimago)
   - **selfArchivingUrl**: `lifia:selfArchivingUrl`
@@ -152,7 +152,7 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
 
 - **Propiedades de objeto:**
   - **tags**: `dcterms:subject` → `cso:Topic`
-  - `_PublicationMembers`: `dcterms:creator` → Miembro (solo autores internos)
+  - `_PublicationMembers`: `dblp:authoredBy` → Miembro (solo autores internos)
   - `_ProjectPublications`: `lifia:partOfProject` → Proyecto
   - `_ThesisPublications`: relación → Tesis
   - **venue** (de `bibtexData`): `bibo:presentedAt` / `dcterms:isPartOf` → Venue
@@ -293,7 +293,7 @@ Cada entidad separa las **propiedades de datos** (columna → valor literal) de 
 
 Para mantener la consistencia interna y no perder interoperabilidad, la ontología declara estas relaciones entre propiedades:
 
-- **`lifia:authorOf` es la inversa de `dcterms:creator`** (`lifia:authorOf owl:inverseOf dcterms:creator`). Las 2 describen el mismo vínculo de `_PublicationMembers`, visto desde cada lado: desde el miembro, "es autor de"; desde la publicación, "tiene por autor". Al declararlas inversas, el grafo las trata como una única relación y una consulta la puede recorrer en cualquier dirección (por eso en Member figura `lifia:authorOf` y en Publication `dcterms:creator`, pero no son 2 relaciones distintas).
+- **`lifia:worksOnProject` / `lifia:hasProjectMember` y `lifia:producedPublication` / `lifia:partOfProject` son inversas** (`owl:inverseOf`). Cada par describe el mismo vínculo de una tabla de unión visto desde cada lado. El ETL igual carga las 2 direcciones.
 
 - **Las propiedades de relación propias son sub-propiedades de `dcterms:relation`** (`rdfs:subPropertyOf dcterms:relation`): `lifia:worksOnProject`, `lifia:involvedInScholarship`, `lifia:involvedInThesis`, `lifia:hasProjectMember`, `lifia:producedPublication`, `lifia:relatedScholarship`, `lifia:relatedThesis` y las demás. Así se conserva la claridad de los nombres específicos y, a la vez, un sistema externo reconoce que hay una relación.
 
@@ -326,7 +326,7 @@ No todo lo que figura en el listado se resuelve leyendo una fila y copiando valo
 
 **Cuidado con los autores**: la columna `Publication.authors` trae la lista completa de firmantes como texto e incluye coautores ajenos al LIFIA, mientras que `_PublicationMembers` solo enlaza a los que están dados de alta como `Member`. Por eso conviven 2 caminos:
 1. `lifia:bibtexAuthors`, que preserva la autoría íntegra desde el string,
-2. `dcterms:creator` (vía la tabla de enlace) que apunta únicamente a los autores internos, que sí son nodos del grafo.
+2. `dblp:authoredBy` / `dblp:authorOf` (vía la tabla de enlace), que apuntan únicamente a los autores internos, que sí son nodos del grafo.
 
 
 **Qué queda deliberadamente afuera**: el enum `Role` (`USER`, `EDITOR`, `ADMIN`, `POWER_EDITOR`), ya que describe permisos del gestor de contenidos, no información académica, así que no forma parte de este mapeo.

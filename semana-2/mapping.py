@@ -22,13 +22,15 @@ BIBO  = Namespace("http://purl.org/ontology/bibo/")
 DBLP  = Namespace("https://dblp.org/rdf/schema#")
 CSO   = Namespace("http://cso.kmi.open.ac.uk/schema/cso#")
 SKOS  = Namespace("http://www.w3.org/2004/02/skos/core#")
+BIBTEX = Namespace("http://purl.org/net/nknouf/ns/bibtex#")  # tipos de entrada BibTeX (rango de dblp:bibtexType)
 
 
 
 def bind_all(g):
     """Registra los prefijos de las ontologías utilizadas en el grafo."""
     for p, ns in [("lifia", LIFIA), ("vivo", VIVO), ("bibo", BIBO), ("dblp", DBLP),
-                  ("cso", CSO), ("skos", SKOS), ("foaf", FOAF), ("dcterms", DCTERMS)]:
+                  ("cso", CSO), ("skos", SKOS), ("foaf", FOAF), ("dcterms", DCTERMS),
+                  ("bibtex", BIBTEX)]:
         g.bind(p, ns)
 
 
@@ -230,6 +232,14 @@ def add_literal(g, s, pred, val, kind="str", lang=None): # g = graph, s = subjec
         # de lo contrario, se conserva como literal.
         g.add((s, pred, URIRef(sv) if (sv.startswith("http") and " " not in sv) else Literal(sv)))
 
+    elif kind in ("mailto", "tel"):  # foaf:mbox y foaf:phone son de objeto: el valor es un IRI mailto: / tel:
+        sv = re.sub(r"\s+", "", str(val))
+        if kind == "mailto" and "@" not in sv:
+            return  # si no parece un email, no se agrega
+        if not sv.startswith(kind + ":"):
+            sv = kind + ":" + sv
+        g.add((s, pred, URIRef(sv)))
+
     elif kind == "lang":  # literal con idioma
         g.add((s, pred, Literal(str(val), lang=lang)))
 
@@ -243,13 +253,18 @@ BIBO_BY_TYPE = {"article": BIBO.AcademicArticle, "inproceedings": BIBO.Article,
                 "conference": BIBO.Article, "inbook": BIBO.Chapter,
                 "incollection": BIBO.Chapter, "book": BIBO.Book, "phdthesis": BIBO.Thesis}
 
+# ------ tipo de entrada BibTeX (dblp:bibtexType apunta a una clase de la ontología bibtex)
+BIBTEX_BY_TYPE = {t.lower(): BIBTEX[t] for t in (
+    "Article", "Book", "Booklet", "Conference", "Inbook", "Incollection", "Inproceedings",
+    "Manual", "Mastersthesis", "Misc", "Phdthesis", "Proceedings", "Techreport", "Unpublished")}
+
 
 
 # ------ tablas de join → object properties
 # (tabla, tipo de A, tipo de B, función(uriA, uriB) -> [(s,p,o), ...])
 JOINS = {
     "_ProjectMembers":      ("persona", "proyecto",     lambda a, b: [(a, LIFIA.worksOnProject, b), (b, LIFIA.hasProjectMember, a)]),
-    "_PublicationMembers":  ("persona", "publicacion",  lambda a, b: [(a, LIFIA.authorOf, b), (b, DCTERMS.creator, a)]),
+    "_PublicationMembers":  ("persona", "publicacion",  lambda a, b: [(a, DBLP.authorOf, b), (b, DBLP.authoredBy, a)]),
     "_ThesisMembers":       ("persona", "tesis",        lambda a, b: [(a, LIFIA.involvedInThesis, b), (b, LIFIA.involvedMember, a)]),
     "_ScholarshipMembers":  ("persona", "beca",         lambda a, b: [(a, LIFIA.involvedInScholarship, b), (b, LIFIA.involvedMember, a)]),
     "_ProjectPublications": ("proyecto", "publicacion", lambda a, b: [(a, LIFIA.producedPublication, b), (b, LIFIA.partOfProject, a)]),
@@ -282,8 +297,8 @@ DATA = {
         ("positionAtLab", LIFIA.positionAtLab, "str", None), ("positionAtUnlp", LIFIA.positionAtUnlp, "str", None),
         ("category", LIFIA.category, "str", None), ("sicadiCategory", LIFIA.sicadiCategory, "str", None),
         ("positionAtCIC", LIFIA.positionAtCIC, "str", None), ("positionAtCONICET", LIFIA.positionAtCONICET, "str", None),
-        ("personalEmail", FOAF.mbox, "str", None), ("institutionalEmail", LIFIA.institutionalEmail, "str", None),
-        ("phone", FOAF.phone, "str", None), ("webPage", FOAF.homepage, "uri", None),
+        ("personalEmail", FOAF.mbox, "mailto", None), ("institutionalEmail", LIFIA.institutionalEmail, "mailto", None),
+        ("phone", FOAF.phone, "tel", None), ("webPage", FOAF.homepage, "uri", None),
         ("shortCvInSpanish", VIVO.overview, "lang", "es"), ("shortCvInEnglish", VIVO.overview, "lang", "en"),
         ("interestsInEnglish", VIVO.freetextKeyword, "lang", "en"), ("interestsInSpanish", VIVO.freetextKeyword, "lang", "es"),
         ("affiliations", LIFIA.affiliations, "str", None), ("avatarUrl", FOAF.depiction, "uri", None),
@@ -300,7 +315,6 @@ DATA = {
     ],
     "Publication": [
         ("id", DCTERMS.identifier, "str", None), ("slug", LIFIA.slug, "str", None),
-        ("publicationType", LIFIA.publicationType, "str", None),  # se completa desde 'type'
         ("title", DCTERMS.title, "str", None), ("authors", LIFIA.bibtexAuthors, "str", None),
         ("year", DBLP.yearOfPublication, "gyear", None), ("ranking", LIFIA.ranking, "str", None),
         ("selfArchivingUrl", LIFIA.selfArchivingUrl, "uri", None),
@@ -352,10 +366,13 @@ def emit_entity(g, table, row, person_index, stats=None):
     
     # Agregar la subclase BIBO correspondiente al tipo de publicación.
     if table == "Publication":
-        extra = BIBO_BY_TYPE.get(str(row.get("type") or "").lower())  # clase BIBO según el type de la publicación
+        ptype = str(row.get("type") or "").strip().lower()
+        extra = BIBO_BY_TYPE.get(ptype)  # clase BIBO según el type de la publicación
         if extra:
             g.add((s, RDF.type, extra))  # agrega la subclase BIBO
-        row = dict(row); row["publicationType"] = row.get("type")  # guarda el tipo de publicación
+        bt = BIBTEX_BY_TYPE.get(ptype)  # el type es un tipo de entrada BibTeX (article, inproceedings, ...)
+        if bt:
+            g.add((s, DBLP.bibtexType, bt))
 
     if table == "Scholarship":
         row = dict(row); row["scholarshipType"] = row.get("type")  # guarda el tipo de beca

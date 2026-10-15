@@ -37,7 +37,7 @@ En la pestaña *SPARQL*:
 SELECT (COUNT(*) AS ?n) WHERE { ?s ?p ?o }
 ```
 
-- Con **"Include inferred" desactivado** se ven solo las cargadas explícitamente (aprox 19.700 = datos + ontología).
+- Con **"Include inferred" desactivado** se ven solo las cargadas explícitamente (19.641 = 19.452 de datos + 189 de la ontología).
 
 - Con **"Include inferred" activado** el total es mayor -> incluye las tripletas que deduce el razonador. Cuánto sube depende del ruleset (con `rdfs` es menos que con un OWL completo), así que ese número conviene leerlo en el propio repo. El aumento claro y reproducible es `dcterms:relation`, que pasa de 0 a 3068 (todas las relaciones `lifia:` son subpropiedad de `dcterms:relation`).
 

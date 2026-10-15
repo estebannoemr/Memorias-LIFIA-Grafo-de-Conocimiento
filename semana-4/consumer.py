@@ -57,11 +57,11 @@ TABLE_BY_TIPO = {v: k for k, v in M.TIPO.items()}
 
 # estas relaciones vienen de las tablas de join, no de la fila de la entidad.
 # se preservan cuando actualizo una entidad (las maneja el evento de su tabla _XY).
-REL_PREDS = {M.LIFIA.worksOnProject, M.LIFIA.hasProjectMember, M.LIFIA.authorOf,
+REL_PREDS = {M.LIFIA.worksOnProject, M.LIFIA.hasProjectMember, M.DBLP.authorOf,
              M.LIFIA.involvedInThesis, M.LIFIA.involvedInScholarship, M.LIFIA.involvedMember,
              M.LIFIA.producedPublication, M.LIFIA.partOfProject, M.LIFIA.relatedProject,
              M.LIFIA.relatedPublication, M.LIFIA.relatedScholarship, M.LIFIA.relatedThesis,
-             M.DCTERMS.creator}
+             M.DBLP.authoredBy}
 
 
 

@@ -62,7 +62,9 @@ lifia:positionAtCIC      a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs
 lifia:positionAtCONICET  a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "cargo en el CONICET"@es .
 lifia:category           a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "categoría"@es .
 lifia:sicadiCategory     a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "categoría SICADI"@es .
-lifia:institutionalEmail a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "email institucional"@es .
+lifia:institutionalEmail a owl:ObjectProperty   ; rdfs:domain foaf:Person ; rdfs:label "email institucional"@es ;
+    rdfs:subPropertyOf foaf:mbox ;
+    rdfs:comment "Casilla institucional como IRI mailto:, igual que foaf:mbox (el email personal va directo con foaf:mbox)."@es .
 lifia:affiliations       a owl:DatatypeProperty ; rdfs:domain foaf:Person ; rdfs:range xsd:string ; rdfs:label "afiliaciones"@es .
 
 # --- Project ---
@@ -75,9 +77,8 @@ lifia:ranking          a owl:DatatypeProperty ; rdfs:domain bibo:Document ; rdfs
     rdfs:comment "Categoría de la publicación (p.ej. CORE, Scimago)."@es .
 lifia:selfArchivingUrl a owl:ObjectProperty ; rdfs:domain bibo:Document ; rdfs:label "URL de auto-archivo"@es ;
     rdfs:comment "Enlace (IRI) a la versión de auto-archivo; se guarda como recurso, no como literal."@es .
-lifia:publicationType  a owl:DatatypeProperty ; rdfs:domain bibo:Document ; rdfs:range xsd:string ; rdfs:label "tipo de publicación"@es .
-lifia:bibtexAuthors    a owl:DatatypeProperty ; rdfs:domain bibo:Document ; rdfs:range xsd:string ; rdfs:label "autores (texto BibTeX)"@es ;
-    rdfs:comment "Cadena completa de autores tal como viene en el BibTeX, incluidos coautores externos al LIFIA. La autoría resuelta a personas va por dcterms:creator."@es .
+lifia:bibtexAuthors    a owl:DatatypeProperty ; rdfs:domain bibo:Document ; rdfs:range xsd:string ; rdfs:label "autores (texto)"@es ;
+    rdfs:comment "Lista completa de autores de la columna authors, como texto con el formato de autores de BibTeX (separados por and), incluidos coautores externos al LIFIA. La autoría resuelta a personas va por dblp:authorOf / dblp:authoredBy."@es .
 
 # --- Scholarship ---
 lifia:scholarshipType a owl:DatatypeProperty ; rdfs:domain vivo:Grant ; rdfs:range xsd:string ; rdfs:label "tipo de beca"@es .
@@ -108,11 +109,6 @@ lifia:otherAdvisors  a owl:DatatypeProperty ; rdfs:domain bibo:Thesis ; rdfs:ran
 #  3. PROPIEDADES DE OBJETO PROPIAS (relación → recurso)
 #     Derivadas de las tablas de join.
 # ------
-
-# --- autoría (Member <-> Publication, tabla _PublicationMembers) ---
-lifia:authorOf a owl:ObjectProperty ;
-    rdfs:domain foaf:Person ; rdfs:range bibo:Document ;
-    rdfs:label "es autor de"@es .
 
 # --- Member <-> Project (_ProjectMembers) ---
 lifia:worksOnProject a owl:ObjectProperty ;
@@ -155,8 +151,6 @@ lifia:relatedThesis      a owl:ObjectProperty ; rdfs:range bibo:Thesis    ; rdfs
 #     Permiten inferir relacions adicionales a partir de las tripletas cargadas.
 # ------
 
-# authorOf es la inversa de dcterms:creator (mismo _PublicationMembers, ambos sentidos)
-lifia:authorOf owl:inverseOf dcterms:creator .
 
 # worksOnProject <-> hasProjectMember  ;  producedPublication <-> partOfProject
 lifia:worksOnProject      owl:inverseOf lifia:hasProjectMember .

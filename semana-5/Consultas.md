@@ -1,6 +1,6 @@
 # Consultas SPARQL - Memorias del LIFIA
 
-Consultas de ejemplo sobre el grafo, una por una. Se ejecutan en el Workbench de GraphDB (http://localhost:7200 -> SPARQL) sobre el repositorio `memorias-repo`. Cada una va con su equivalente en SQL y el resultado esperado sobre los datos actuales (aprox 19.700 tripletas sin razonar).
+Consultas de ejemplo sobre el grafo, una por una. Se ejecutan en el Workbench de GraphDB (http://localhost:7200 -> SPARQL) sobre el repositorio `memorias-repo`. Cada una va con su equivalente en SQL y el resultado esperado sobre los datos actuales (19.641 tripletas sin razonar).
 
 Los prefijos van al principio de cada consulta:
 
@@ -51,7 +51,7 @@ Recorre el grafo de la persona a sus publicaciones sin ningún JOIN.
 
 ```sparql
 SELECT ?nombre (COUNT(?p) AS ?publicaciones) WHERE {
-  ?m a foaf:Person ; foaf:givenName ?g ; foaf:familyName ?f ; lifia:authorOf ?p .
+  ?m a foaf:Person ; foaf:givenName ?g ; foaf:familyName ?f ; dblp:authorOf ?p .
   BIND(CONCAT(?g, " ", ?f) AS ?nombre)
 } GROUP BY ?nombre ORDER BY DESC(?publicaciones) LIMIT 6
 ```
@@ -73,8 +73,8 @@ Junta dos autores sobre la misma publicación. El `FILTER` con `<` impone un ord
 
 ```sparql
 SELECT ?autor1 ?autor2 (COUNT(?p) AS ?juntos) WHERE {
-  ?m1 lifia:authorOf ?p ; foaf:familyName ?autor1 .
-  ?m2 lifia:authorOf ?p ; foaf:familyName ?autor2 .
+  ?m1 dblp:authorOf ?p ; foaf:familyName ?autor1 .
+  ?m2 dblp:authorOf ?p ; foaf:familyName ?autor2 .
   FILTER( STR(?m1) < STR(?m2) )
 } GROUP BY ?autor1 ?autor2 ORDER BY DESC(?juntos) LIMIT 6
 ```
@@ -145,17 +145,17 @@ Para comprobar el efecto del razonamiento, se ejecuta la misma consulta con la o
 SELECT (COUNT(*) AS ?tripletas) WHERE { ?s ?p ?o }
 ```
 
-Con "Include inferred" desactivado, el resultado corresponde a las tripletas explícitamente almacenadas en el repositorio: aprox 19.700 entre datos y ontología.
+Con "Include inferred" desactivado, el resultado corresponde a las tripletas explícitamente almacenadas en el repositorio: aprox 19.600 entre datos y ontología.
 
 Al activar "Include inferred", el resultado incluye además las tripletas que el razonador puede deducir a partir de las relaciones y axiomas definidos en la ontología, por lo que el total aumenta. La cantidad exacta depende del ruleset configurado en el repositorio y se puede consultar directamente en GraphDB. El total con inferidas también se puede ver por consola con `curl -s http://localhost:7200/repositories/memorias-repo/size`.
 
 La inferencia más clara para mostrar en este caso es `dcterms:relation` -> ya que las relaciones específicas del vocabulario `lifia:` están declaradas como subpropiedad de `dcterms:relation`. Por lo tanto, a partir de una tripleta como:
 
-`persona lifia:authorOf publicacion`
+`persona lifia:worksOnProject proyecto`
 
 el razonador puede inferir:
 
-`persona dcterms:relation publicacion`
+`persona dcterms:relation proyecto`
 
 La siguiente consulta permite observar directamente esta diferencia:
 
@@ -166,7 +166,7 @@ SELECT (COUNT(*) AS ?relacionesGenericasInferidas) WHERE { ?x dcterms:relation ?
 **Resultado esperado:** 0 sin razonar, 3068 con razonamiento.
 
 
-Esto muestra una diferencia importante respecto de la base relacional: las 3068 relaciones genéricas no fueron cargadas explícitamente por el ETL ni existen como una columna o tabla en PostgreSQL. Se obtienen a partir de la semántica definida en la ontología. El razonador toma las relaciones específicas (`lifia:authorOf`, participación en proyectos, dirección de tesis, etc) y las relaciona con el concepto más general `dcterms:relation`.
+Esto muestra una diferencia importante respecto de la base relacional: las 3068 relaciones genéricas no fueron cargadas explícitamente por el ETL ni existen como una columna o tabla en PostgreSQL. Se obtienen a partir de la semántica definida en la ontología. El razonador toma las relaciones específicas (participación en proyectos, publicaciones de un proyecto, dirección de tesis, etc) y las relaciona con el concepto más general `dcterms:relation`.
 
 
 ---
@@ -174,7 +174,7 @@ Esto muestra una diferencia importante respecto de la base relacional: las 3068 
 
 Aclaración sobre las otras inferencias posibles:
 
-- Las relaciones inversas (`dcterms:creator` / `lifia:authorOf`, `lifia:hasProjectMember` / `lifia:worksOnProject`) están declaradas en la ontología con `owl:inverseOf`. Sin embargo, el ETL ya carga las 2 direcciones de cada relación, por lo que el razonador no agrega tripletas nuevas en estos casos. Las declaraciones se mantienen como parte de la semántica del modelo y permiten que la relación pueda inferirse si en algún momento se cargara solamente 1 de las 2 direcciones.
+- Las relaciones inversas (`lifia:hasProjectMember` / `lifia:worksOnProject`, `lifia:producedPublication` / `lifia:partOfProject`) están declaradas en la ontología con `owl:inverseOf` -> con el ruleset `rdfs` esa regla no se aplica -> habría que usar `rdfsplus-optimized` (RDFS-Plus) que sí incluye `owl:inverseOf`. Por eso el ETL carga las 2 direcciones de cada relación: así las consultas funcionan sin depender del razonador.
 
 - Las equivalencias de clase con vocabularios externos (DBLP, FOAF, schema.org) tampoco generan nuevas instancias en este repositorio, ya que las ontologías externas correspondientes no están importadas.
 
